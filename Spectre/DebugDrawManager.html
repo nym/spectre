@@ -1,0 +1,570 @@
+        <!DOCTYPE html>
+        <html>
+        <head>
+                <meta charset="utf-8">
+        <title>DebugDrawManager Class / Spectre Library / Dart Documentation</title>
+        <link rel="stylesheet" type="text/css"
+            href="../styles.css">
+        <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet" type="text/css">
+        <link rel="shortcut icon" href="../favicon.ico">
+        
+        </head>
+        <body data-library="Spectre" data-type="DebugDrawManager">
+        <div class="page">
+        <div class="header">
+          <a href="../index.html"><div class="logo"></div></a>
+          <a href="../index.html">Dart Documentation</a>
+         &rsaquo; <a href="../Spectre.html">Spectre</a> &rsaquo; <a href="../Spectre/DebugDrawManager.html">DebugDrawManager</a></div>
+        <div class="nav">
+        
+<h2><div class="icon-library"></div><a href="../dart_core.html">dart:core</a></h2><h2><div class="icon-library"></div><a href="../dart_coreimpl.html">dart:coreimpl</a></h2><h2><div class="icon-library"></div><a href="../html.html">html</a></h2><h2><div class="icon-library"></div><a href="../json.html">json</a></h2><h2><div class="icon-library"></div><a href="../Spectre.html">Spectre</a></h2><ul class="icon">
+<li><a href="../Spectre/BlendState.html"><div class="icon-class"></div>BlendState</a></li>
+<li><a href="../Spectre/BoundCommand.html"><div class="icon-class"></div>BoundCommand</a></li>
+<li><a href="../Spectre/BoundCommandDraw.html"><div class="icon-class"></div>BoundCommandDraw</a></li>
+<li><a href="../Spectre/BoundCommandDrawIndexed.html"><div class="icon-class"></div>BoundCommandDrawIndexed</a></li>
+<li><a href="../Spectre/BoundCommandExecuter.html"><div class="icon-class"></div>BoundCommandExecuter</a></li>
+<li><a href="../Spectre/BoundCommandSetBlendState.html"><div class="icon-class"></div>BoundCommandSetBlendState</a></li>
+<li><a href="../Spectre/BoundCommandSetDepthState.html"><div class="icon-class"></div>BoundCommandSetDepthState</a></li>
+<li><a href="../Spectre/BoundCommandSetIndexBuffer.html"><div class="icon-class"></div>BoundCommandSetIndexBuffer</a></li>
+<li><a href="../Spectre/BoundCommandSetInputLayout.html"><div class="icon-class"></div>BoundCommandSetInputLayout</a></li>
+<li><a href="../Spectre/BoundCommandSetPrimitiveTopology.html"><div class="icon-class"></div>BoundCommandSetPrimitiveTopology</a></li>
+<li><a href="../Spectre/BoundCommandSetRasterizerState.html"><div class="icon-class"></div>BoundCommandSetRasterizerState</a></li>
+<li><a href="../Spectre/BoundCommandSetShaderProgram.html"><div class="icon-class"></div>BoundCommandSetShaderProgram</a></li>
+<li><a href="../Spectre/BoundCommandSetUniformMatrix3.html"><div class="icon-class"></div>BoundCommandSetUniformMatrix3</a></li>
+<li><a href="../Spectre/BoundCommandSetUniformMatrix4.html"><div class="icon-class"></div>BoundCommandSetUniformMatrix4</a></li>
+<li><a href="../Spectre/BoundCommandSetUniformVector3.html"><div class="icon-class"></div>BoundCommandSetUniformVector3</a></li>
+<li><a href="../Spectre/BoundCommandSetUniformVector4.html"><div class="icon-class"></div>BoundCommandSetUniformVector4</a></li>
+<li><a href="../Spectre/BoundCommandSetVertexBuffers.html"><div class="icon-class"></div>BoundCommandSetVertexBuffers</a></li>
+<li><a href="../Spectre/BoundCommandSetViewport.html"><div class="icon-class"></div>BoundCommandSetViewport</a></li>
+<li><a href="../Spectre/Camera.html"><div class="icon-class"></div>Camera</a></li>
+<li><a href="../Spectre/CameraController.html"><div class="icon-class"></div>CameraController</a></li>
+<li><a href="../Spectre/Command.html"><div class="icon-class"></div>Command</a></li>
+<li><a href="../Spectre/CommandBuffer.html"><div class="icon-class"></div>CommandBuffer</a></li>
+<li><a href="../Spectre/CommandDraw.html"><div class="icon-class"></div>CommandDraw</a></li>
+<li><a href="../Spectre/CommandDrawIndexed.html"><div class="icon-class"></div>CommandDrawIndexed</a></li>
+<li><a href="../Spectre/CommandSetBlendState.html"><div class="icon-class"></div>CommandSetBlendState</a></li>
+<li><a href="../Spectre/CommandSetDepthState.html"><div class="icon-class"></div>CommandSetDepthState</a></li>
+<li><a href="../Spectre/CommandSetIndexBuffer.html"><div class="icon-class"></div>CommandSetIndexBuffer</a></li>
+<li><a href="../Spectre/CommandSetInputLayout.html"><div class="icon-class"></div>CommandSetInputLayout</a></li>
+<li><a href="../Spectre/CommandSetPrimitiveTopology.html"><div class="icon-class"></div>CommandSetPrimitiveTopology</a></li>
+<li><a href="../Spectre/CommandSetRasterizerState.html"><div class="icon-class"></div>CommandSetRasterizerState</a></li>
+<li><a href="../Spectre/CommandSetShaderProgram.html"><div class="icon-class"></div>CommandSetShaderProgram</a></li>
+<li><a href="../Spectre/CommandSetUniformMatrix3.html"><div class="icon-class"></div>CommandSetUniformMatrix3</a></li>
+<li><a href="../Spectre/CommandSetUniformMatrix4.html"><div class="icon-class"></div>CommandSetUniformMatrix4</a></li>
+<li><a href="../Spectre/CommandSetUniformVector3.html"><div class="icon-class"></div>CommandSetUniformVector3</a></li>
+<li><a href="../Spectre/CommandSetUniformVector4.html"><div class="icon-class"></div>CommandSetUniformVector4</a></li>
+<li><a href="../Spectre/CommandSetVertexBuffers.html"><div class="icon-class"></div>CommandSetVertexBuffers</a></li>
+<li><a href="../Spectre/CommandSetViewport.html"><div class="icon-class"></div>CommandSetViewport</a></li>
+<li><div class="icon-class"></div><strong>DebugDrawManager</strong></li>
+<li><a href="../Spectre/DepthState.html"><div class="icon-class"></div>DepthState</a></li>
+<li><a href="../Spectre/Device.html"><div class="icon-class"></div>Device</a></li>
+<li><a href="../Spectre/DeviceChild.html"><div class="icon-class"></div>DeviceChild</a></li>
+<li><a href="../Spectre/DeviceFormat.html"><div class="icon-class"></div>DeviceFormat</a></li>
+<li><a href="../Spectre/FragmentShader.html"><div class="icon-class"></div>FragmentShader</a></li>
+<li><a href="../Spectre/FragmentShaderResource.html"><div class="icon-class"></div>FragmentShaderResource</a></li>
+<li><a href="../Spectre/HtmlLogger.html"><div class="icon-class"></div>HtmlLogger</a></li>
+<li><a href="../Spectre/ImageResource.html"><div class="icon-class"></div>ImageResource</a></li>
+<li><a href="../Spectre/ImmediateContext.html"><div class="icon-class"></div>ImmediateContext</a></li>
+<li><a href="../Spectre/IndexBuffer.html"><div class="icon-class"></div>IndexBuffer</a></li>
+<li><a href="../Spectre/InputElementDescription.html"><div class="icon-class"></div>InputElementDescription</a></li>
+<li><a href="../Spectre/InputLayout.html"><div class="icon-class"></div>InputLayout</a></li>
+<li><a href="../Spectre/InputLayoutHelper.html"><div class="icon-class"></div>InputLayoutHelper</a></li>
+<li><a href="../Spectre/Logger.html"><div class="icon-interface"></div>Logger</a></li>
+<li><a href="../Spectre/MeshResource.html"><div class="icon-class"></div>MeshResource</a></li>
+<li><a href="../Spectre/MouseKeyboardCameraController.html"><div class="icon-class"></div>MouseKeyboardCameraController</a></li>
+<li><a href="../Spectre/NullLogger.html"><div class="icon-class"></div>NullLogger</a></li>
+<li><a href="../Spectre/OnResourceLoad.html"><div class="icon-interface"></div>OnResourceLoad</a></li>
+<li><a href="../Spectre/OnResourceLoadFailure.html"><div class="icon-interface"></div>OnResourceLoadFailure</a></li>
+<li><a href="../Spectre/PrintLogger.html"><div class="icon-class"></div>PrintLogger</a></li>
+<li><a href="../Spectre/RasterizerState.html"><div class="icon-class"></div>RasterizerState</a></li>
+<li><a href="../Spectre/RenderBuffer.html"><div class="icon-class"></div>RenderBuffer</a></li>
+<li><a href="../Spectre/RenderTarget.html"><div class="icon-class"></div>RenderTarget</a></li>
+<li><a href="../Spectre/Resource.html"><div class="icon-class"></div>Resource</a></li>
+<li><a href="../Spectre/ResourceLoader.html"><div class="icon-class"></div>ResourceLoader</a></li>
+<li><a href="../Spectre/ResourceManager.html"><div class="icon-class"></div>ResourceManager</a></li>
+<li><a href="../Spectre/SamplerState.html"><div class="icon-class"></div>SamplerState</a></li>
+<li><a href="../Spectre/Shader.html"><div class="icon-class"></div>Shader</a></li>
+<li><a href="../Spectre/ShaderProgram.html"><div class="icon-class"></div>ShaderProgram</a></li>
+<li><a href="../Spectre/SpectreBuffer.html"><div class="icon-class"></div>SpectreBuffer</a></li>
+<li><a href="../Spectre/StaticResources.html"><div class="icon-class"></div>StaticResources</a></li>
+<li><a href="../Spectre/StencilState.html"><div class="icon-class"></div>StencilState</a></li>
+<li><a href="../Spectre/Texture.html"><div class="icon-class"></div>Texture</a></li>
+<li><a href="../Spectre/Texture2D.html"><div class="icon-class"></div>Texture2D</a></li>
+<li><a href="../Spectre/VertexBuffer.html"><div class="icon-class"></div>VertexBuffer</a></li>
+<li><a href="../Spectre/VertexShader.html"><div class="icon-class"></div>VertexShader</a></li>
+<li><a href="../Spectre/VertexShaderResource.html"><div class="icon-class"></div>VertexShaderResource</a></li>
+<li><a href="../Spectre/Viewport.html"><div class="icon-class"></div>Viewport</a></li>
+</ul>
+<h2><div class="icon-library"></div><a href="../VectorMath.html">VectorMath</a></h2></div>
+<div class="content">
+        <h2><strong>DebugDrawManager</strong>
+          Class
+        </h2>
+        
+<div class="doc">
+
+</div>
+<h3>Constructors</h3>
+<div class="method"><h4 id="DebugDrawManager">
+<span class="show-code">Code</span>
+new <strong>DebugDrawManager</strong>() <a class="anchor-link" href="#DebugDrawManager"
+              title="Permalink to DebugDrawManager.DebugDrawManager">#</a></h4>
+<div class="doc">
+
+<pre class="source">
+DebugDrawManager() {
+  _depthEnabledState = spectreDevice.createDepthState(depthStateEnabledName, {'depthTestEnabled': true, 'depthWriteEnabled': true, 'depthComparisonOp': DepthState.DepthComparisonOpLess});
+  _depthDisabledState = spectreDevice.createDepthState(depthStateDisabledName, {'depthTestEnabled': false, 'depthWriteEnabled': false});
+  _blendState = spectreDevice.createBlendState(blendStateName, {});
+  _rasterState = spectreDevice.createRasterizerState(rasterStateName, {'cullEnabled': false, 'lineWidth': 2.0});
+  _cameraMatrix = new Float32Array(16);
+  _commandBuffer = new CommandBuffer();
+}
+</pre>
+</div>
+</div>
+<h3>Methods</h3>
+<div class="method"><h4 id="addAABB">
+<span class="show-code">Code</span>
+<a href="../dart_core/void.html">void</a> <strong>addAABB</strong>(<a href="../VectorMath/vec3.html">vec3</a> boxMin, <a href="../VectorMath/vec3.html">vec3</a> boxMax, <a href="../VectorMath/vec4.html">vec4</a> color, [<a href="../dart_core/num.html">num</a> duration = 0.0, <a href="../dart_core/bool.html">bool</a> depthEnabled = true]) <a class="anchor-link" href="#addAABB"
+              title="Permalink to DebugDrawManager.addAABB">#</a></h4>
+<div class="doc">
+
+<pre class="source">
+void addAABB(vec3 boxMin, vec3 boxMax, vec4 color, [num duration = 0.0, bool depthEnabled = true]) {
+  vec3 vertex_a;
+  vec3 vertex_b;
+  
+  vertex_a = new vec3.copy(boxMin);
+  vertex_b = new vec3.copy(vertex_a);
+  vertex_b[0] = boxMax[0];
+  addLine(vertex_a, vertex_b, color, duration, depthEnabled);
+  vertex_b = new vec3.copy(vertex_a);
+  vertex_b[1] = boxMax[1];
+  addLine(vertex_a, vertex_b, color, duration, depthEnabled);
+  vertex_b = new vec3.copy(vertex_a);
+  vertex_b[2] = boxMax[2];
+  addLine(vertex_a, vertex_b, color, duration, depthEnabled);
+  vertex_a[1] = boxMax[1];
+  vertex_b = new vec3.copy(vertex_a);
+  vertex_b[0] = boxMax[0];
+  addLine(vertex_a, vertex_b, color, duration, depthEnabled);
+  vertex_b = new vec3.copy(vertex_a);
+  vertex_b[2] = boxMax[2];
+  addLine(vertex_a, vertex_b, color, duration, depthEnabled);
+  vertex_a = new vec3.copy(boxMin);
+  vertex_a[0] = boxMax[0];
+  vertex_b = new vec3.copy(vertex_a);
+  vertex_b[1] = boxMax[1];
+  addLine(vertex_a, vertex_b, color, duration, depthEnabled);
+  vertex_a = new vec3.copy(boxMax);
+  vertex_b = new vec3.copy(vertex_a);
+  vertex_b[0] = boxMin[0];
+  addLine(vertex_a, vertex_b, color, duration, depthEnabled);
+  vertex_b = new vec3.copy(vertex_a);
+  vertex_b[1] = boxMin[1];
+  addLine(vertex_a, vertex_b, color, duration, depthEnabled);
+  vertex_b = new vec3.copy(vertex_a);
+  vertex_b[2] = boxMin[2];
+  addLine(vertex_a, vertex_b, color, duration, depthEnabled);
+  vertex_a[1] = boxMin[1];
+  vertex_b = new vec3.copy(vertex_a);
+  vertex_b[0] = boxMin[0];
+  addLine(vertex_a, vertex_b, color, duration, depthEnabled);
+  vertex_b = new vec3.copy(vertex_a);
+  vertex_b[2] = boxMin[2];
+  addLine(vertex_a, vertex_b, color, duration, depthEnabled);
+  vertex_a = new vec3.copy(boxMin);
+  vertex_a[2] = boxMax[2];
+  vertex_b = new vec3.copy(vertex_a);
+  vertex_b[1] = boxMax[1];
+  addLine(vertex_a, vertex_b, color, duration, depthEnabled);
+}
+</pre>
+</div>
+</div>
+<div class="method"><h4 id="addAxes">
+<span class="show-code">Code</span>
+<a href="../dart_core/void.html">void</a> <strong>addAxes</strong>(<a href="../VectorMath/mat4x4.html">mat4x4</a> xform, <a href="../dart_core/num.html">num</a> size, [<a href="../dart_core/num.html">num</a> duration = 0.0, <a href="../dart_core/bool.html">bool</a> depthEnabled = true]) <a class="anchor-link" href="#addAxes"
+              title="Permalink to DebugDrawManager.addAxes">#</a></h4>
+<div class="doc">
+
+<pre class="source">
+void addAxes(mat4x4 xform, num size, [num duration = 0.0, bool depthEnabled = true]) {
+  vec4 origin = new vec4.raw(0.0, 0.0, 0.0, 1.0);
+  num size_90p = 0.9 * size;
+  num size_10p = 0.1 * size;
+
+  vec4 color;
+
+  vec4 X = new vec4.raw(size, 0.0, 0.0, 1.0);
+  vec4 X_head_0 = new vec4.raw(size_90p, size_10p, 0.0, 1.0);
+  vec4 X_head_1 = new vec4.raw(size_90p, -size_10p, 0.0, 1.0);
+  vec4 X_head_2 = new vec4.raw(size_90p, 0.0, size_10p, 1.0);
+  vec4 X_head_3 = new vec4.raw(size_90p, 0.0, -size_10p, 1.0);
+
+  vec4 Y = new vec4.raw(0.0, size, 0.0, 1.0);
+  vec4 Y_head_0 = new vec4.raw(size_10p, size_90p, 0.0, 1.0);
+  vec4 Y_head_1 = new vec4.raw(-size_10p, size_90p, 0.0, 1.0);
+  vec4 Y_head_2 = new vec4.raw(0.0, size_90p, size_10p, 1.0);
+  vec4 Y_head_3 = new vec4.raw(0.0, size_90p, -size_10p, 1.0);
+
+
+  vec4 Z = new vec4.raw(0.0, 0.0, size, 1.0);
+  vec4 Z_head_0 = new vec4.raw(size_10p, 0.0, size_90p, 1.0);
+  vec4 Z_head_1 = new vec4.raw(-size_10p, 0.0, size_90p, 1.0);
+  vec4 Z_head_2 = new vec4.raw(0.0, size_10p, size_90p, 1.0);
+  vec4 Z_head_3 = new vec4.raw(0.0, -size_10p, size_90p, 1.0);
+
+  origin = xform * origin;
+
+  X = xform * X;
+  X_head_0 = xform * X_head_0;
+  X_head_1 = xform * X_head_1;
+  X_head_2 = xform * X_head_2;
+  X_head_3 = xform * X_head_3;
+
+  color = new vec4.raw(1.0, 0.0, 0.0, 1.0);
+  addLine(origin.xyz, X.xyz, color, duration, depthEnabled);
+  addLine(X.xyz, X_head_0.xyz, color,duration, depthEnabled);
+  addLine(X.xyz, X_head_1.xyz, color, duration, depthEnabled);
+  addLine(X.xyz, X_head_2.xyz, color, duration, depthEnabled);
+  addLine(X.xyz, X_head_3.xyz, color, duration, depthEnabled);
+
+  Y = xform * Y;
+  Y_head_0 = xform * Y_head_0;
+  Y_head_1 = xform * Y_head_1;
+  Y_head_2 = xform * Y_head_2;
+  Y_head_3 = xform * Y_head_3;
+
+  color = new vec4.raw(0.0, 1.0, 0.0, 1.0);
+  addLine(origin.xyz, Y.xyz, color, duration, depthEnabled);
+  addLine(Y.xyz, Y_head_0.xyz, color, duration, depthEnabled);
+  addLine(Y.xyz, Y_head_1.xyz, color, duration, depthEnabled);
+  addLine(Y.xyz, Y_head_2.xyz, color, duration, depthEnabled);
+  addLine(Y.xyz, Y_head_3.xyz, color, duration, depthEnabled);
+
+  Z = xform * Z;
+  Z_head_0 = xform * Z_head_0;
+  Z_head_1 = xform * Z_head_1;
+  Z_head_2 = xform * Z_head_2;
+  Z_head_3 = xform * Z_head_3;
+
+  color = new vec4.raw(0.0, 0.0, 1.0, 1.0);
+  addLine(origin.xyz, Z.xyz, color, duration, depthEnabled);
+  addLine(Z.xyz, Z_head_0.xyz, color, duration, depthEnabled);
+  addLine(Z.xyz, Z_head_1.xyz, color, duration, depthEnabled);
+  addLine(Z.xyz, Z_head_2.xyz, color, duration, depthEnabled);
+  addLine(Z.xyz, Z_head_3.xyz, color, duration, depthEnabled);
+}
+</pre>
+</div>
+</div>
+<div class="method"><h4 id="addCircle">
+<span class="show-code">Code</span>
+<a href="../dart_core/void.html">void</a> <strong>addCircle</strong>(<a href="../VectorMath/vec3.html">vec3</a> center, <a href="../VectorMath/vec3.html">vec3</a> planeNormal, <a href="../dart_core/num.html">num</a> radius, <a href="../VectorMath/vec4.html">vec4</a> color, [<a href="../dart_core/num.html">num</a> duration = 0.0, <a href="../dart_core/bool.html">bool</a> depthEnabled = true, <a href="../dart_core/int.html">int</a> numSegments = 12]) <a class="anchor-link" href="#addCircle"
+              title="Permalink to DebugDrawManager.addCircle">#</a></h4>
+<div class="doc">
+
+<pre class="source">
+void addCircle(vec3 center, vec3 planeNormal, num radius, vec4 color, [num duration = 0.0, bool depthEnabled = true, int numSegments = 12]) {
+  vec3 u = new vec3.zero();
+  vec3 v = new vec3.zero();
+  buildPlaneVectors(planeNormal, u, v);
+  num alpha = 0.0;
+  num twoPi = (2.0 * 3.141592653589793238462643);
+  num _step = twoPi/numSegments;
+
+  vec3 last = center + u * radius;
+
+  for (alpha = _step; alpha &lt;= twoPi; alpha += _step) {
+    vec3 p = center + (u * (radius * cos(alpha))) + (v * (radius * sin(alpha)));
+    addLine(last, p, color, duration);
+    last = p;
+  }
+  addLine(last, center + u * radius, color, duration);
+}
+</pre>
+</div>
+</div>
+<div class="method"><h4 id="addCross">
+<span class="show-code">Code</span>
+<a href="../dart_core/void.html">void</a> <strong>addCross</strong>(<a href="../VectorMath/vec3.html">vec3</a> point, <a href="../VectorMath/vec4.html">vec4</a> color, [<a href="../dart_core/num.html">num</a> size = 1.0, <a href="../dart_core/num.html">num</a> duration = 0.0, <a href="../dart_core/bool.html">bool</a> depthEnabled = true]) <a class="anchor-link" href="#addCross"
+              title="Permalink to DebugDrawManager.addCross">#</a></h4>
+<div class="doc">
+
+<pre class="source">
+void addCross(vec3 point, vec4 color, [num size = 1.0, num duration = 0.0, bool depthEnabled=true]) {
+  num half_size = size * 0.5;
+  addLine(point, point + new vec3(half_size, 0.0, 0.0), color, duration, depthEnabled);
+  addLine(point, point + new vec3(-half_size, 0.0, 0.0), color, duration, depthEnabled);
+  addLine(point, point + new vec3(0.0, half_size, 0.0), color, duration, depthEnabled);
+  addLine(point, point + new vec3(0.0, -half_size, 0.0), color, duration, depthEnabled);
+  addLine(point, point + new vec3(0.0, 0.0, half_size), color, duration, depthEnabled);
+  addLine(point, point + new vec3(0.0, 0.0, -half_size), color, duration, depthEnabled);
+}
+</pre>
+</div>
+</div>
+<div class="method"><h4 id="addLine">
+<span class="show-code">Code</span>
+<a href="../dart_core/void.html">void</a> <strong>addLine</strong>(<a href="../VectorMath/vec3.html">vec3</a> start, <a href="../VectorMath/vec3.html">vec3</a> finish, <a href="../VectorMath/vec4.html">vec4</a> color, [<a href="../dart_core/num.html">num</a> duration = 0.0, <a href="../dart_core/bool.html">bool</a> depthEnabled = true]) <a class="anchor-link" href="#addLine"
+              title="Permalink to DebugDrawManager.addLine">#</a></h4>
+<div class="doc">
+
+<pre class="source">
+void addLine(vec3 start, vec3 finish, vec4 color, [num duration = 0.0, bool depthEnabled=true]) {
+  _DebugDrawVertex v1 = new _DebugDrawVertex();
+  v1.color = new vec4.copy(color);
+  v1.position = new vec3.copy(start);
+  v1.duration = duration;
+  _DebugDrawVertex v2 = new _DebugDrawVertex();
+  v2.color = new vec4.copy(color);
+  v2.position = new vec3.copy(finish);
+  v2.duration = duration;
+  if (depthEnabled &amp;&amp; _depthEnabled.hasRoomFor(2)) {
+    _depthEnabled.add(v1);
+    _depthEnabled.add(v2);
+  } else if (_depthDisabled.hasRoomFor(2)){
+    _depthDisabled.add(v1);
+    _depthDisabled.add(v2);
+  }
+}
+</pre>
+</div>
+</div>
+<div class="method"><h4 id="addSphere">
+<span class="show-code">Code</span>
+<a href="../dart_core/void.html">void</a> <strong>addSphere</strong>(<a href="../VectorMath/vec3.html">vec3</a> center, <a href="../dart_core/num.html">num</a> radius, <a href="../VectorMath/vec4.html">vec4</a> color, [<a href="../dart_core/num.html">num</a> duration = 0.0, <a href="../dart_core/bool.html">bool</a> depthEnabled = true]) <a class="anchor-link" href="#addSphere"
+              title="Permalink to DebugDrawManager.addSphere">#</a></h4>
+<div class="doc">
+
+<pre class="source">
+void addSphere(vec3 center, num radius, vec4 color, [num duration = 0.0, bool depthEnabled = true]) {
+  _DebugDrawSphere sphere = new _DebugDrawSphere();
+  sphere.color = new vec4.copy(color);
+  sphere.radius = radius;
+  sphere.center = new vec3.copy(center);
+  sphere.duration = duration;
+  if (depthEnabled) {
+    _depthEnabledSpheres.add(sphere);
+  } else {
+    _depthDisabledSpheres.add(sphere);
+  }
+}
+</pre>
+</div>
+</div>
+<div class="method"><h4 id="addTriangle">
+<span class="show-code">Code</span>
+<a href="../dart_core/void.html">void</a> <strong>addTriangle</strong>(<a href="../VectorMath/vec3.html">vec3</a> vertex0, <a href="../VectorMath/vec3.html">vec3</a> vertex1, <a href="../VectorMath/vec3.html">vec3</a> vertex2, <a href="../VectorMath/vec4.html">vec4</a> color, [<a href="../dart_core/num.html">num</a> duration = 0.0, <a href="../dart_core/bool.html">bool</a> depthEnabled = true]) <a class="anchor-link" href="#addTriangle"
+              title="Permalink to DebugDrawManager.addTriangle">#</a></h4>
+<div class="doc">
+
+<pre class="source">
+void addTriangle(vec3 vertex0, vec3 vertex1, vec3 vertex2, vec4 color, [num duration = 0.0, bool depthEnabled = true]) {
+  addLine(vertex0, vertex1, color, duration, depthEnabled);
+  addLine(vertex1, vertex2, color, duration, depthEnabled);
+  addLine(vertex2, vertex0, color, duration, depthEnabled);
+}
+</pre>
+</div>
+</div>
+<div class="method"><h4 id="Init">
+<span class="show-code">Code</span>
+<a href="../dart_core/void.html">void</a> <strong>Init</strong>(<a href="../Spectre/VertexShaderResource.html">VertexShaderResource</a> lineVShader, <a href="../Spectre/FragmentShaderResource.html">FragmentShaderResource</a> linePShader, <a href="../Spectre/VertexShaderResource.html">VertexShaderResource</a> sphereVShader, <a href="../Spectre/FragmentShaderResource.html">FragmentShaderResource</a> spherePShader, <a href="../Spectre/MeshResource.html">MeshResource</a> unitSphere, [<a href="../dart_core/int.html">int</a> vboSize = 4096, <a href="../dart_core/int.html">int</a> maxSpheres = 1024]) <a class="anchor-link" href="#Init"
+              title="Permalink to DebugDrawManager.Init">#</a></h4>
+<div class="doc">
+
+<pre class="source">
+void Init(VertexShaderResource lineVShader, FragmentShaderResource linePShader, VertexShaderResource sphereVShader, FragmentShaderResource spherePShader, MeshResource unitSphere, [int vboSize=4096, int maxSpheres=1024]) {
+  ShaderProgram lineProgram = spectreDevice.createShaderProgram(lineShaderProgramName, {'VertexProgram':lineVShader.shader, 'FragmentProgram':linePShader.shader});
+  _depthEnabled = new _DebugDrawVertexManager(depthEnabledLineVBOName, vboSize, lineProgram);
+  _depthDisabled = new _DebugDrawVertexManager(depthDisabledLineVBOName, vboSize, lineProgram);
+  _depthEnabledSpheres = new _DebugDrawSphereManager(unitSphere, maxSpheres);
+  _depthDisabledSpheres = new _DebugDrawSphereManager(unitSphere, maxSpheres);
+}
+</pre>
+</div>
+</div>
+<div class="method"><h4 id="prepareForRender">
+<span class="show-code">Code</span>
+<a href="../dart_core/void.html">void</a> <strong>prepareForRender</strong>() <a class="anchor-link" href="#prepareForRender"
+              title="Permalink to DebugDrawManager.prepareForRender">#</a></h4>
+<div class="doc">
+
+<pre class="source">
+void prepareForRender() {
+  _depthEnabled._prepareForRender();
+  _depthDisabled._prepareForRender();
+  _depthEnabledSpheres._prepareForRender();
+  _depthDisabledSpheres._prepareForRender();
+  _commandBuffer.clear();
+  _commandBuffer.addCommand(new CommandSetBlendState(blendStateName));
+  _commandBuffer.addCommand(new CommandSetRasterizerState(rasterStateName));
+  _commandBuffer.addCommand(new CommandSetDepthState(depthStateEnabledName));
+  _commandBuffer.addCommand(new CommandSetShaderProgram(lineShaderProgramName));
+  _commandBuffer.addCommand(new CommandSetUniformMatrix4(cameraTransformUniformName, _cameraMatrix));
+  _commandBuffer.addCommand(new CommandSetPrimitiveTopology(ImmediateContext.PrimitiveTopologyLines));
+  _commandBuffer.addCommand(new CommandSetVertexBuffers(0, [depthEnabledLineVBOName]));
+  _commandBuffer.addCommand(new CommandSetIndexBuffer(null));
+  _commandBuffer.addCommand(new CommandSetInputLayout('$depthEnabledLineVBOName Layout'));
+  _commandBuffer.addCommand(new CommandDraw(_depthEnabled.vertexCount, 0));
+  _commandBuffer.addCommand(new CommandSetDepthState(depthStateDisabledName));
+  _commandBuffer.addCommand(new CommandSetVertexBuffers(0, [depthDisabledLineVBOName]));
+  _commandBuffer.addCommand(new CommandSetInputLayout('$depthDisabledLineVBOName Layout'));
+  _commandBuffer.addCommand(new CommandDraw(_depthDisabled.vertexCount, 0));
+}
+</pre>
+</div>
+</div>
+<div class="method"><h4 id="render">
+<span class="show-code">Code</span>
+<a href="../dart_core/void.html">void</a> <strong>render</strong>(<a href="../Spectre/Camera.html">Camera</a> cam) <a class="anchor-link" href="#render"
+              title="Permalink to DebugDrawManager.render">#</a></h4>
+<div class="doc">
+
+<pre class="source">
+void render(Camera cam) {
+  {
+    mat4x4 pm = cam.projectionMatrix;
+    mat4x4 la = cam.lookAtMatrix;
+    pm.selfMultiply(la);
+    pm.copyIntoArray(_cameraMatrix);
+  }
+  _commandBuffer.apply(spectreRM, spectreDevice, spectreImmediateContext);
+}
+</pre>
+</div>
+</div>
+<div class="method"><h4 id="update">
+<span class="show-code">Code</span>
+<a href="../dart_core/void.html">void</a> <strong>update</strong>(<a href="../dart_core/num.html">num</a> seconds) <a class="anchor-link" href="#update"
+              title="Permalink to DebugDrawManager.update">#</a></h4>
+<div class="doc">
+
+<pre class="source">
+void update(num seconds) {
+  _depthEnabled.update(seconds);
+  _depthDisabled.update(seconds);
+  _depthEnabledSpheres.update(seconds);
+  _depthDisabledSpheres.update(seconds);
+}
+</pre>
+</div>
+</div>
+<h3>Fields</h3>
+<div class="field"><h4 id="blendStateName">
+<span class="show-code">Code</span>
+final <a href="../dart_core/String.html">String</a>         <strong>blendStateName</strong> <a class="anchor-link"
+            href="#blendStateName"
+            title="Permalink to DebugDrawManager.blendStateName">#</a>
+        </h4>
+        <div class="doc">
+
+<pre class="source">
+final String blendStateName = 'Debug Blend State';
+</pre>
+</div>
+</div>
+<div class="field"><h4 id="cameraTransformUniformName">
+<span class="show-code">Code</span>
+final <a href="../dart_core/String.html">String</a>         <strong>cameraTransformUniformName</strong> <a class="anchor-link"
+            href="#cameraTransformUniformName"
+            title="Permalink to DebugDrawManager.cameraTransformUniformName">#</a>
+        </h4>
+        <div class="doc">
+
+<pre class="source">
+final String cameraTransformUniformName = 'cameraTransform';
+</pre>
+</div>
+</div>
+<div class="field"><h4 id="depthDisabledLineVBOName">
+<span class="show-code">Code</span>
+final <a href="../dart_core/String.html">String</a>         <strong>depthDisabledLineVBOName</strong> <a class="anchor-link"
+            href="#depthDisabledLineVBOName"
+            title="Permalink to DebugDrawManager.depthDisabledLineVBOName">#</a>
+        </h4>
+        <div class="doc">
+
+<pre class="source">
+final String depthDisabledLineVBOName = 'Debug Draw Depth Disabled VBO';
+</pre>
+</div>
+</div>
+<div class="field"><h4 id="depthEnabledLineVBOName">
+<span class="show-code">Code</span>
+final <a href="../dart_core/String.html">String</a>         <strong>depthEnabledLineVBOName</strong> <a class="anchor-link"
+            href="#depthEnabledLineVBOName"
+            title="Permalink to DebugDrawManager.depthEnabledLineVBOName">#</a>
+        </h4>
+        <div class="doc">
+
+<pre class="source">
+final String depthEnabledLineVBOName = 'Debug Draw Depth Enabled VBO';
+</pre>
+</div>
+</div>
+<div class="field"><h4 id="depthStateDisabledName">
+<span class="show-code">Code</span>
+final <a href="../dart_core/String.html">String</a>         <strong>depthStateDisabledName</strong> <a class="anchor-link"
+            href="#depthStateDisabledName"
+            title="Permalink to DebugDrawManager.depthStateDisabledName">#</a>
+        </h4>
+        <div class="doc">
+
+<pre class="source">
+final String depthStateDisabledName = 'Debug Depth Disabled State';
+</pre>
+</div>
+</div>
+<div class="field"><h4 id="depthStateEnabledName">
+<span class="show-code">Code</span>
+final <a href="../dart_core/String.html">String</a>         <strong>depthStateEnabledName</strong> <a class="anchor-link"
+            href="#depthStateEnabledName"
+            title="Permalink to DebugDrawManager.depthStateEnabledName">#</a>
+        </h4>
+        <div class="doc">
+
+<pre class="source">
+final String depthStateEnabledName = 'Debug Depth Enabled State';
+</pre>
+</div>
+</div>
+<div class="field"><h4 id="lineShaderProgramName">
+<span class="show-code">Code</span>
+final <a href="../dart_core/String.html">String</a>         <strong>lineShaderProgramName</strong> <a class="anchor-link"
+            href="#lineShaderProgramName"
+            title="Permalink to DebugDrawManager.lineShaderProgramName">#</a>
+        </h4>
+        <div class="doc">
+
+<pre class="source">
+final String lineShaderProgramName = 'Debug Line Program';
+</pre>
+</div>
+</div>
+<div class="field"><h4 id="rasterStateName">
+<span class="show-code">Code</span>
+final <a href="../dart_core/String.html">String</a>         <strong>rasterStateName</strong> <a class="anchor-link"
+            href="#rasterStateName"
+            title="Permalink to DebugDrawManager.rasterStateName">#</a>
+        </h4>
+        <div class="doc">
+
+<pre class="source">
+final String rasterStateName = 'Debug Rasterizer State';
+</pre>
+</div>
+</div>
+        </div>
+        <div class="clear"></div>
+        </div>
+        
+        <div class="footer">
+          <div>This page generated at 2012-07-02 19:29:31.115</div>
+        </div>
+        <script async src="../client-static.js"></script>
+        </body></html>
+        

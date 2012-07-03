@@ -1,0 +1,318 @@
+        <!DOCTYPE html>
+        <html>
+        <head>
+                <meta charset="utf-8">
+        <title>MouseKeyboardCameraController Class / Spectre Library / Dart Documentation</title>
+        <link rel="stylesheet" type="text/css"
+            href="../styles.css">
+        <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet" type="text/css">
+        <link rel="shortcut icon" href="../favicon.ico">
+        
+        </head>
+        <body data-library="Spectre" data-type="MouseKeyboardCameraController">
+        <div class="page">
+        <div class="header">
+          <a href="../index.html"><div class="logo"></div></a>
+          <a href="../index.html">Dart Documentation</a>
+         &rsaquo; <a href="../Spectre.html">Spectre</a> &rsaquo; <a href="../Spectre/MouseKeyboardCameraController.html">MouseKeyboardCameraController</a></div>
+        <div class="nav">
+        
+<h2><div class="icon-library"></div><a href="../dart_core.html">dart:core</a></h2><h2><div class="icon-library"></div><a href="../dart_coreimpl.html">dart:coreimpl</a></h2><h2><div class="icon-library"></div><a href="../html.html">html</a></h2><h2><div class="icon-library"></div><a href="../json.html">json</a></h2><h2><div class="icon-library"></div><a href="../Spectre.html">Spectre</a></h2><ul class="icon">
+<li><a href="../Spectre/BlendState.html"><div class="icon-class"></div>BlendState</a></li>
+<li><a href="../Spectre/BoundCommand.html"><div class="icon-class"></div>BoundCommand</a></li>
+<li><a href="../Spectre/BoundCommandDraw.html"><div class="icon-class"></div>BoundCommandDraw</a></li>
+<li><a href="../Spectre/BoundCommandDrawIndexed.html"><div class="icon-class"></div>BoundCommandDrawIndexed</a></li>
+<li><a href="../Spectre/BoundCommandExecuter.html"><div class="icon-class"></div>BoundCommandExecuter</a></li>
+<li><a href="../Spectre/BoundCommandSetBlendState.html"><div class="icon-class"></div>BoundCommandSetBlendState</a></li>
+<li><a href="../Spectre/BoundCommandSetDepthState.html"><div class="icon-class"></div>BoundCommandSetDepthState</a></li>
+<li><a href="../Spectre/BoundCommandSetIndexBuffer.html"><div class="icon-class"></div>BoundCommandSetIndexBuffer</a></li>
+<li><a href="../Spectre/BoundCommandSetInputLayout.html"><div class="icon-class"></div>BoundCommandSetInputLayout</a></li>
+<li><a href="../Spectre/BoundCommandSetPrimitiveTopology.html"><div class="icon-class"></div>BoundCommandSetPrimitiveTopology</a></li>
+<li><a href="../Spectre/BoundCommandSetRasterizerState.html"><div class="icon-class"></div>BoundCommandSetRasterizerState</a></li>
+<li><a href="../Spectre/BoundCommandSetShaderProgram.html"><div class="icon-class"></div>BoundCommandSetShaderProgram</a></li>
+<li><a href="../Spectre/BoundCommandSetUniformMatrix3.html"><div class="icon-class"></div>BoundCommandSetUniformMatrix3</a></li>
+<li><a href="../Spectre/BoundCommandSetUniformMatrix4.html"><div class="icon-class"></div>BoundCommandSetUniformMatrix4</a></li>
+<li><a href="../Spectre/BoundCommandSetUniformVector3.html"><div class="icon-class"></div>BoundCommandSetUniformVector3</a></li>
+<li><a href="../Spectre/BoundCommandSetUniformVector4.html"><div class="icon-class"></div>BoundCommandSetUniformVector4</a></li>
+<li><a href="../Spectre/BoundCommandSetVertexBuffers.html"><div class="icon-class"></div>BoundCommandSetVertexBuffers</a></li>
+<li><a href="../Spectre/BoundCommandSetViewport.html"><div class="icon-class"></div>BoundCommandSetViewport</a></li>
+<li><a href="../Spectre/Camera.html"><div class="icon-class"></div>Camera</a></li>
+<li><a href="../Spectre/CameraController.html"><div class="icon-class"></div>CameraController</a></li>
+<li><a href="../Spectre/Command.html"><div class="icon-class"></div>Command</a></li>
+<li><a href="../Spectre/CommandBuffer.html"><div class="icon-class"></div>CommandBuffer</a></li>
+<li><a href="../Spectre/CommandDraw.html"><div class="icon-class"></div>CommandDraw</a></li>
+<li><a href="../Spectre/CommandDrawIndexed.html"><div class="icon-class"></div>CommandDrawIndexed</a></li>
+<li><a href="../Spectre/CommandSetBlendState.html"><div class="icon-class"></div>CommandSetBlendState</a></li>
+<li><a href="../Spectre/CommandSetDepthState.html"><div class="icon-class"></div>CommandSetDepthState</a></li>
+<li><a href="../Spectre/CommandSetIndexBuffer.html"><div class="icon-class"></div>CommandSetIndexBuffer</a></li>
+<li><a href="../Spectre/CommandSetInputLayout.html"><div class="icon-class"></div>CommandSetInputLayout</a></li>
+<li><a href="../Spectre/CommandSetPrimitiveTopology.html"><div class="icon-class"></div>CommandSetPrimitiveTopology</a></li>
+<li><a href="../Spectre/CommandSetRasterizerState.html"><div class="icon-class"></div>CommandSetRasterizerState</a></li>
+<li><a href="../Spectre/CommandSetShaderProgram.html"><div class="icon-class"></div>CommandSetShaderProgram</a></li>
+<li><a href="../Spectre/CommandSetUniformMatrix3.html"><div class="icon-class"></div>CommandSetUniformMatrix3</a></li>
+<li><a href="../Spectre/CommandSetUniformMatrix4.html"><div class="icon-class"></div>CommandSetUniformMatrix4</a></li>
+<li><a href="../Spectre/CommandSetUniformVector3.html"><div class="icon-class"></div>CommandSetUniformVector3</a></li>
+<li><a href="../Spectre/CommandSetUniformVector4.html"><div class="icon-class"></div>CommandSetUniformVector4</a></li>
+<li><a href="../Spectre/CommandSetVertexBuffers.html"><div class="icon-class"></div>CommandSetVertexBuffers</a></li>
+<li><a href="../Spectre/CommandSetViewport.html"><div class="icon-class"></div>CommandSetViewport</a></li>
+<li><a href="../Spectre/DebugDrawManager.html"><div class="icon-class"></div>DebugDrawManager</a></li>
+<li><a href="../Spectre/DepthState.html"><div class="icon-class"></div>DepthState</a></li>
+<li><a href="../Spectre/Device.html"><div class="icon-class"></div>Device</a></li>
+<li><a href="../Spectre/DeviceChild.html"><div class="icon-class"></div>DeviceChild</a></li>
+<li><a href="../Spectre/DeviceFormat.html"><div class="icon-class"></div>DeviceFormat</a></li>
+<li><a href="../Spectre/FragmentShader.html"><div class="icon-class"></div>FragmentShader</a></li>
+<li><a href="../Spectre/FragmentShaderResource.html"><div class="icon-class"></div>FragmentShaderResource</a></li>
+<li><a href="../Spectre/HtmlLogger.html"><div class="icon-class"></div>HtmlLogger</a></li>
+<li><a href="../Spectre/ImageResource.html"><div class="icon-class"></div>ImageResource</a></li>
+<li><a href="../Spectre/ImmediateContext.html"><div class="icon-class"></div>ImmediateContext</a></li>
+<li><a href="../Spectre/IndexBuffer.html"><div class="icon-class"></div>IndexBuffer</a></li>
+<li><a href="../Spectre/InputElementDescription.html"><div class="icon-class"></div>InputElementDescription</a></li>
+<li><a href="../Spectre/InputLayout.html"><div class="icon-class"></div>InputLayout</a></li>
+<li><a href="../Spectre/InputLayoutHelper.html"><div class="icon-class"></div>InputLayoutHelper</a></li>
+<li><a href="../Spectre/Logger.html"><div class="icon-interface"></div>Logger</a></li>
+<li><a href="../Spectre/MeshResource.html"><div class="icon-class"></div>MeshResource</a></li>
+<li><div class="icon-class"></div><strong>MouseKeyboardCameraController</strong></li>
+<li><a href="../Spectre/NullLogger.html"><div class="icon-class"></div>NullLogger</a></li>
+<li><a href="../Spectre/OnResourceLoad.html"><div class="icon-interface"></div>OnResourceLoad</a></li>
+<li><a href="../Spectre/OnResourceLoadFailure.html"><div class="icon-interface"></div>OnResourceLoadFailure</a></li>
+<li><a href="../Spectre/PrintLogger.html"><div class="icon-class"></div>PrintLogger</a></li>
+<li><a href="../Spectre/RasterizerState.html"><div class="icon-class"></div>RasterizerState</a></li>
+<li><a href="../Spectre/RenderBuffer.html"><div class="icon-class"></div>RenderBuffer</a></li>
+<li><a href="../Spectre/RenderTarget.html"><div class="icon-class"></div>RenderTarget</a></li>
+<li><a href="../Spectre/Resource.html"><div class="icon-class"></div>Resource</a></li>
+<li><a href="../Spectre/ResourceLoader.html"><div class="icon-class"></div>ResourceLoader</a></li>
+<li><a href="../Spectre/ResourceManager.html"><div class="icon-class"></div>ResourceManager</a></li>
+<li><a href="../Spectre/SamplerState.html"><div class="icon-class"></div>SamplerState</a></li>
+<li><a href="../Spectre/Shader.html"><div class="icon-class"></div>Shader</a></li>
+<li><a href="../Spectre/ShaderProgram.html"><div class="icon-class"></div>ShaderProgram</a></li>
+<li><a href="../Spectre/SpectreBuffer.html"><div class="icon-class"></div>SpectreBuffer</a></li>
+<li><a href="../Spectre/StaticResources.html"><div class="icon-class"></div>StaticResources</a></li>
+<li><a href="../Spectre/StencilState.html"><div class="icon-class"></div>StencilState</a></li>
+<li><a href="../Spectre/Texture.html"><div class="icon-class"></div>Texture</a></li>
+<li><a href="../Spectre/Texture2D.html"><div class="icon-class"></div>Texture2D</a></li>
+<li><a href="../Spectre/VertexBuffer.html"><div class="icon-class"></div>VertexBuffer</a></li>
+<li><a href="../Spectre/VertexShader.html"><div class="icon-class"></div>VertexShader</a></li>
+<li><a href="../Spectre/VertexShaderResource.html"><div class="icon-class"></div>VertexShaderResource</a></li>
+<li><a href="../Spectre/Viewport.html"><div class="icon-class"></div>Viewport</a></li>
+</ul>
+<h2><div class="icon-library"></div><a href="../VectorMath.html">VectorMath</a></h2></div>
+<div class="content">
+        <h2><strong>MouseKeyboardCameraController</strong>
+          Class
+        </h2>
+        
+<div class="doc">
+
+</div>
+<h3>Implements</h3>
+<p>
+<span class="type-box"><span class="icon-class"></span><a href="../Spectre/CameraController.html">CameraController</a></span></p>
+<h3>Constructors</h3>
+<div class="method"><h4 id="MouseKeyboardCameraController">
+<span class="show-code">Code</span>
+new <strong>MouseKeyboardCameraController</strong>() <a class="anchor-link" href="#MouseKeyboardCameraController"
+              title="Permalink to MouseKeyboardCameraController.MouseKeyboardCameraController">#</a></h4>
+<div class="doc">
+
+<pre class="source">
+MouseKeyboardCameraController() {
+  floatVelocity = 5.0;
+  strafeVelocity = 5.0;
+  forwardVelocity = 5.0;
+  up = false;
+  down = false;
+  strafeLeft = false;
+  strafeRight = false;
+  forward = false;
+  backward = false;
+  accumDX = 0;
+  accumDY = 0;
+  mouseSensitivity = 360.0;
+}
+</pre>
+</div>
+</div>
+<h3>Methods</h3>
+<div class="method"><h4 id="UpdateCamera">
+<span class="show-code">Code</span>
+<a href="../dart_core/void.html">void</a> <strong>UpdateCamera</strong>(<a href="../dart_core/num.html">num</a> seconds, <a href="../Spectre/Camera.html">Camera</a> cam) <a class="anchor-link" href="#UpdateCamera"
+              title="Permalink to MouseKeyboardCameraController.UpdateCamera">#</a></h4>
+<div class="doc">
+
+<pre class="source">
+void UpdateCamera(num seconds, Camera cam) {
+  _MoveFloat(seconds, up, down, cam);
+  _MoveStrafe(seconds, strafeRight, strafeLeft, cam);
+  _MoveForward(seconds, forward, backward, cam);
+  _RotateView(seconds, cam);
+}
+</pre>
+</div>
+</div>
+<h3>Fields</h3>
+<div class="field"><h4 id="accumDX">
+<span class="show-code">Code</span>
+<a href="../dart_core/int.html">int</a>         <strong>accumDX</strong> <a class="anchor-link"
+            href="#accumDX"
+            title="Permalink to MouseKeyboardCameraController.accumDX">#</a>
+        </h4>
+        <div class="doc">
+
+<pre class="source">
+int accumDX;
+</pre>
+</div>
+</div>
+<div class="field"><h4 id="accumDY">
+<span class="show-code">Code</span>
+<a href="../dart_core/int.html">int</a>         <strong>accumDY</strong> <a class="anchor-link"
+            href="#accumDY"
+            title="Permalink to MouseKeyboardCameraController.accumDY">#</a>
+        </h4>
+        <div class="doc">
+
+<pre class="source">
+int accumDY;
+</pre>
+</div>
+</div>
+<div class="field"><h4 id="backward">
+<span class="show-code">Code</span>
+<a href="../dart_core/bool.html">bool</a>         <strong>backward</strong> <a class="anchor-link"
+            href="#backward"
+            title="Permalink to MouseKeyboardCameraController.backward">#</a>
+        </h4>
+        <div class="doc">
+
+<pre class="source">
+bool backward;
+</pre>
+</div>
+</div>
+<div class="field"><h4 id="down">
+<span class="show-code">Code</span>
+<a href="../dart_core/bool.html">bool</a>         <strong>down</strong> <a class="anchor-link"
+            href="#down"
+            title="Permalink to MouseKeyboardCameraController.down">#</a>
+        </h4>
+        <div class="doc">
+
+<pre class="source">
+bool down;
+</pre>
+</div>
+</div>
+<div class="field"><h4 id="floatVelocity">
+<span class="show-code">Code</span>
+<a href="../dart_core/num.html">num</a>         <strong>floatVelocity</strong> <a class="anchor-link"
+            href="#floatVelocity"
+            title="Permalink to MouseKeyboardCameraController.floatVelocity">#</a>
+        </h4>
+        <div class="doc">
+
+<pre class="source">
+num floatVelocity;
+</pre>
+</div>
+</div>
+<div class="field"><h4 id="forward">
+<span class="show-code">Code</span>
+<a href="../dart_core/bool.html">bool</a>         <strong>forward</strong> <a class="anchor-link"
+            href="#forward"
+            title="Permalink to MouseKeyboardCameraController.forward">#</a>
+        </h4>
+        <div class="doc">
+
+<pre class="source">
+bool forward;
+</pre>
+</div>
+</div>
+<div class="field"><h4 id="forwardVelocity">
+<span class="show-code">Code</span>
+<a href="../dart_core/num.html">num</a>         <strong>forwardVelocity</strong> <a class="anchor-link"
+            href="#forwardVelocity"
+            title="Permalink to MouseKeyboardCameraController.forwardVelocity">#</a>
+        </h4>
+        <div class="doc">
+
+<pre class="source">
+num forwardVelocity;
+</pre>
+</div>
+</div>
+<div class="field"><h4 id="mouseSensitivity">
+<span class="show-code">Code</span>
+<a href="../dart_core/num.html">num</a>         <strong>mouseSensitivity</strong> <a class="anchor-link"
+            href="#mouseSensitivity"
+            title="Permalink to MouseKeyboardCameraController.mouseSensitivity">#</a>
+        </h4>
+        <div class="doc">
+
+<pre class="source">
+num mouseSensitivity;
+</pre>
+</div>
+</div>
+<div class="field"><h4 id="strafeLeft">
+<span class="show-code">Code</span>
+<a href="../dart_core/bool.html">bool</a>         <strong>strafeLeft</strong> <a class="anchor-link"
+            href="#strafeLeft"
+            title="Permalink to MouseKeyboardCameraController.strafeLeft">#</a>
+        </h4>
+        <div class="doc">
+
+<pre class="source">
+bool strafeLeft;
+</pre>
+</div>
+</div>
+<div class="field"><h4 id="strafeRight">
+<span class="show-code">Code</span>
+<a href="../dart_core/bool.html">bool</a>         <strong>strafeRight</strong> <a class="anchor-link"
+            href="#strafeRight"
+            title="Permalink to MouseKeyboardCameraController.strafeRight">#</a>
+        </h4>
+        <div class="doc">
+
+<pre class="source">
+bool strafeRight;
+</pre>
+</div>
+</div>
+<div class="field"><h4 id="strafeVelocity">
+<span class="show-code">Code</span>
+<a href="../dart_core/num.html">num</a>         <strong>strafeVelocity</strong> <a class="anchor-link"
+            href="#strafeVelocity"
+            title="Permalink to MouseKeyboardCameraController.strafeVelocity">#</a>
+        </h4>
+        <div class="doc">
+
+<pre class="source">
+num strafeVelocity;
+</pre>
+</div>
+</div>
+<div class="field"><h4 id="up">
+<span class="show-code">Code</span>
+<a href="../dart_core/bool.html">bool</a>         <strong>up</strong> <a class="anchor-link"
+            href="#up"
+            title="Permalink to MouseKeyboardCameraController.up">#</a>
+        </h4>
+        <div class="doc">
+
+<pre class="source">
+bool up;
+</pre>
+</div>
+</div>
+        </div>
+        <div class="clear"></div>
+        </div>
+        
+        <div class="footer">
+          <div>This page generated at 2012-07-02 19:29:31.073</div>
+        </div>
+        <script async src="../client-static.js"></script>
+        </body></html>
+        

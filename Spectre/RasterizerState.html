@@ -1,0 +1,280 @@
+        <!DOCTYPE html>
+        <html>
+        <head>
+                <meta charset="utf-8">
+        <title>RasterizerState Class / Spectre Library / Dart Documentation</title>
+        <link rel="stylesheet" type="text/css"
+            href="../styles.css">
+        <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet" type="text/css">
+        <link rel="shortcut icon" href="../favicon.ico">
+        
+        </head>
+        <body data-library="Spectre" data-type="RasterizerState">
+        <div class="page">
+        <div class="header">
+          <a href="../index.html"><div class="logo"></div></a>
+          <a href="../index.html">Dart Documentation</a>
+         &rsaquo; <a href="../Spectre.html">Spectre</a> &rsaquo; <a href="../Spectre/RasterizerState.html">RasterizerState</a></div>
+        <div class="nav">
+        
+<h2><div class="icon-library"></div><a href="../dart_core.html">dart:core</a></h2><h2><div class="icon-library"></div><a href="../dart_coreimpl.html">dart:coreimpl</a></h2><h2><div class="icon-library"></div><a href="../html.html">html</a></h2><h2><div class="icon-library"></div><a href="../json.html">json</a></h2><h2><div class="icon-library"></div><a href="../Spectre.html">Spectre</a></h2><ul class="icon">
+<li><a href="../Spectre/BlendState.html"><div class="icon-class"></div>BlendState</a></li>
+<li><a href="../Spectre/BoundCommand.html"><div class="icon-class"></div>BoundCommand</a></li>
+<li><a href="../Spectre/BoundCommandDraw.html"><div class="icon-class"></div>BoundCommandDraw</a></li>
+<li><a href="../Spectre/BoundCommandDrawIndexed.html"><div class="icon-class"></div>BoundCommandDrawIndexed</a></li>
+<li><a href="../Spectre/BoundCommandExecuter.html"><div class="icon-class"></div>BoundCommandExecuter</a></li>
+<li><a href="../Spectre/BoundCommandSetBlendState.html"><div class="icon-class"></div>BoundCommandSetBlendState</a></li>
+<li><a href="../Spectre/BoundCommandSetDepthState.html"><div class="icon-class"></div>BoundCommandSetDepthState</a></li>
+<li><a href="../Spectre/BoundCommandSetIndexBuffer.html"><div class="icon-class"></div>BoundCommandSetIndexBuffer</a></li>
+<li><a href="../Spectre/BoundCommandSetInputLayout.html"><div class="icon-class"></div>BoundCommandSetInputLayout</a></li>
+<li><a href="../Spectre/BoundCommandSetPrimitiveTopology.html"><div class="icon-class"></div>BoundCommandSetPrimitiveTopology</a></li>
+<li><a href="../Spectre/BoundCommandSetRasterizerState.html"><div class="icon-class"></div>BoundCommandSetRasterizerState</a></li>
+<li><a href="../Spectre/BoundCommandSetShaderProgram.html"><div class="icon-class"></div>BoundCommandSetShaderProgram</a></li>
+<li><a href="../Spectre/BoundCommandSetUniformMatrix3.html"><div class="icon-class"></div>BoundCommandSetUniformMatrix3</a></li>
+<li><a href="../Spectre/BoundCommandSetUniformMatrix4.html"><div class="icon-class"></div>BoundCommandSetUniformMatrix4</a></li>
+<li><a href="../Spectre/BoundCommandSetUniformVector3.html"><div class="icon-class"></div>BoundCommandSetUniformVector3</a></li>
+<li><a href="../Spectre/BoundCommandSetUniformVector4.html"><div class="icon-class"></div>BoundCommandSetUniformVector4</a></li>
+<li><a href="../Spectre/BoundCommandSetVertexBuffers.html"><div class="icon-class"></div>BoundCommandSetVertexBuffers</a></li>
+<li><a href="../Spectre/BoundCommandSetViewport.html"><div class="icon-class"></div>BoundCommandSetViewport</a></li>
+<li><a href="../Spectre/Camera.html"><div class="icon-class"></div>Camera</a></li>
+<li><a href="../Spectre/CameraController.html"><div class="icon-class"></div>CameraController</a></li>
+<li><a href="../Spectre/Command.html"><div class="icon-class"></div>Command</a></li>
+<li><a href="../Spectre/CommandBuffer.html"><div class="icon-class"></div>CommandBuffer</a></li>
+<li><a href="../Spectre/CommandDraw.html"><div class="icon-class"></div>CommandDraw</a></li>
+<li><a href="../Spectre/CommandDrawIndexed.html"><div class="icon-class"></div>CommandDrawIndexed</a></li>
+<li><a href="../Spectre/CommandSetBlendState.html"><div class="icon-class"></div>CommandSetBlendState</a></li>
+<li><a href="../Spectre/CommandSetDepthState.html"><div class="icon-class"></div>CommandSetDepthState</a></li>
+<li><a href="../Spectre/CommandSetIndexBuffer.html"><div class="icon-class"></div>CommandSetIndexBuffer</a></li>
+<li><a href="../Spectre/CommandSetInputLayout.html"><div class="icon-class"></div>CommandSetInputLayout</a></li>
+<li><a href="../Spectre/CommandSetPrimitiveTopology.html"><div class="icon-class"></div>CommandSetPrimitiveTopology</a></li>
+<li><a href="../Spectre/CommandSetRasterizerState.html"><div class="icon-class"></div>CommandSetRasterizerState</a></li>
+<li><a href="../Spectre/CommandSetShaderProgram.html"><div class="icon-class"></div>CommandSetShaderProgram</a></li>
+<li><a href="../Spectre/CommandSetUniformMatrix3.html"><div class="icon-class"></div>CommandSetUniformMatrix3</a></li>
+<li><a href="../Spectre/CommandSetUniformMatrix4.html"><div class="icon-class"></div>CommandSetUniformMatrix4</a></li>
+<li><a href="../Spectre/CommandSetUniformVector3.html"><div class="icon-class"></div>CommandSetUniformVector3</a></li>
+<li><a href="../Spectre/CommandSetUniformVector4.html"><div class="icon-class"></div>CommandSetUniformVector4</a></li>
+<li><a href="../Spectre/CommandSetVertexBuffers.html"><div class="icon-class"></div>CommandSetVertexBuffers</a></li>
+<li><a href="../Spectre/CommandSetViewport.html"><div class="icon-class"></div>CommandSetViewport</a></li>
+<li><a href="../Spectre/DebugDrawManager.html"><div class="icon-class"></div>DebugDrawManager</a></li>
+<li><a href="../Spectre/DepthState.html"><div class="icon-class"></div>DepthState</a></li>
+<li><a href="../Spectre/Device.html"><div class="icon-class"></div>Device</a></li>
+<li><a href="../Spectre/DeviceChild.html"><div class="icon-class"></div>DeviceChild</a></li>
+<li><a href="../Spectre/DeviceFormat.html"><div class="icon-class"></div>DeviceFormat</a></li>
+<li><a href="../Spectre/FragmentShader.html"><div class="icon-class"></div>FragmentShader</a></li>
+<li><a href="../Spectre/FragmentShaderResource.html"><div class="icon-class"></div>FragmentShaderResource</a></li>
+<li><a href="../Spectre/HtmlLogger.html"><div class="icon-class"></div>HtmlLogger</a></li>
+<li><a href="../Spectre/ImageResource.html"><div class="icon-class"></div>ImageResource</a></li>
+<li><a href="../Spectre/ImmediateContext.html"><div class="icon-class"></div>ImmediateContext</a></li>
+<li><a href="../Spectre/IndexBuffer.html"><div class="icon-class"></div>IndexBuffer</a></li>
+<li><a href="../Spectre/InputElementDescription.html"><div class="icon-class"></div>InputElementDescription</a></li>
+<li><a href="../Spectre/InputLayout.html"><div class="icon-class"></div>InputLayout</a></li>
+<li><a href="../Spectre/InputLayoutHelper.html"><div class="icon-class"></div>InputLayoutHelper</a></li>
+<li><a href="../Spectre/Logger.html"><div class="icon-interface"></div>Logger</a></li>
+<li><a href="../Spectre/MeshResource.html"><div class="icon-class"></div>MeshResource</a></li>
+<li><a href="../Spectre/MouseKeyboardCameraController.html"><div class="icon-class"></div>MouseKeyboardCameraController</a></li>
+<li><a href="../Spectre/NullLogger.html"><div class="icon-class"></div>NullLogger</a></li>
+<li><a href="../Spectre/OnResourceLoad.html"><div class="icon-interface"></div>OnResourceLoad</a></li>
+<li><a href="../Spectre/OnResourceLoadFailure.html"><div class="icon-interface"></div>OnResourceLoadFailure</a></li>
+<li><a href="../Spectre/PrintLogger.html"><div class="icon-class"></div>PrintLogger</a></li>
+<li><div class="icon-class"></div><strong>RasterizerState</strong></li>
+<li><a href="../Spectre/RenderBuffer.html"><div class="icon-class"></div>RenderBuffer</a></li>
+<li><a href="../Spectre/RenderTarget.html"><div class="icon-class"></div>RenderTarget</a></li>
+<li><a href="../Spectre/Resource.html"><div class="icon-class"></div>Resource</a></li>
+<li><a href="../Spectre/ResourceLoader.html"><div class="icon-class"></div>ResourceLoader</a></li>
+<li><a href="../Spectre/ResourceManager.html"><div class="icon-class"></div>ResourceManager</a></li>
+<li><a href="../Spectre/SamplerState.html"><div class="icon-class"></div>SamplerState</a></li>
+<li><a href="../Spectre/Shader.html"><div class="icon-class"></div>Shader</a></li>
+<li><a href="../Spectre/ShaderProgram.html"><div class="icon-class"></div>ShaderProgram</a></li>
+<li><a href="../Spectre/SpectreBuffer.html"><div class="icon-class"></div>SpectreBuffer</a></li>
+<li><a href="../Spectre/StaticResources.html"><div class="icon-class"></div>StaticResources</a></li>
+<li><a href="../Spectre/StencilState.html"><div class="icon-class"></div>StencilState</a></li>
+<li><a href="../Spectre/Texture.html"><div class="icon-class"></div>Texture</a></li>
+<li><a href="../Spectre/Texture2D.html"><div class="icon-class"></div>Texture2D</a></li>
+<li><a href="../Spectre/VertexBuffer.html"><div class="icon-class"></div>VertexBuffer</a></li>
+<li><a href="../Spectre/VertexShader.html"><div class="icon-class"></div>VertexShader</a></li>
+<li><a href="../Spectre/VertexShaderResource.html"><div class="icon-class"></div>VertexShaderResource</a></li>
+<li><a href="../Spectre/Viewport.html"><div class="icon-class"></div>Viewport</a></li>
+</ul>
+<h2><div class="icon-library"></div><a href="../VectorMath.html">VectorMath</a></h2></div>
+<div class="content">
+        <h2><strong>RasterizerState</strong>
+          Class
+        </h2>
+        
+<div class="doc">
+<p>RasterizerState controls how the GPU rasterizer functions including primitive culling and width of rasterized lines
+Create using <a class="crossref" href="../Spectre/Device.html#createRasterizerState">Device.createRasterizerState</a>
+Set using <a class="crossref" href="../Spectre/ImmediateContext.html#setRasterizerState">ImmediateContext.setRasterizerState</a></p>
+</div>
+<h3>Extends</h3>
+<p>
+<span class="type-box"><span class="icon-class"></span><a href="../Spectre/DeviceChild.html">DeviceChild</a></span>&nbsp;&gt;&nbsp;<span class="type-box"><span class="icon-class"></span><strong>RasterizerState</strong></span></p>
+<h3>Constructors</h3>
+<div class="method"><h4 id="RasterizerState">
+<span class="show-code">Code</span>
+new <strong>RasterizerState</strong>() <a class="anchor-link" href="#RasterizerState"
+              title="Permalink to RasterizerState.RasterizerState">#</a></h4>
+<div class="doc">
+
+<pre class="source">
+RasterizerState() {
+  cullEnabled = false;
+  cullMode = CullBack;
+  cullFrontFace = FrontCCW;
+  lineWidth = 1.0;
+}
+</pre>
+</div>
+</div>
+<h3>Static Fields</h3>
+<div class="field"><h4 id="CullBack">
+<span class="show-code">Code</span>
+final <a href="../dart_core/int.html">int</a>         <strong>CullBack</strong> <a class="anchor-link"
+            href="#CullBack"
+            title="Permalink to RasterizerState.CullBack">#</a>
+        </h4>
+        <div class="doc">
+
+<pre class="source">
+static final int CullBack = WebGLRenderingContext.BACK;
+</pre>
+</div>
+</div>
+<div class="field"><h4 id="CullFront">
+<span class="show-code">Code</span>
+final <a href="../dart_core/int.html">int</a>         <strong>CullFront</strong> <a class="anchor-link"
+            href="#CullFront"
+            title="Permalink to RasterizerState.CullFront">#</a>
+        </h4>
+        <div class="doc">
+
+<pre class="source">
+static final int CullFront = WebGLRenderingContext.FRONT;
+</pre>
+</div>
+</div>
+<div class="field"><h4 id="CullFrontAndBack">
+<span class="show-code">Code</span>
+final <a href="../dart_core/int.html">int</a>         <strong>CullFrontAndBack</strong> <a class="anchor-link"
+            href="#CullFrontAndBack"
+            title="Permalink to RasterizerState.CullFrontAndBack">#</a>
+        </h4>
+        <div class="doc">
+
+<pre class="source">
+static final int CullFrontAndBack = WebGLRenderingContext.FRONT_AND_BACK;
+</pre>
+</div>
+</div>
+<div class="field"><h4 id="FrontCCW">
+<span class="show-code">Code</span>
+final <a href="../dart_core/int.html">int</a>         <strong>FrontCCW</strong> <a class="anchor-link"
+            href="#FrontCCW"
+            title="Permalink to RasterizerState.FrontCCW">#</a>
+        </h4>
+        <div class="doc">
+
+<pre class="source">
+static final int FrontCCW = WebGLRenderingContext.CCW;
+</pre>
+</div>
+</div>
+<div class="field"><h4 id="FrontCW">
+<span class="show-code">Code</span>
+final <a href="../dart_core/int.html">int</a>         <strong>FrontCW</strong> <a class="anchor-link"
+            href="#FrontCW"
+            title="Permalink to RasterizerState.FrontCW">#</a>
+        </h4>
+        <div class="doc">
+
+<pre class="source">
+static final int FrontCW = WebGLRenderingContext.CW;
+</pre>
+</div>
+</div>
+<h3>Methods</h3>
+<div class="method"><h4 id="fillProps">
+<span class="show-code">Code</span>
+<a href="../dart_core/void.html">void</a> <strong>fillProps</strong>(<a href="../dart_core/Map.html">Map</a> props) <a class="anchor-link" href="#fillProps"
+              title="Permalink to RasterizerState.fillProps">#</a></h4>
+<div class="doc">
+
+<pre class="source">
+void fillProps(Map props) {
+  Dynamic o;
+  
+  o = props['cullEnabled'];
+  cullEnabled = o != null ? o : false;
+  o = props['cullMode'];
+  cullMode = o != null ? o : CullBack;
+  o = props['cullFrontFace'];
+  cullFrontFace = o != null ? o : FrontCCW;
+  o = props['lineWidth'];
+  lineWidth = o != null ? o : lineWidth;
+}
+</pre>
+</div>
+</div>
+<h3>Fields</h3>
+<div class="field"><h4 id="cullEnabled">
+<span class="show-code">Code</span>
+<a href="../dart_core/bool.html">bool</a>         <strong>cullEnabled</strong> <a class="anchor-link"
+            href="#cullEnabled"
+            title="Permalink to RasterizerState.cullEnabled">#</a>
+        </h4>
+        <div class="doc">
+
+<pre class="source">
+bool cullEnabled;
+</pre>
+</div>
+</div>
+<div class="field"><h4 id="cullFrontFace">
+<span class="show-code">Code</span>
+<a href="../dart_core/int.html">int</a>         <strong>cullFrontFace</strong> <a class="anchor-link"
+            href="#cullFrontFace"
+            title="Permalink to RasterizerState.cullFrontFace">#</a>
+        </h4>
+        <div class="doc">
+
+<pre class="source">
+int cullFrontFace;
+</pre>
+</div>
+</div>
+<div class="field"><h4 id="cullMode">
+<span class="show-code">Code</span>
+<a href="../dart_core/int.html">int</a>         <strong>cullMode</strong> <a class="anchor-link"
+            href="#cullMode"
+            title="Permalink to RasterizerState.cullMode">#</a>
+        </h4>
+        <div class="doc">
+
+<pre class="source">
+int cullMode;
+</pre>
+</div>
+</div>
+<div class="field"><h4 id="lineWidth">
+<span class="show-code">Code</span>
+<a href="../dart_core/num.html">num</a>         <strong>lineWidth</strong> <a class="anchor-link"
+            href="#lineWidth"
+            title="Permalink to RasterizerState.lineWidth">#</a>
+        </h4>
+        <div class="doc">
+
+<pre class="source">
+num lineWidth;
+</pre>
+</div>
+</div>
+        </div>
+        <div class="clear"></div>
+        </div>
+        
+        <div class="footer">
+          <div>This page generated at 2012-07-02 19:29:30.498</div>
+        </div>
+        <script async src="../client-static.js"></script>
+        </body></html>
+        

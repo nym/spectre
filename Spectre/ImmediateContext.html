@@ -1,0 +1,696 @@
+        <!DOCTYPE html>
+        <html>
+        <head>
+                <meta charset="utf-8">
+        <title>ImmediateContext Class / Spectre Library / Dart Documentation</title>
+        <link rel="stylesheet" type="text/css"
+            href="../styles.css">
+        <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet" type="text/css">
+        <link rel="shortcut icon" href="../favicon.ico">
+        
+        </head>
+        <body data-library="Spectre" data-type="ImmediateContext">
+        <div class="page">
+        <div class="header">
+          <a href="../index.html"><div class="logo"></div></a>
+          <a href="../index.html">Dart Documentation</a>
+         &rsaquo; <a href="../Spectre.html">Spectre</a> &rsaquo; <a href="../Spectre/ImmediateContext.html">ImmediateContext</a></div>
+        <div class="nav">
+        
+<h2><div class="icon-library"></div><a href="../dart_core.html">dart:core</a></h2><h2><div class="icon-library"></div><a href="../dart_coreimpl.html">dart:coreimpl</a></h2><h2><div class="icon-library"></div><a href="../html.html">html</a></h2><h2><div class="icon-library"></div><a href="../json.html">json</a></h2><h2><div class="icon-library"></div><a href="../Spectre.html">Spectre</a></h2><ul class="icon">
+<li><a href="../Spectre/BlendState.html"><div class="icon-class"></div>BlendState</a></li>
+<li><a href="../Spectre/BoundCommand.html"><div class="icon-class"></div>BoundCommand</a></li>
+<li><a href="../Spectre/BoundCommandDraw.html"><div class="icon-class"></div>BoundCommandDraw</a></li>
+<li><a href="../Spectre/BoundCommandDrawIndexed.html"><div class="icon-class"></div>BoundCommandDrawIndexed</a></li>
+<li><a href="../Spectre/BoundCommandExecuter.html"><div class="icon-class"></div>BoundCommandExecuter</a></li>
+<li><a href="../Spectre/BoundCommandSetBlendState.html"><div class="icon-class"></div>BoundCommandSetBlendState</a></li>
+<li><a href="../Spectre/BoundCommandSetDepthState.html"><div class="icon-class"></div>BoundCommandSetDepthState</a></li>
+<li><a href="../Spectre/BoundCommandSetIndexBuffer.html"><div class="icon-class"></div>BoundCommandSetIndexBuffer</a></li>
+<li><a href="../Spectre/BoundCommandSetInputLayout.html"><div class="icon-class"></div>BoundCommandSetInputLayout</a></li>
+<li><a href="../Spectre/BoundCommandSetPrimitiveTopology.html"><div class="icon-class"></div>BoundCommandSetPrimitiveTopology</a></li>
+<li><a href="../Spectre/BoundCommandSetRasterizerState.html"><div class="icon-class"></div>BoundCommandSetRasterizerState</a></li>
+<li><a href="../Spectre/BoundCommandSetShaderProgram.html"><div class="icon-class"></div>BoundCommandSetShaderProgram</a></li>
+<li><a href="../Spectre/BoundCommandSetUniformMatrix3.html"><div class="icon-class"></div>BoundCommandSetUniformMatrix3</a></li>
+<li><a href="../Spectre/BoundCommandSetUniformMatrix4.html"><div class="icon-class"></div>BoundCommandSetUniformMatrix4</a></li>
+<li><a href="../Spectre/BoundCommandSetUniformVector3.html"><div class="icon-class"></div>BoundCommandSetUniformVector3</a></li>
+<li><a href="../Spectre/BoundCommandSetUniformVector4.html"><div class="icon-class"></div>BoundCommandSetUniformVector4</a></li>
+<li><a href="../Spectre/BoundCommandSetVertexBuffers.html"><div class="icon-class"></div>BoundCommandSetVertexBuffers</a></li>
+<li><a href="../Spectre/BoundCommandSetViewport.html"><div class="icon-class"></div>BoundCommandSetViewport</a></li>
+<li><a href="../Spectre/Camera.html"><div class="icon-class"></div>Camera</a></li>
+<li><a href="../Spectre/CameraController.html"><div class="icon-class"></div>CameraController</a></li>
+<li><a href="../Spectre/Command.html"><div class="icon-class"></div>Command</a></li>
+<li><a href="../Spectre/CommandBuffer.html"><div class="icon-class"></div>CommandBuffer</a></li>
+<li><a href="../Spectre/CommandDraw.html"><div class="icon-class"></div>CommandDraw</a></li>
+<li><a href="../Spectre/CommandDrawIndexed.html"><div class="icon-class"></div>CommandDrawIndexed</a></li>
+<li><a href="../Spectre/CommandSetBlendState.html"><div class="icon-class"></div>CommandSetBlendState</a></li>
+<li><a href="../Spectre/CommandSetDepthState.html"><div class="icon-class"></div>CommandSetDepthState</a></li>
+<li><a href="../Spectre/CommandSetIndexBuffer.html"><div class="icon-class"></div>CommandSetIndexBuffer</a></li>
+<li><a href="../Spectre/CommandSetInputLayout.html"><div class="icon-class"></div>CommandSetInputLayout</a></li>
+<li><a href="../Spectre/CommandSetPrimitiveTopology.html"><div class="icon-class"></div>CommandSetPrimitiveTopology</a></li>
+<li><a href="../Spectre/CommandSetRasterizerState.html"><div class="icon-class"></div>CommandSetRasterizerState</a></li>
+<li><a href="../Spectre/CommandSetShaderProgram.html"><div class="icon-class"></div>CommandSetShaderProgram</a></li>
+<li><a href="../Spectre/CommandSetUniformMatrix3.html"><div class="icon-class"></div>CommandSetUniformMatrix3</a></li>
+<li><a href="../Spectre/CommandSetUniformMatrix4.html"><div class="icon-class"></div>CommandSetUniformMatrix4</a></li>
+<li><a href="../Spectre/CommandSetUniformVector3.html"><div class="icon-class"></div>CommandSetUniformVector3</a></li>
+<li><a href="../Spectre/CommandSetUniformVector4.html"><div class="icon-class"></div>CommandSetUniformVector4</a></li>
+<li><a href="../Spectre/CommandSetVertexBuffers.html"><div class="icon-class"></div>CommandSetVertexBuffers</a></li>
+<li><a href="../Spectre/CommandSetViewport.html"><div class="icon-class"></div>CommandSetViewport</a></li>
+<li><a href="../Spectre/DebugDrawManager.html"><div class="icon-class"></div>DebugDrawManager</a></li>
+<li><a href="../Spectre/DepthState.html"><div class="icon-class"></div>DepthState</a></li>
+<li><a href="../Spectre/Device.html"><div class="icon-class"></div>Device</a></li>
+<li><a href="../Spectre/DeviceChild.html"><div class="icon-class"></div>DeviceChild</a></li>
+<li><a href="../Spectre/DeviceFormat.html"><div class="icon-class"></div>DeviceFormat</a></li>
+<li><a href="../Spectre/FragmentShader.html"><div class="icon-class"></div>FragmentShader</a></li>
+<li><a href="../Spectre/FragmentShaderResource.html"><div class="icon-class"></div>FragmentShaderResource</a></li>
+<li><a href="../Spectre/HtmlLogger.html"><div class="icon-class"></div>HtmlLogger</a></li>
+<li><a href="../Spectre/ImageResource.html"><div class="icon-class"></div>ImageResource</a></li>
+<li><div class="icon-class"></div><strong>ImmediateContext</strong></li>
+<li><a href="../Spectre/IndexBuffer.html"><div class="icon-class"></div>IndexBuffer</a></li>
+<li><a href="../Spectre/InputElementDescription.html"><div class="icon-class"></div>InputElementDescription</a></li>
+<li><a href="../Spectre/InputLayout.html"><div class="icon-class"></div>InputLayout</a></li>
+<li><a href="../Spectre/InputLayoutHelper.html"><div class="icon-class"></div>InputLayoutHelper</a></li>
+<li><a href="../Spectre/Logger.html"><div class="icon-interface"></div>Logger</a></li>
+<li><a href="../Spectre/MeshResource.html"><div class="icon-class"></div>MeshResource</a></li>
+<li><a href="../Spectre/MouseKeyboardCameraController.html"><div class="icon-class"></div>MouseKeyboardCameraController</a></li>
+<li><a href="../Spectre/NullLogger.html"><div class="icon-class"></div>NullLogger</a></li>
+<li><a href="../Spectre/OnResourceLoad.html"><div class="icon-interface"></div>OnResourceLoad</a></li>
+<li><a href="../Spectre/OnResourceLoadFailure.html"><div class="icon-interface"></div>OnResourceLoadFailure</a></li>
+<li><a href="../Spectre/PrintLogger.html"><div class="icon-class"></div>PrintLogger</a></li>
+<li><a href="../Spectre/RasterizerState.html"><div class="icon-class"></div>RasterizerState</a></li>
+<li><a href="../Spectre/RenderBuffer.html"><div class="icon-class"></div>RenderBuffer</a></li>
+<li><a href="../Spectre/RenderTarget.html"><div class="icon-class"></div>RenderTarget</a></li>
+<li><a href="../Spectre/Resource.html"><div class="icon-class"></div>Resource</a></li>
+<li><a href="../Spectre/ResourceLoader.html"><div class="icon-class"></div>ResourceLoader</a></li>
+<li><a href="../Spectre/ResourceManager.html"><div class="icon-class"></div>ResourceManager</a></li>
+<li><a href="../Spectre/SamplerState.html"><div class="icon-class"></div>SamplerState</a></li>
+<li><a href="../Spectre/Shader.html"><div class="icon-class"></div>Shader</a></li>
+<li><a href="../Spectre/ShaderProgram.html"><div class="icon-class"></div>ShaderProgram</a></li>
+<li><a href="../Spectre/SpectreBuffer.html"><div class="icon-class"></div>SpectreBuffer</a></li>
+<li><a href="../Spectre/StaticResources.html"><div class="icon-class"></div>StaticResources</a></li>
+<li><a href="../Spectre/StencilState.html"><div class="icon-class"></div>StencilState</a></li>
+<li><a href="../Spectre/Texture.html"><div class="icon-class"></div>Texture</a></li>
+<li><a href="../Spectre/Texture2D.html"><div class="icon-class"></div>Texture2D</a></li>
+<li><a href="../Spectre/VertexBuffer.html"><div class="icon-class"></div>VertexBuffer</a></li>
+<li><a href="../Spectre/VertexShader.html"><div class="icon-class"></div>VertexShader</a></li>
+<li><a href="../Spectre/VertexShaderResource.html"><div class="icon-class"></div>VertexShaderResource</a></li>
+<li><a href="../Spectre/Viewport.html"><div class="icon-class"></div>Viewport</a></li>
+</ul>
+<h2><div class="icon-library"></div><a href="../VectorMath.html">VectorMath</a></h2></div>
+<div class="content">
+        <h2><strong>ImmediateContext</strong>
+          Class
+        </h2>
+        
+<div class="doc">
+
+</div>
+<h3>Constructors</h3>
+<div class="method"><h4 id="ImmediateContext">
+<span class="show-code">Code</span>
+new <strong>ImmediateContext</strong>() <a class="anchor-link" href="#ImmediateContext"
+              title="Permalink to ImmediateContext.ImmediateContext">#</a></h4>
+<div class="doc">
+
+<pre class="source">
+ImmediateContext() {
+  _vertexBuffers = new List&lt;VertexBuffer&gt;(numVertexBuffers);
+  _samplerStates = new List&lt;SamplerState&gt;(numTextures);
+  _textures = new List&lt;Texture&gt;(numTextures);
+  _vertexAttributeArrayEnabledIndex = 0;
+}
+</pre>
+</div>
+</div>
+<h3>Static Fields</h3>
+<div class="field"><h4 id="PrimitiveTopologyLines">
+<span class="show-code">Code</span>
+final <a href="../dart_core/int.html">int</a>         <strong>PrimitiveTopologyLines</strong> <a class="anchor-link"
+            href="#PrimitiveTopologyLines"
+            title="Permalink to ImmediateContext.PrimitiveTopologyLines">#</a>
+        </h4>
+        <div class="doc">
+
+<pre class="source">
+static final int PrimitiveTopologyLines = WebGLRenderingContext.LINES;
+</pre>
+</div>
+</div>
+<div class="field"><h4 id="PrimitiveTopologyTriangles">
+<span class="show-code">Code</span>
+final <a href="../dart_core/int.html">int</a>         <strong>PrimitiveTopologyTriangles</strong> <a class="anchor-link"
+            href="#PrimitiveTopologyTriangles"
+            title="Permalink to ImmediateContext.PrimitiveTopologyTriangles">#</a>
+        </h4>
+        <div class="doc">
+
+<pre class="source">
+static final int PrimitiveTopologyTriangles = WebGLRenderingContext.TRIANGLES;
+</pre>
+</div>
+</div>
+<h3>Methods</h3>
+<div class="method"><h4 id="draw">
+<span class="show-code">Code</span>
+<a href="../dart_core/void.html">void</a> <strong>draw</strong>(<a href="../dart_core/int.html">int</a> numVertices, <a href="../dart_core/int.html">int</a> vertexOffset) <a class="anchor-link" href="#draw"
+              title="Permalink to ImmediateContext.draw">#</a></h4>
+<div class="doc">
+
+<pre class="source">
+void draw(int numVertices, int vertexOffset) {
+  if (numVertices == 0) {
+    return;
+  }
+  _prepareInputs();
+  _prepareTextures();
+  webGL.drawArrays(_primitiveTopology, vertexOffset, numVertices);
+}
+</pre>
+</div>
+</div>
+<div class="method"><h4 id="drawIndexed">
+<span class="show-code">Code</span>
+<a href="../dart_core/void.html">void</a> <strong>drawIndexed</strong>(<a href="../dart_core/int.html">int</a> numIndices, <a href="../dart_core/int.html">int</a> indexOffset) <a class="anchor-link" href="#drawIndexed"
+              title="Permalink to ImmediateContext.drawIndexed">#</a></h4>
+<div class="doc">
+
+<pre class="source">
+void drawIndexed(int numIndices, int indexOffset) {
+  if (numIndices == 0) {
+    return;
+  }
+  _prepareInputs();
+  _prepareTextures();
+  webGL.drawElements(_primitiveTopology, numIndices, WebGLRenderingContext.UNSIGNED_SHORT, indexOffset);
+}
+</pre>
+</div>
+</div>
+<div class="method"><h4 id="generateMipmap">
+<span class="show-code">Code</span>
+<a href="../dart_core/void.html">void</a> <strong>generateMipmap</strong>(<a href="../Spectre/Texture2D.html">Texture2D</a> tex) <a class="anchor-link" href="#generateMipmap"
+              title="Permalink to ImmediateContext.generateMipmap">#</a></h4>
+<div class="doc">
+
+<pre class="source">
+void generateMipmap(Texture2D tex) {
+  webGL.activeTexture(WebGLRenderingContext.TEXTURE0);
+  var oldBind = webGL.getParameter(tex._target_param);
+  webGL.bindTexture(tex._target, tex._buffer);
+  webGL.generateMipmap(tex._target);
+  webGL.bindTexture(tex._target, oldBind);
+}
+</pre>
+</div>
+</div>
+<div class="method"><h4 id="reset">
+<span class="show-code">Code</span>
+<a href="../dart_core/void.html">void</a> <strong>reset</strong>() <a class="anchor-link" href="#reset"
+              title="Permalink to ImmediateContext.reset">#</a></h4>
+<div class="doc">
+
+<pre class="source">
+void reset() {
+  // TODO: Update state
+  _primitiveTopology = 0;
+  _vertexAttributeArrayEnabledIndex = 0;
+  _indexBuffer = null;
+  for (int i = 0; i &lt; numVertexBuffers; i++) {
+    _vertexBuffers[i] = null;
+  }
+  _inputLayout = null;
+  _shaderProgram = null;
+  for (int i = 0; i &lt; numTextures; i++) {
+    _samplerStates[i] = null;
+    _textures[i] = null;
+  }
+  _rasterizerState = null;
+  _viewport = null;
+  _blendState = null;
+  _depthState = null;
+  _stencilState = null;
+  _renderTarget = null;
+}
+</pre>
+</div>
+</div>
+<div class="method"><h4 id="setBlendState">
+<span class="show-code">Code</span>
+<a href="../dart_core/void.html">void</a> <strong>setBlendState</strong>(<a href="../Spectre/BlendState.html">BlendState</a> bs) <a class="anchor-link" href="#setBlendState"
+              title="Permalink to ImmediateContext.setBlendState">#</a></h4>
+<div class="doc">
+
+<pre class="source">
+void setBlendState(BlendState bs) {
+  if (bs == null) {
+    return;
+  }
+  if (_blendState == bs) {
+    return;
+  }
+  
+  _blendState = bs;
+  
+  webGL.colorMask(bs.writeRenderTargetRed, bs.writeRenderTargetGreen, bs.writeRenderTargetBlue, bs.writeRenderTargetAlpha);
+  
+  if (_blendState.blendEnable == false) {
+    webGL.disable(WebGLRenderingContext.BLEND);
+    return;
+  }
+  
+  webGL.enable(WebGLRenderingContext.BLEND);
+  webGL.blendFuncSeparate(bs.blendSourceColorFunc, bs.blendDestColorFunc, bs.blendSourceAlphaFunc, bs.blendDestAlphaFunc);
+  webGL.blendEquationSeparate(bs.blendColorOp, bs.blendAlphaOp);
+  webGL.blendColor(bs.blendColorRed, bs.blendColorGreen, bs.blendColorBlue, bs.blendColorAlpha);
+}
+</pre>
+</div>
+</div>
+<div class="method"><h4 id="setDepthState">
+<span class="show-code">Code</span>
+<a href="../dart_core/void.html">void</a> <strong>setDepthState</strong>(<a href="../Spectre/DepthState.html">DepthState</a> ds) <a class="anchor-link" href="#setDepthState"
+              title="Permalink to ImmediateContext.setDepthState">#</a></h4>
+<div class="doc">
+
+<pre class="source">
+void setDepthState(DepthState ds) {
+  if (ds == null) {
+    return;
+  }
+  if (_depthState == ds) {
+    return;
+  }
+  _depthState = ds;
+
+  webGL.depthRange(ds.depthNearVal, ds.depthFarVal);
+  
+  if (ds.depthTestEnabled == false) {
+    webGL.disable(WebGLRenderingContext.DEPTH_TEST);
+  } else {
+    webGL.enable(WebGLRenderingContext.DEPTH_TEST);
+    webGL.depthFunc(ds.depthComparisonOp);
+  }
+  
+  webGL.depthMask(ds.depthWriteEnabled);
+  
+  if (ds.polygonOffsetEnabled == false) {
+    webGL.disable(WebGLRenderingContext.POLYGON_OFFSET_FILL);
+  } else {
+    webGL.enable(WebGLRenderingContext.POLYGON_OFFSET_FILL);
+    webGL.polygonOffset(ds.polygonOffsetFactor, ds.polygonOffsetUnits);
+  }
+}
+</pre>
+</div>
+</div>
+<div class="method"><h4 id="setIndexBuffer">
+<span class="show-code">Code</span>
+<a href="../dart_core/void.html">void</a> <strong>setIndexBuffer</strong>(<a href="../Spectre/IndexBuffer.html">IndexBuffer</a> ib) <a class="anchor-link" href="#setIndexBuffer"
+              title="Permalink to ImmediateContext.setIndexBuffer">#</a></h4>
+<div class="doc">
+
+<pre class="source">
+void setIndexBuffer(IndexBuffer ib) {
+  if (_indexBuffer == ib) {
+    return;
+  }
+  _indexBuffer = ib;
+}
+</pre>
+</div>
+</div>
+<div class="method"><h4 id="setInputLayout">
+<span class="show-code">Code</span>
+<a href="../dart_core/void.html">void</a> <strong>setInputLayout</strong>(<a href="../Spectre/InputLayout.html">InputLayout</a> il) <a class="anchor-link" href="#setInputLayout"
+              title="Permalink to ImmediateContext.setInputLayout">#</a></h4>
+<div class="doc">
+
+<pre class="source">
+void setInputLayout(InputLayout il) {
+  _inputLayout = il;
+}
+</pre>
+</div>
+</div>
+<div class="method"><h4 id="setPrimitiveTopology">
+<span class="show-code">Code</span>
+<a href="../dart_core/void.html">void</a> <strong>setPrimitiveTopology</strong>(<a href="../dart_core/int.html">int</a> topology) <a class="anchor-link" href="#setPrimitiveTopology"
+              title="Permalink to ImmediateContext.setPrimitiveTopology">#</a></h4>
+<div class="doc">
+
+<pre class="source">
+void setPrimitiveTopology(int topology) {
+  _primitiveTopology = topology;
+}
+</pre>
+</div>
+</div>
+<div class="method"><h4 id="setProgram">
+<span class="show-code">Code</span>
+<a href="../dart_core/void.html">void</a> <strong>setProgram</strong>(<a href="../Spectre/ShaderProgram.html">ShaderProgram</a> sp) <a class="anchor-link" href="#setProgram"
+              title="Permalink to ImmediateContext.setProgram">#</a></h4>
+<div class="doc">
+
+<pre class="source">
+void setProgram(ShaderProgram sp) {
+  if (sp == null) {
+    return;
+  }
+  if (_shaderProgram == sp) {
+    return;
+  }
+  _shaderProgram = sp;
+  webGL.useProgram(_shaderProgram._program);
+}
+</pre>
+</div>
+</div>
+<div class="method"><h4 id="setRasterizerState">
+<span class="show-code">Code</span>
+<a href="../dart_core/void.html">void</a> <strong>setRasterizerState</strong>(<a href="../Spectre/RasterizerState.html">RasterizerState</a> rs) <a class="anchor-link" href="#setRasterizerState"
+              title="Permalink to ImmediateContext.setRasterizerState">#</a></h4>
+<div class="doc">
+
+<pre class="source">
+void setRasterizerState(RasterizerState rs) {
+  if (rs == null) {
+    return;
+  }
+  if (_rasterizerState == rs) {
+    return;
+  }
+  _rasterizerState = rs;
+  
+  webGL.lineWidth(rs.lineWidth);
+  if (rs.cullEnabled) {
+    webGL.enable(WebGLRenderingContext.CULL_FACE);
+    webGL.cullFace(rs.cullMode);
+    webGL.frontFace(rs.cullFrontFace);
+  } else {
+    webGL.disable(WebGLRenderingContext.CULL_FACE);
+  }
+}
+</pre>
+</div>
+</div>
+<div class="method"><h4 id="setRenderTarget">
+<span class="show-code">Code</span>
+<a href="../dart_core/void.html">void</a> <strong>setRenderTarget</strong>(<a href="../Spectre/RenderTarget.html">RenderTarget</a> rt) <a class="anchor-link" href="#setRenderTarget"
+              title="Permalink to ImmediateContext.setRenderTarget">#</a></h4>
+<div class="doc">
+
+<pre class="source">
+void setRenderTarget(RenderTarget rt) {
+  if (_renderTarget == rt) {
+    return;
+  }
+  _renderTarget = rt;
+  webGL.bindFramebuffer(rt._target, rt._buffer);
+}
+</pre>
+</div>
+</div>
+<div class="method"><h4 id="setSamplers">
+<span class="show-code">Code</span>
+<a href="../dart_core/void.html">void</a> <strong>setSamplers</strong>(<a href="../dart_core/int.html">int</a> texUnitOffset, <a href="../dart_core/List.html">List</a> samplers) <a class="anchor-link" href="#setSamplers"
+              title="Permalink to ImmediateContext.setSamplers">#</a></h4>
+<div class="doc">
+
+<pre class="source">
+void setSamplers(int texUnitOffset, List&lt;SamplerState&gt; samplers) {
+  for (int i = texUnitOffset; i &lt; numTextures; i++) {
+    _samplerStates[i] = samplers[i-texUnitOffset];
+  }
+}
+</pre>
+</div>
+</div>
+<div class="method"><h4 id="setShaderProgram">
+<span class="show-code">Code</span>
+<a href="../dart_core/void.html">void</a> <strong>setShaderProgram</strong>(<a href="../Spectre/ShaderProgram.html">ShaderProgram</a> sp) <a class="anchor-link" href="#setShaderProgram"
+              title="Permalink to ImmediateContext.setShaderProgram">#</a></h4>
+<div class="doc">
+
+<pre class="source">
+void setShaderProgram(ShaderProgram sp) {
+  if (sp == null) {
+    return;
+  }
+  if (_shaderProgram == sp) {
+    return;
+  }
+  _shaderProgram = sp;
+  webGL.useProgram(_shaderProgram._program);
+}
+</pre>
+</div>
+</div>
+<div class="method"><h4 id="setTextures">
+<span class="show-code">Code</span>
+<a href="../dart_core/void.html">void</a> <strong>setTextures</strong>(<a href="../dart_core/int.html">int</a> texUnitOffset, <a href="../dart_core/List.html">List</a> textures) <a class="anchor-link" href="#setTextures"
+              title="Permalink to ImmediateContext.setTextures">#</a></h4>
+<div class="doc">
+
+<pre class="source">
+void setTextures(int texUnitOffset, List&lt;Texture&gt; textures) {
+  for (int i = texUnitOffset; i &lt; numTextures; i++) {
+    _textures[i] = textures[i-texUnitOffset];
+  }
+}
+</pre>
+</div>
+</div>
+<div class="method"><h4 id="setUniform3f">
+<span class="show-code">Code</span>
+<a href="../dart_core/void.html">void</a> <strong>setUniform3f</strong>(<a href="../dart_core/String.html">String</a> name, <a href="../dart_core/num.html">num</a> v0, <a href="../dart_core/num.html">num</a> v1, <a href="../dart_core/num.html">num</a> v2) <a class="anchor-link" href="#setUniform3f"
+              title="Permalink to ImmediateContext.setUniform3f">#</a></h4>
+<div class="doc">
+
+<pre class="source">
+void setUniform3f(String name, num v0, num v1, num v2) {
+  if (_shaderProgram == null) {
+    spectreLog.Error('Attempting to set uniform with no program bound.');
+    return;
+  }
+  var index = webGL.getUniformLocation(_shaderProgram._program, name);
+  if (index == -1) {
+    spectreLog.Error('Could not find uniform $name in ${_shaderProgram.name}');
+    return;
+  }
+  webGL.uniform3f(index,v0, v1, v2);
+}
+</pre>
+</div>
+</div>
+<div class="method"><h4 id="setUniform4f">
+<span class="show-code">Code</span>
+<a href="../dart_core/void.html">void</a> <strong>setUniform4f</strong>(<a href="../dart_core/String.html">String</a> name, <a href="../dart_core/num.html">num</a> v0, <a href="../dart_core/num.html">num</a> v1, <a href="../dart_core/num.html">num</a> v2, <a href="../dart_core/num.html">num</a> v3) <a class="anchor-link" href="#setUniform4f"
+              title="Permalink to ImmediateContext.setUniform4f">#</a></h4>
+<div class="doc">
+
+<pre class="source">
+void setUniform4f(String name, num v0, num v1, num v2, num v3) {
+  if (_shaderProgram == null) {
+    spectreLog.Error('Attempting to set uniform with no program bound.');
+    return;
+  }
+  var index = webGL.getUniformLocation(_shaderProgram._program, name);
+  if (index == -1) {
+    spectreLog.Error('Could not find uniform $name in ${_shaderProgram.name}');
+    return;
+  }
+  webGL.uniform4f(index,v0, v1, v2, v3);
+}
+</pre>
+</div>
+</div>
+<div class="method"><h4 id="setUniformMatrix3">
+<span class="show-code">Code</span>
+<a href="../dart_core/void.html">void</a> <strong>setUniformMatrix3</strong>(<a href="../dart_core/String.html">String</a> name, <a href="../html/Float32Array.html">Float32Array</a> matrix, [<a href="../dart_core/bool.html">bool</a> transpose = false]) <a class="anchor-link" href="#setUniformMatrix3"
+              title="Permalink to ImmediateContext.setUniformMatrix3">#</a></h4>
+<div class="doc">
+
+<pre class="source">
+void setUniformMatrix3(String name, Float32Array matrix, [bool transpose=false]) {
+  if (_shaderProgram == null) {
+    spectreLog.Error('Attempting to set uniform with no program bound.');
+    return;
+  }
+  var index = webGL.getUniformLocation(_shaderProgram._program, name);
+  if (index == -1) {
+    spectreLog.Error('Could not find uniform $name in ${_shaderProgram.name}');
+    return;
+  }
+  webGL.uniformMatrix3fv(index, transpose, matrix);
+}
+</pre>
+</div>
+</div>
+<div class="method"><h4 id="setUniformMatrix4">
+<span class="show-code">Code</span>
+<a href="../dart_core/void.html">void</a> <strong>setUniformMatrix4</strong>(<a href="../dart_core/String.html">String</a> name, <a href="../html/Float32Array.html">Float32Array</a> matrix, [<a href="../dart_core/bool.html">bool</a> transpose = false]) <a class="anchor-link" href="#setUniformMatrix4"
+              title="Permalink to ImmediateContext.setUniformMatrix4">#</a></h4>
+<div class="doc">
+
+<pre class="source">
+void setUniformMatrix4(String name, Float32Array matrix, [bool transpose=false]) {
+  if (_shaderProgram == null) {
+    spectreLog.Error('Attempting to set uniform with no program bound.');
+    return;
+  }
+  var index = webGL.getUniformLocation(_shaderProgram._program, name);
+  if (index == -1) {
+    spectreLog.Error('Could not find uniform $name in ${_shaderProgram.name}');
+    return;
+  }
+  webGL.uniformMatrix4fv(index, transpose, matrix);
+  //spectreLog.Info('Setting $name to ${matrix[0]} ${matrix[1]} ${matrix[2]} ${matrix[3]}');
+}
+</pre>
+</div>
+</div>
+<div class="method"><h4 id="setVertexBuffers">
+<span class="show-code">Code</span>
+<a href="../dart_core/void.html">void</a> <strong>setVertexBuffers</strong>(<a href="../dart_core/int.html">int</a> startSlot, <a href="../dart_core/List.html">List</a> vbs) <a class="anchor-link" href="#setVertexBuffers"
+              title="Permalink to ImmediateContext.setVertexBuffers">#</a></h4>
+<div class="doc">
+
+<pre class="source">
+void setVertexBuffers(int startSlot, List&lt;VertexBuffer&gt; vbs) {
+  int limit = vbs.length + startSlot;
+  for (int i = startSlot; i &lt; limit; i++) {
+    _vertexBuffers[i] = vbs[i-startSlot];
+  }
+}
+</pre>
+</div>
+</div>
+<div class="method"><h4 id="setViewport">
+<span class="show-code">Code</span>
+<a href="../dart_core/void.html">void</a> <strong>setViewport</strong>(<a href="../Spectre/Viewport.html">Viewport</a> vp) <a class="anchor-link" href="#setViewport"
+              title="Permalink to ImmediateContext.setViewport">#</a></h4>
+<div class="doc">
+
+<pre class="source">
+void setViewport(Viewport vp) {
+  if (vp == null) {
+    return;
+  }
+  if (_viewport == vp) {
+    return;
+  }
+  _viewport = vp;
+  webGL.viewport(vp.x, vp.y, vp.width, vp.height);
+  //print('(${vp.x},${vp.y}) -&gt; (${vp.width}, ${vp.height})');
+}
+</pre>
+</div>
+</div>
+<div class="method"><h4 id="updateBuffer">
+<span class="show-code">Code</span>
+<a href="../dart_core/void.html">void</a> <strong>updateBuffer</strong>(<a href="../Spectre/SpectreBuffer.html">SpectreBuffer</a> buffer, <a href="../html/ArrayBufferView.html">ArrayBufferView</a> data) <a class="anchor-link" href="#updateBuffer"
+              title="Permalink to ImmediateContext.updateBuffer">#</a></h4>
+<div class="doc">
+
+<pre class="source">
+void updateBuffer(SpectreBuffer buffer, ArrayBufferView data) {
+  var correctType = buffer is SpectreBuffer;
+  if (correctType == false) {
+    return;
+  }
+  var target = buffer._target;
+  var oldBind;
+  if (buffer is VertexBuffer) {
+    oldBind = webGL.getParameter(WebGLRenderingContext.ARRAY_BUFFER_BINDING);
+  } else if (buffer is IndexBuffer) {
+    oldBind = webGL.getParameter(WebGLRenderingContext.ELEMENT_ARRAY_BUFFER_BINDING);
+  }
+  webGL.bindBuffer(buffer._target, buffer._buffer);
+  webGL.bufferData(buffer._target, data, buffer._usage);
+  //int size = webGL.getBufferParameter(buffer._target, WebGLRenderingContext.BUFFER_SIZE);
+  //int usage = webGL.getBufferParameter(buffer._target, WebGLRenderingContext.BUFFER_USAGE);
+  //spectreLog.Info('updated buffer (${buffer._target}, $size, $usage) with ${data.byteLength}');
+  webGL.bindBuffer(buffer._target,  oldBind);
+}
+</pre>
+</div>
+</div>
+<div class="method"><h4 id="updateSubBuffer">
+<span class="show-code">Code</span>
+<a href="../dart_core/void.html">void</a> <strong>updateSubBuffer</strong>(<a href="../Spectre/SpectreBuffer.html">SpectreBuffer</a> buffer, <a href="../html/ArrayBufferView.html">ArrayBufferView</a> data, <a href="../dart_core/num.html">num</a> offset) <a class="anchor-link" href="#updateSubBuffer"
+              title="Permalink to ImmediateContext.updateSubBuffer">#</a></h4>
+<div class="doc">
+
+<pre class="source">
+void updateSubBuffer(SpectreBuffer buffer, ArrayBufferView data, num offset) {
+  var correctType = buffer is SpectreBuffer;
+  if (correctType == false) {
+    return;
+  }
+  var target = buffer._target;
+  var oldBind;
+  if (buffer is VertexBuffer) {
+    oldBind = webGL.getParameter(WebGLRenderingContext.ARRAY_BUFFER_BINDING);
+  } else if (buffer is IndexBuffer) {
+    oldBind = webGL.getParameter(WebGLRenderingContext.ELEMENT_ARRAY_BUFFER_BINDING);
+  }
+  webGL.bindBuffer(buffer._target, buffer._buffer);
+  webGL.bufferSubData(buffer._target, offset, data);
+  webGL.bindBuffer(buffer._target, oldBind);
+}
+</pre>
+</div>
+</div>
+<div class="method"><h4 id="updateTexture2D">
+<span class="show-code">Code</span>
+<a href="../dart_core/void.html">void</a> <strong>updateTexture2D</strong>(<a href="../Spectre/Texture2D.html">Texture2D</a> tex, <a href="../html/ImageElement.html">ImageElement</a> img) <a class="anchor-link" href="#updateTexture2D"
+              title="Permalink to ImmediateContext.updateTexture2D">#</a></h4>
+<div class="doc">
+
+<pre class="source">
+void updateTexture2D(Texture2D tex, ImageElement img) {
+  webGL.activeTexture(WebGLRenderingContext.TEXTURE0);
+  var oldBind = webGL.getParameter(tex._target_param);
+  webGL.bindTexture(tex._target, tex._buffer);
+  webGL.texImage2D(tex._target, 0, tex._textureFormat, tex._textureFormat, tex._pixelFormat, img);
+  webGL.bindTexture(tex._target, oldBind);
+}
+</pre>
+</div>
+</div>
+<h3>Fields</h3>
+<div class="field"><h4 id="numTextures">
+<span class="show-code">Code</span>
+final <a href="../dart_core/int.html">int</a>         <strong>numTextures</strong> <a class="anchor-link"
+            href="#numTextures"
+            title="Permalink to ImmediateContext.numTextures">#</a>
+        </h4>
+        <div class="doc">
+
+<pre class="source">
+final int numTextures = 1;
+</pre>
+</div>
+</div>
+<div class="field"><h4 id="numVertexBuffers">
+<span class="show-code">Code</span>
+final <a href="../dart_core/int.html">int</a>         <strong>numVertexBuffers</strong> <a class="anchor-link"
+            href="#numVertexBuffers"
+            title="Permalink to ImmediateContext.numVertexBuffers">#</a>
+        </h4>
+        <div class="doc">
+
+<pre class="source">
+final int numVertexBuffers = 1;
+</pre>
+</div>
+</div>
+        </div>
+        <div class="clear"></div>
+        </div>
+        
+        <div class="footer">
+          <div>This page generated at 2012-07-02 19:29:30.693</div>
+        </div>
+        <script async src="../client-static.js"></script>
+        </body></html>
+        
