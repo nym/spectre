@@ -80,7 +80,6 @@
 <li><a href="../Spectre/RenderBuffer.html"><div class="icon-class"></div>RenderBuffer</a></li>
 <li><a href="../Spectre/RenderTarget.html"><div class="icon-class"></div>RenderTarget</a></li>
 <li><a href="../Spectre/Resource.html"><div class="icon-class"></div>Resource</a></li>
-<li><a href="../Spectre/ResourceLoader.html"><div class="icon-class"></div>ResourceLoader</a></li>
 <li><a href="../Spectre/ResourceManager.html"><div class="icon-class"></div>ResourceManager</a></li>
 <li><a href="../Spectre/SamplerState.html"><div class="icon-class"></div>SamplerState</a></li>
 <li><a href="../Spectre/Shader.html"><div class="icon-class"></div>Shader</a></li>
@@ -102,7 +101,7 @@
         </h2>
         
 <div class="doc">
-
+<p>CommandBuffer stores a queue of commands for an <a class="crossref" href="../Spectre/ImmediateContext.html">ImmediateContext</a></p>
 </div>
 <h3>Constructors</h3>
 <div class="method"><h4 id="CommandBuffer">
@@ -110,7 +109,7 @@
 new <strong>CommandBuffer</strong>() <a class="anchor-link" href="#CommandBuffer"
               title="Permalink to CommandBuffer.CommandBuffer">#</a></h4>
 <div class="doc">
-
+<p>Constructs an empty <a class="crossref" href="../Spectre/CommandBuffer.html">CommandBuffer</a></p>
 <pre class="source">
 CommandBuffer() {
   _commands = new List&lt;Command&gt;();
@@ -124,7 +123,7 @@ CommandBuffer() {
 <a href="../dart_core/void.html">void</a> <strong>addCommand</strong>(<a href="../Spectre/Command.html">Command</a> cmd) <a class="anchor-link" href="#addCommand"
               title="Permalink to CommandBuffer.addCommand">#</a></h4>
 <div class="doc">
-
+<p>Adds a <a class="crossref" href="../Spectre/Command.html">Command</a> to the <a class="crossref" href="../Spectre/CommandBuffer.html">CommandBuffer</a></p>
 <pre class="source">
 void addCommand(Command cmd) {
   _commands.add(cmd);
@@ -137,7 +136,8 @@ void addCommand(Command cmd) {
 <a href="../dart_core/void.html">void</a> <strong>apply</strong>(<a href="../Spectre/ResourceManager.html">ResourceManager</a> resourceManager, <a href="../Spectre/Device.html">Device</a> device, <a href="../Spectre/ImmediateContext.html">ImmediateContext</a> context) <a class="anchor-link" href="#apply"
               title="Permalink to CommandBuffer.apply">#</a></h4>
 <div class="doc">
-
+<p>Executes the commands against [ImmediateContext] [context]</p>
+<p>Uses [ResourceManager] [resourceManager] and [Device] [device] to find resources referenced by the commands</p>
 <pre class="source">
 void apply(ResourceManager resourceManager, Device device, ImmediateContext context) {
   for (final Command cmd in _commands) {
@@ -152,7 +152,10 @@ void apply(ResourceManager resourceManager, Device device, ImmediateContext cont
 <a href="../dart_core/void.html">void</a> <strong>bind</strong>(<a href="../Spectre/ResourceManager.html">ResourceManager</a> resourceManager, <a href="../Spectre/Device.html">Device</a> device, <a href="../dart_core/List.html">List</a> commands) <a class="anchor-link" href="#bind"
               title="Permalink to CommandBuffer.bind">#</a></h4>
 <div class="doc">
-
+<p>Binds all commands and append them to 
+<span class="param">commands</span></p>
+<p>Binding is looks up all resources in the commands and references them directly rather than through name.
+BoundCommands are faster to execute but are less friendly to resource changes. </p>
 <pre class="source">
 void bind(ResourceManager resourceManager, Device device, List&lt;BoundCommand&gt; commands) {
   for (final Command cmd in _commands) {
@@ -167,7 +170,7 @@ void bind(ResourceManager resourceManager, Device device, List&lt;BoundCommand&g
 <a href="../dart_core/void.html">void</a> <strong>clear</strong>() <a class="anchor-link" href="#clear"
               title="Permalink to CommandBuffer.clear">#</a></h4>
 <div class="doc">
-
+<p>Clears all commands</p>
 <pre class="source">
 void clear() {
   _commands.clear();
@@ -180,7 +183,7 @@ void clear() {
         </div>
         
         <div class="footer">
-          <div>This page generated at 2012-07-02 19:29:31.051</div>
+          <div>This page generated at 2012-07-02 22:37:22.465</div>
         </div>
         <script async src="../client-static.js"></script>
         </body></html>

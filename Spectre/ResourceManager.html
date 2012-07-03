@@ -80,7 +80,6 @@
 <li><a href="../Spectre/RenderBuffer.html"><div class="icon-class"></div>RenderBuffer</a></li>
 <li><a href="../Spectre/RenderTarget.html"><div class="icon-class"></div>RenderTarget</a></li>
 <li><a href="../Spectre/Resource.html"><div class="icon-class"></div>Resource</a></li>
-<li><a href="../Spectre/ResourceLoader.html"><div class="icon-class"></div>ResourceLoader</a></li>
 <li><div class="icon-class"></div><strong>ResourceManager</strong></li>
 <li><a href="../Spectre/SamplerState.html"><div class="icon-class"></div>SamplerState</a></li>
 <li><a href="../Spectre/Shader.html"><div class="icon-class"></div>Shader</a></li>
@@ -102,7 +101,8 @@
         </h2>
         
 <div class="doc">
-
+<p>Resource Manager</p>
+<p>Loads resources from URLs</p>
 </div>
 <h3>Constructors</h3>
 <div class="method"><h4 id="ResourceManager">
@@ -110,7 +110,7 @@
 new <strong>ResourceManager</strong>() <a class="anchor-link" href="#ResourceManager"
               title="Permalink to ResourceManager.ResourceManager">#</a></h4>
 <div class="doc">
-
+<p>Constructs a <a class="crossref" href="../Spectre/ResourceManager.html">ResourceManager</a></p>
 <pre class="source">
 ResourceManager() {
   _baseURL = null;
@@ -125,7 +125,9 @@ ResourceManager() {
 <a href="../dart_core/Future.html">Future</a> <strong>load</strong>(<a href="../dart_core/String.html">String</a> name) <a class="anchor-link" href="#load"
               title="Permalink to ResourceManager.load">#</a></h4>
 <div class="doc">
-
+<p>Loads the resource in 
+<span class="param">name</span></p>
+<p>Returns a future that will complete when the resource has been fetched and loaded</p>
 <pre class="source">
 Future&lt;Resource&gt; load(String name) {
   if (_resources.containsKey(name)) {
@@ -148,7 +150,8 @@ Future&lt;Resource&gt; load(String name) {
 <a href="../dart_core/void.html">void</a> <strong>refresh</strong>(<a href="../dart_core/String.html">String</a> name) <a class="anchor-link" href="#refresh"
               title="Permalink to ResourceManager.refresh">#</a></h4>
 <div class="doc">
-
+<p>Refreshes a resource 
+<span class="param">name</span></p>
 <pre class="source">
 void refresh(String name) {
   if (_resources.containsKey(name)) {
@@ -166,7 +169,7 @@ void refresh(String name) {
 <a href="../dart_core/void.html">void</a> <strong>setBaseURL</strong>(<a href="../dart_core/String.html">String</a> baseURL) <a class="anchor-link" href="#setBaseURL"
               title="Permalink to ResourceManager.setBaseURL">#</a></h4>
 <div class="doc">
-
+<p>Sets the base URL to load resources from</p>
 <pre class="source">
 void setBaseURL(String baseURL) {
   _baseURL = baseURL;
@@ -180,7 +183,8 @@ void setBaseURL(String baseURL) {
 <a href="../dart_core/void.html">void</a> <strong>unload</strong>(<a href="../dart_core/String.html">String</a> name) <a class="anchor-link" href="#unload"
               title="Permalink to ResourceManager.unload">#</a></h4>
 <div class="doc">
-
+<p>Unloads a resource 
+<span class="param">name</span></p>
 <pre class="source">
 void unload(String name) {
   if (_resources.containsKey(name) == false) {
@@ -199,7 +203,7 @@ void unload(String name) {
         </div>
         
         <div class="footer">
-          <div>This page generated at 2012-07-02 19:29:30.777</div>
+          <div>This page generated at 2012-07-02 22:37:22.151</div>
         </div>
         <script async src="../client-static.js"></script>
         </body></html>

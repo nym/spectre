@@ -80,7 +80,6 @@
 <li><a href="../Spectre/RenderBuffer.html"><div class="icon-class"></div>RenderBuffer</a></li>
 <li><a href="../Spectre/RenderTarget.html"><div class="icon-class"></div>RenderTarget</a></li>
 <li><a href="../Spectre/Resource.html"><div class="icon-class"></div>Resource</a></li>
-<li><a href="../Spectre/ResourceLoader.html"><div class="icon-class"></div>ResourceLoader</a></li>
 <li><a href="../Spectre/ResourceManager.html"><div class="icon-class"></div>ResourceManager</a></li>
 <li><a href="../Spectre/SamplerState.html"><div class="icon-class"></div>SamplerState</a></li>
 <li><a href="../Spectre/Shader.html"><div class="icon-class"></div>Shader</a></li>
@@ -102,7 +101,7 @@
         </h2>
         
 <div class="doc">
-
+<p>The <a class="crossref" href="../Spectre/ImmediateContext.html">ImmediateContext</a> configures the GPU pipeline and executes draw commands</p>
 </div>
 <h3>Constructors</h3>
 <div class="method"><h4 id="ImmediateContext">
@@ -154,7 +153,9 @@ static final int PrimitiveTopologyTriangles = WebGLRenderingContext.TRIANGLES;
 <a href="../dart_core/void.html">void</a> <strong>draw</strong>(<a href="../dart_core/int.html">int</a> numVertices, <a href="../dart_core/int.html">int</a> vertexOffset) <a class="anchor-link" href="#draw"
               title="Permalink to ImmediateContext.draw">#</a></h4>
 <div class="doc">
-
+<p>Draw a mesh with 
+<span class="param">numVertices</span> starting at 
+<span class="param">vertexOffset</span></p>
 <pre class="source">
 void draw(int numVertices, int vertexOffset) {
   if (numVertices == 0) {
@@ -172,7 +173,9 @@ void draw(int numVertices, int vertexOffset) {
 <a href="../dart_core/void.html">void</a> <strong>drawIndexed</strong>(<a href="../dart_core/int.html">int</a> numIndices, <a href="../dart_core/int.html">int</a> indexOffset) <a class="anchor-link" href="#drawIndexed"
               title="Permalink to ImmediateContext.drawIndexed">#</a></h4>
 <div class="doc">
-
+<p>Draw an indexed mesh with 
+<span class="param">numIndices</span> starting at 
+<span class="param">indexOffset</span></p>
 <pre class="source">
 void drawIndexed(int numIndices, int indexOffset) {
   if (numIndices == 0) {
@@ -190,7 +193,8 @@ void drawIndexed(int numIndices, int indexOffset) {
 <a href="../dart_core/void.html">void</a> <strong>generateMipmap</strong>(<a href="../Spectre/Texture2D.html">Texture2D</a> tex) <a class="anchor-link" href="#generateMipmap"
               title="Permalink to ImmediateContext.generateMipmap">#</a></h4>
 <div class="doc">
-
+<p>Generate the full mipmap pyramid for 
+<span class="param">tex</span></p>
 <pre class="source">
 void generateMipmap(Texture2D tex) {
   webGL.activeTexture(WebGLRenderingContext.TEXTURE0);
@@ -207,7 +211,7 @@ void generateMipmap(Texture2D tex) {
 <a href="../dart_core/void.html">void</a> <strong>reset</strong>() <a class="anchor-link" href="#reset"
               title="Permalink to ImmediateContext.reset">#</a></h4>
 <div class="doc">
-
+<p>Resets the cached GPU pipeline state</p>
 <pre class="source">
 void reset() {
   // TODO: Update state
@@ -238,7 +242,7 @@ void reset() {
 <a href="../dart_core/void.html">void</a> <strong>setBlendState</strong>(<a href="../Spectre/BlendState.html">BlendState</a> bs) <a class="anchor-link" href="#setBlendState"
               title="Permalink to ImmediateContext.setBlendState">#</a></h4>
 <div class="doc">
-
+<p>Set [BlendState] [bs]</p>
 <pre class="source">
 void setBlendState(BlendState bs) {
   if (bs == null) {
@@ -270,7 +274,7 @@ void setBlendState(BlendState bs) {
 <a href="../dart_core/void.html">void</a> <strong>setDepthState</strong>(<a href="../Spectre/DepthState.html">DepthState</a> ds) <a class="anchor-link" href="#setDepthState"
               title="Permalink to ImmediateContext.setDepthState">#</a></h4>
 <div class="doc">
-
+<p>Set [DepthState] [ds]</p>
 <pre class="source">
 void setDepthState(DepthState ds) {
   if (ds == null) {
@@ -307,7 +311,7 @@ void setDepthState(DepthState ds) {
 <a href="../dart_core/void.html">void</a> <strong>setIndexBuffer</strong>(<a href="../Spectre/IndexBuffer.html">IndexBuffer</a> ib) <a class="anchor-link" href="#setIndexBuffer"
               title="Permalink to ImmediateContext.setIndexBuffer">#</a></h4>
 <div class="doc">
-
+<p>Set the [IndexBuffer] [ib]</p>
 <pre class="source">
 void setIndexBuffer(IndexBuffer ib) {
   if (_indexBuffer == ib) {
@@ -323,7 +327,7 @@ void setIndexBuffer(IndexBuffer ib) {
 <a href="../dart_core/void.html">void</a> <strong>setInputLayout</strong>(<a href="../Spectre/InputLayout.html">InputLayout</a> il) <a class="anchor-link" href="#setInputLayout"
               title="Permalink to ImmediateContext.setInputLayout">#</a></h4>
 <div class="doc">
-
+<p>Set [InputLayout] [il]</p>
 <pre class="source">
 void setInputLayout(InputLayout il) {
   _inputLayout = il;
@@ -336,30 +340,10 @@ void setInputLayout(InputLayout il) {
 <a href="../dart_core/void.html">void</a> <strong>setPrimitiveTopology</strong>(<a href="../dart_core/int.html">int</a> topology) <a class="anchor-link" href="#setPrimitiveTopology"
               title="Permalink to ImmediateContext.setPrimitiveTopology">#</a></h4>
 <div class="doc">
-
+<p>Configure the primitive topology</p>
 <pre class="source">
 void setPrimitiveTopology(int topology) {
   _primitiveTopology = topology;
-}
-</pre>
-</div>
-</div>
-<div class="method"><h4 id="setProgram">
-<span class="show-code">Code</span>
-<a href="../dart_core/void.html">void</a> <strong>setProgram</strong>(<a href="../Spectre/ShaderProgram.html">ShaderProgram</a> sp) <a class="anchor-link" href="#setProgram"
-              title="Permalink to ImmediateContext.setProgram">#</a></h4>
-<div class="doc">
-
-<pre class="source">
-void setProgram(ShaderProgram sp) {
-  if (sp == null) {
-    return;
-  }
-  if (_shaderProgram == sp) {
-    return;
-  }
-  _shaderProgram = sp;
-  webGL.useProgram(_shaderProgram._program);
 }
 </pre>
 </div>
@@ -369,7 +353,7 @@ void setProgram(ShaderProgram sp) {
 <a href="../dart_core/void.html">void</a> <strong>setRasterizerState</strong>(<a href="../Spectre/RasterizerState.html">RasterizerState</a> rs) <a class="anchor-link" href="#setRasterizerState"
               title="Permalink to ImmediateContext.setRasterizerState">#</a></h4>
 <div class="doc">
-
+<p>Set [RasterizerState] [rs]</p>
 <pre class="source">
 void setRasterizerState(RasterizerState rs) {
   if (rs == null) {
@@ -397,7 +381,7 @@ void setRasterizerState(RasterizerState rs) {
 <a href="../dart_core/void.html">void</a> <strong>setRenderTarget</strong>(<a href="../Spectre/RenderTarget.html">RenderTarget</a> rt) <a class="anchor-link" href="#setRenderTarget"
               title="Permalink to ImmediateContext.setRenderTarget">#</a></h4>
 <div class="doc">
-
+<p>Set [RenderTarget] [rt]</p>
 <pre class="source">
 void setRenderTarget(RenderTarget rt) {
   if (_renderTarget == rt) {
@@ -414,7 +398,9 @@ void setRenderTarget(RenderTarget rt) {
 <a href="../dart_core/void.html">void</a> <strong>setSamplers</strong>(<a href="../dart_core/int.html">int</a> texUnitOffset, <a href="../dart_core/List.html">List</a> samplers) <a class="anchor-link" href="#setSamplers"
               title="Permalink to ImmediateContext.setSamplers">#</a></h4>
 <div class="doc">
-
+<p>Sets a list of 
+<span class="param">samplers</span> starting at 
+<span class="param">texUnitOffset</span></p>
 <pre class="source">
 void setSamplers(int texUnitOffset, List&lt;SamplerState&gt; samplers) {
   for (int i = texUnitOffset; i &lt; numTextures; i++) {
@@ -429,7 +415,7 @@ void setSamplers(int texUnitOffset, List&lt;SamplerState&gt; samplers) {
 <a href="../dart_core/void.html">void</a> <strong>setShaderProgram</strong>(<a href="../Spectre/ShaderProgram.html">ShaderProgram</a> sp) <a class="anchor-link" href="#setShaderProgram"
               title="Permalink to ImmediateContext.setShaderProgram">#</a></h4>
 <div class="doc">
-
+<p>Set [ShaderProgram] [sp]</p>
 <pre class="source">
 void setShaderProgram(ShaderProgram sp) {
   if (sp == null) {
@@ -449,7 +435,9 @@ void setShaderProgram(ShaderProgram sp) {
 <a href="../dart_core/void.html">void</a> <strong>setTextures</strong>(<a href="../dart_core/int.html">int</a> texUnitOffset, <a href="../dart_core/List.html">List</a> textures) <a class="anchor-link" href="#setTextures"
               title="Permalink to ImmediateContext.setTextures">#</a></h4>
 <div class="doc">
-
+<p>Sets a list of 
+<span class="param">textures</span> starting at 
+<span class="param">texUnitOffset</span></p>
 <pre class="source">
 void setTextures(int texUnitOffset, List&lt;Texture&gt; textures) {
   for (int i = texUnitOffset; i &lt; numTextures; i++) {
@@ -464,7 +452,8 @@ void setTextures(int texUnitOffset, List&lt;Texture&gt; textures) {
 <a href="../dart_core/void.html">void</a> <strong>setUniform3f</strong>(<a href="../dart_core/String.html">String</a> name, <a href="../dart_core/num.html">num</a> v0, <a href="../dart_core/num.html">num</a> v1, <a href="../dart_core/num.html">num</a> v2) <a class="anchor-link" href="#setUniform3f"
               title="Permalink to ImmediateContext.setUniform3f">#</a></h4>
 <div class="doc">
-
+<p>Set Uniform variable 
+<span class="param">name</span> in current <a class="crossref" href="../Spectre/ShaderProgram.html">ShaderProgram</a></p>
 <pre class="source">
 void setUniform3f(String name, num v0, num v1, num v2) {
   if (_shaderProgram == null) {
@@ -486,7 +475,8 @@ void setUniform3f(String name, num v0, num v1, num v2) {
 <a href="../dart_core/void.html">void</a> <strong>setUniform4f</strong>(<a href="../dart_core/String.html">String</a> name, <a href="../dart_core/num.html">num</a> v0, <a href="../dart_core/num.html">num</a> v1, <a href="../dart_core/num.html">num</a> v2, <a href="../dart_core/num.html">num</a> v3) <a class="anchor-link" href="#setUniform4f"
               title="Permalink to ImmediateContext.setUniform4f">#</a></h4>
 <div class="doc">
-
+<p>Set Uniform variable 
+<span class="param">name</span> in current <a class="crossref" href="../Spectre/ShaderProgram.html">ShaderProgram</a></p>
 <pre class="source">
 void setUniform4f(String name, num v0, num v1, num v2, num v3) {
   if (_shaderProgram == null) {
@@ -508,7 +498,8 @@ void setUniform4f(String name, num v0, num v1, num v2, num v3) {
 <a href="../dart_core/void.html">void</a> <strong>setUniformMatrix3</strong>(<a href="../dart_core/String.html">String</a> name, <a href="../html/Float32Array.html">Float32Array</a> matrix, [<a href="../dart_core/bool.html">bool</a> transpose = false]) <a class="anchor-link" href="#setUniformMatrix3"
               title="Permalink to ImmediateContext.setUniformMatrix3">#</a></h4>
 <div class="doc">
-
+<p>Set Uniform variable 
+<span class="param">name</span> in current <a class="crossref" href="../Spectre/ShaderProgram.html">ShaderProgram</a></p>
 <pre class="source">
 void setUniformMatrix3(String name, Float32Array matrix, [bool transpose=false]) {
   if (_shaderProgram == null) {
@@ -530,7 +521,8 @@ void setUniformMatrix3(String name, Float32Array matrix, [bool transpose=false])
 <a href="../dart_core/void.html">void</a> <strong>setUniformMatrix4</strong>(<a href="../dart_core/String.html">String</a> name, <a href="../html/Float32Array.html">Float32Array</a> matrix, [<a href="../dart_core/bool.html">bool</a> transpose = false]) <a class="anchor-link" href="#setUniformMatrix4"
               title="Permalink to ImmediateContext.setUniformMatrix4">#</a></h4>
 <div class="doc">
-
+<p>Set Uniform variable 
+<span class="param">name</span> in current <a class="crossref" href="../Spectre/ShaderProgram.html">ShaderProgram</a></p>
 <pre class="source">
 void setUniformMatrix4(String name, Float32Array matrix, [bool transpose=false]) {
   if (_shaderProgram == null) {
@@ -553,7 +545,9 @@ void setUniformMatrix4(String name, Float32Array matrix, [bool transpose=false])
 <a href="../dart_core/void.html">void</a> <strong>setVertexBuffers</strong>(<a href="../dart_core/int.html">int</a> startSlot, <a href="../dart_core/List.html">List</a> vbs) <a class="anchor-link" href="#setVertexBuffers"
               title="Permalink to ImmediateContext.setVertexBuffers">#</a></h4>
 <div class="doc">
-
+<p>Set multiple <code>VertexBuffers</code> in 
+<span class="param">vbs</span> starting at 
+<span class="param">startSlot</span></p>
 <pre class="source">
 void setVertexBuffers(int startSlot, List&lt;VertexBuffer&gt; vbs) {
   int limit = vbs.length + startSlot;
@@ -569,7 +563,7 @@ void setVertexBuffers(int startSlot, List&lt;VertexBuffer&gt; vbs) {
 <a href="../dart_core/void.html">void</a> <strong>setViewport</strong>(<a href="../Spectre/Viewport.html">Viewport</a> vp) <a class="anchor-link" href="#setViewport"
               title="Permalink to ImmediateContext.setViewport">#</a></h4>
 <div class="doc">
-
+<p>Set [Viewport] [vp]</p>
 <pre class="source">
 void setViewport(Viewport vp) {
   if (vp == null) {
@@ -590,7 +584,9 @@ void setViewport(Viewport vp) {
 <a href="../dart_core/void.html">void</a> <strong>updateBuffer</strong>(<a href="../Spectre/SpectreBuffer.html">SpectreBuffer</a> buffer, <a href="../html/ArrayBufferView.html">ArrayBufferView</a> data) <a class="anchor-link" href="#updateBuffer"
               title="Permalink to ImmediateContext.updateBuffer">#</a></h4>
 <div class="doc">
-
+<p>Update the contents of 
+<span class="param">buffer</span> with the contents of 
+<span class="param">data</span></p>
 <pre class="source">
 void updateBuffer(SpectreBuffer buffer, ArrayBufferView data) {
   var correctType = buffer is SpectreBuffer;
@@ -619,7 +615,10 @@ void updateBuffer(SpectreBuffer buffer, ArrayBufferView data) {
 <a href="../dart_core/void.html">void</a> <strong>updateSubBuffer</strong>(<a href="../Spectre/SpectreBuffer.html">SpectreBuffer</a> buffer, <a href="../html/ArrayBufferView.html">ArrayBufferView</a> data, <a href="../dart_core/num.html">num</a> offset) <a class="anchor-link" href="#updateSubBuffer"
               title="Permalink to ImmediateContext.updateSubBuffer">#</a></h4>
 <div class="doc">
-
+<p>Update the contents of 
+<span class="param">buffer</span> with the contents of 
+<span class="param">data</span> starting at 
+<span class="param">offset</span></p>
 <pre class="source">
 void updateSubBuffer(SpectreBuffer buffer, ArrayBufferView data, num offset) {
   var correctType = buffer is SpectreBuffer;
@@ -645,7 +644,10 @@ void updateSubBuffer(SpectreBuffer buffer, ArrayBufferView data, num offset) {
 <a href="../dart_core/void.html">void</a> <strong>updateTexture2D</strong>(<a href="../Spectre/Texture2D.html">Texture2D</a> tex, <a href="../html/ImageElement.html">ImageElement</a> img) <a class="anchor-link" href="#updateTexture2D"
               title="Permalink to ImmediateContext.updateTexture2D">#</a></h4>
 <div class="doc">
-
+<p>Update the pixels of 
+<span class="param">tex</span> with the pixels of 
+<span class="param">img</span></p>
+<p>Only updates the top level mip map</p>
 <pre class="source">
 void updateTexture2D(Texture2D tex, ImageElement img) {
   webGL.activeTexture(WebGLRenderingContext.TEXTURE0);
@@ -689,7 +691,7 @@ final int numVertexBuffers = 1;
         </div>
         
         <div class="footer">
-          <div>This page generated at 2012-07-02 19:29:30.693</div>
+          <div>This page generated at 2012-07-02 22:37:22.079</div>
         </div>
         <script async src="../client-static.js"></script>
         </body></html>

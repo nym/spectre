@@ -80,7 +80,6 @@
 <li><a href="../Spectre/RenderBuffer.html"><div class="icon-class"></div>RenderBuffer</a></li>
 <li><a href="../Spectre/RenderTarget.html"><div class="icon-class"></div>RenderTarget</a></li>
 <li><a href="../Spectre/Resource.html"><div class="icon-class"></div>Resource</a></li>
-<li><a href="../Spectre/ResourceLoader.html"><div class="icon-class"></div>ResourceLoader</a></li>
 <li><a href="../Spectre/ResourceManager.html"><div class="icon-class"></div>ResourceManager</a></li>
 <li><a href="../Spectre/SamplerState.html"><div class="icon-class"></div>SamplerState</a></li>
 <li><a href="../Spectre/Shader.html"><div class="icon-class"></div>Shader</a></li>
@@ -103,10 +102,9 @@
         
 <div class="doc">
 <p>Spectre GPU Device
-All GPU resources are created, managed, and destroyed here
-Creation of resources is done with <code>Device.create?</code>
-Resource lookup is done with <code>Device.find?</code>
-Destruction of resources is done with <code>Device.delete?</code></p>
+All GPU resources are created and destroyed through a Device.
+Each resource requires a unique name.
+An existing resource can be looked up using its name.</p>
 </div>
 <h3>Constructors</h3>
 <div class="method"><h4 id="Device">
@@ -114,7 +112,7 @@ Destruction of resources is done with <code>Device.delete?</code></p>
 new <strong>Device</strong>() <a class="anchor-link" href="#Device"
               title="Permalink to Device.Device">#</a></h4>
 <div class="doc">
-
+<p>Constructs a GPU device</p>
 <pre class="source">
 Device() {
   _indexBuffers = new Map&lt;String, IndexBuffer&gt;();
@@ -194,7 +192,11 @@ static final DeviceFormat DeviceFormatFloat4 = const DeviceFormat(WebGLRendering
 <a href="../Spectre/BlendState.html">BlendState</a> <strong>createBlendState</strong>(<a href="../dart_core/String.html">String</a> name, <a href="../dart_core/Object.html">Object</a> props) <a class="anchor-link" href="#createBlendState"
               title="Permalink to Device.createBlendState">#</a></h4>
 <div class="doc">
-
+<p>Create a <a class="crossref" href="../Spectre/BlendState.html">BlendState</a> named 
+<span class="param">name</span></p>
+<p>
+<span class="param">props</span> is a JSON String or a <code>Map</code> containing a set of properties
+describing the <a class="crossref" href="../Spectre/BlendState.html">BlendState</a> being created</p>
 <pre class="source">
 BlendState createBlendState(String name, Object props) {
   if (_blendStates.containsKey(name)) {
@@ -221,7 +223,11 @@ BlendState createBlendState(String name, Object props) {
 <a href="../Spectre/DepthState.html">DepthState</a> <strong>createDepthState</strong>(<a href="../dart_core/String.html">String</a> name, <a href="../dart_core/Object.html">Object</a> props) <a class="anchor-link" href="#createDepthState"
               title="Permalink to Device.createDepthState">#</a></h4>
 <div class="doc">
-
+<p>Create a <a class="crossref" href="../Spectre/DepthState.html">DepthState</a> named 
+<span class="param">name</span></p>
+<p>
+<span class="param">props</span> is a JSON String or a <code>Map</code> containing a set of properties
+describing the <a class="crossref" href="../Spectre/DepthState.html">DepthState</a> being created</p>
 <pre class="source">
 DepthState createDepthState(String name, Object props) {
   if (_depthStates.containsKey(name)) {
@@ -248,7 +254,11 @@ DepthState createDepthState(String name, Object props) {
 <a href="../Spectre/FragmentShader.html">FragmentShader</a> <strong>createFragmentShader</strong>(<a href="../dart_core/String.html">String</a> name, <a href="../dart_core/Object.html">Object</a> props) <a class="anchor-link" href="#createFragmentShader"
               title="Permalink to Device.createFragmentShader">#</a></h4>
 <div class="doc">
-
+<p>Create a <a class="crossref" href="../Spectre/FragmentShader.html">FragmentShader</a> named 
+<span class="param">name</span></p>
+<p>
+<span class="param">props</span> is a JSON String or a <code>Map</code> containing a set of properties
+describing the <a class="crossref" href="../Spectre/FragmentShader.html">FragmentShader</a> being created</p>
 <pre class="source">
 FragmentShader createFragmentShader(String name, Object props) {
   if (_fragmentShaders.containsKey(name)) {
@@ -276,7 +286,11 @@ FragmentShader createFragmentShader(String name, Object props) {
 <a href="../Spectre/IndexBuffer.html">IndexBuffer</a> <strong>createIndexBuffer</strong>(<a href="../dart_core/String.html">String</a> name, <a href="../dart_core/Object.html">Object</a> props) <a class="anchor-link" href="#createIndexBuffer"
               title="Permalink to Device.createIndexBuffer">#</a></h4>
 <div class="doc">
-
+<p>Create a <a class="crossref" href="../Spectre/IndexBuffer.html">IndexBuffer</a> named 
+<span class="param">name</span></p>
+<p>
+<span class="param">props</span> is a JSON String or a <code>Map</code> containing a set of properties
+describing the <a class="crossref" href="../Spectre/IndexBuffer.html">IndexBuffer</a> being created</p>
 <pre class="source">
 IndexBuffer createIndexBuffer(String name, Object props) {
   if (_indexBuffers.containsKey(name)){
@@ -312,7 +326,10 @@ IndexBuffer createIndexBuffer(String name, Object props) {
 <a href="../Spectre/InputLayout.html">InputLayout</a> <strong>createInputLayout</strong>(<a href="../dart_core/String.html">String</a> name, <a href="../dart_core/List.html">List</a> elements, <a href="../Spectre/ShaderProgram.html">ShaderProgram</a> sp) <a class="anchor-link" href="#createInputLayout"
               title="Permalink to Device.createInputLayout">#</a></h4>
 <div class="doc">
-
+<p>Create an <a class="crossref" href="../Spectre/InputLayout.html">InputLayout</a> named 
+<span class="param">name</span> for 
+<span class="param">elements</span> and 
+<span class="param">sp</span> </p>
 <pre class="source">
 InputLayout createInputLayout(String name, List&lt;InputElementDescription&gt; elements, ShaderProgram sp) {
   if (_inputLayouts.containsKey(name)) {
@@ -352,7 +369,11 @@ InputLayout createInputLayout(String name, List&lt;InputElementDescription&gt; e
 <a href="../Spectre/RasterizerState.html">RasterizerState</a> <strong>createRasterizerState</strong>(<a href="../dart_core/String.html">String</a> name, <a href="../dart_core/Object.html">Object</a> props) <a class="anchor-link" href="#createRasterizerState"
               title="Permalink to Device.createRasterizerState">#</a></h4>
 <div class="doc">
-
+<p>Create a <a class="crossref" href="../Spectre/RasterizerState.html">RasterizerState</a> named 
+<span class="param">name</span></p>
+<p>
+<span class="param">props</span> is a JSON String or a <code>Map</code> containing a set of properties
+describing the <a class="crossref" href="../Spectre/RasterizerState.html">RasterizerState</a> being created</p>
 <pre class="source">
 RasterizerState createRasterizerState(String name, Object props) {
   if (_rasterizerStates.containsKey(name)) {
@@ -379,7 +400,11 @@ RasterizerState createRasterizerState(String name, Object props) {
 <a href="../Spectre/RenderBuffer.html">RenderBuffer</a> <strong>createRenderBuffer</strong>(<a href="../dart_core/String.html">String</a> name, <a href="../dart_core/Object.html">Object</a> props) <a class="anchor-link" href="#createRenderBuffer"
               title="Permalink to Device.createRenderBuffer">#</a></h4>
 <div class="doc">
-
+<p>Create a <a class="crossref" href="../Spectre/RenderBuffer.html">RenderBuffer</a> named 
+<span class="param">name</span></p>
+<p>
+<span class="param">props</span> is a JSON String or a <code>Map</code> containing a set of properties
+describing the <a class="crossref" href="../Spectre/RenderBuffer.html">RenderBuffer</a> being created</p>
 <pre class="source">
 RenderBuffer createRenderBuffer(String name, Object props) {
   if (_renderBuffers.containsKey(name)){
@@ -412,7 +437,11 @@ RenderBuffer createRenderBuffer(String name, Object props) {
 <a href="../Spectre/RenderTarget.html">RenderTarget</a> <strong>createRenderTarget</strong>(<a href="../dart_core/String.html">String</a> name, <a href="../dart_core/Object.html">Object</a> props) <a class="anchor-link" href="#createRenderTarget"
               title="Permalink to Device.createRenderTarget">#</a></h4>
 <div class="doc">
-
+<p>Create a <a class="crossref" href="../Spectre/RenderTarget.html">RenderTarget</a> named 
+<span class="param">name</span></p>
+<p>
+<span class="param">props</span> is a JSON String or a <code>Map</code> containing a set of properties
+describing the <a class="crossref" href="../Spectre/RenderTarget.html">RenderTarget</a> being created</p>
 <pre class="source">
 RenderTarget createRenderTarget(String name, Object props) {
   if (_renderTargets.containsKey(name)){
@@ -464,7 +493,11 @@ RenderTarget createRenderTarget(String name, Object props) {
 <a href="../Spectre/SamplerState.html">SamplerState</a> <strong>createSamplerState</strong>(<a href="../dart_core/String.html">String</a> name, <a href="../dart_core/Object.html">Object</a> props) <a class="anchor-link" href="#createSamplerState"
               title="Permalink to Device.createSamplerState">#</a></h4>
 <div class="doc">
-
+<p>Create a <a class="crossref" href="../Spectre/SamplerState.html">SamplerState</a> named 
+<span class="param">name</span></p>
+<p>
+<span class="param">props</span> is a JSON String or a <code>Map</code> containing a set of properties
+describing the <a class="crossref" href="../Spectre/SamplerState.html">SamplerState</a> being created</p>
 <pre class="source">
 SamplerState createSamplerState(String name, Object props) {
   if (_samplerStates.containsKey(name)){
@@ -491,7 +524,11 @@ SamplerState createSamplerState(String name, Object props) {
 <a href="../Spectre/ShaderProgram.html">ShaderProgram</a> <strong>createShaderProgram</strong>(<a href="../dart_core/String.html">String</a> name, <a href="../dart_core/Object.html">Object</a> props) <a class="anchor-link" href="#createShaderProgram"
               title="Permalink to Device.createShaderProgram">#</a></h4>
 <div class="doc">
-
+<p>Create a <a class="crossref" href="../Spectre/ShaderProgram.html">ShaderProgram</a> named 
+<span class="param">name</span></p>
+<p>
+<span class="param">props</span> is a JSON String or a <code>Map</code> containing a set of properties
+describing the <a class="crossref" href="../Spectre/ShaderProgram.html">ShaderProgram</a> being created</p>
 <pre class="source">
 ShaderProgram createShaderProgram(String name, Object props) {
   if (_shaderPrograms.containsKey(name)) {
@@ -519,12 +556,16 @@ ShaderProgram createShaderProgram(String name, Object props) {
 </div>
 <div class="method"><h4 id="createTexture2D">
 <span class="show-code">Code</span>
-<a href="../Spectre/Texture.html">Texture</a> <strong>createTexture2D</strong>(<a href="../dart_core/String.html">String</a> name, <a href="../dart_core/Object.html">Object</a> props) <a class="anchor-link" href="#createTexture2D"
+<a href="../Spectre/Texture2D.html">Texture2D</a> <strong>createTexture2D</strong>(<a href="../dart_core/String.html">String</a> name, <a href="../dart_core/Object.html">Object</a> props) <a class="anchor-link" href="#createTexture2D"
               title="Permalink to Device.createTexture2D">#</a></h4>
 <div class="doc">
-
+<p>Create a <a class="crossref" href="../Spectre/Texture2D.html">Texture2D</a> named 
+<span class="param">name</span></p>
+<p>
+<span class="param">props</span> is a JSON String or a <code>Map</code> containing a set of properties
+describing the <a class="crossref" href="../Spectre/Texture2D.html">Texture2D</a> being created</p>
 <pre class="source">
-Texture createTexture2D(String name, Object props) {
+Texture2D createTexture2D(String name, Object props) {
   if (_texture2Ds.containsKey(name)){
     spectreLog.Error('Attempting to create Texture2D with same name $name');
     return _texture2Ds[name];
@@ -556,7 +597,11 @@ Texture createTexture2D(String name, Object props) {
 <a href="../Spectre/VertexBuffer.html">VertexBuffer</a> <strong>createVertexBuffer</strong>(<a href="../dart_core/String.html">String</a> name, <a href="../dart_core/Object.html">Object</a> props) <a class="anchor-link" href="#createVertexBuffer"
               title="Permalink to Device.createVertexBuffer">#</a></h4>
 <div class="doc">
-
+<p>Create a <a class="crossref" href="../Spectre/VertexBuffer.html">VertexBuffer</a> named 
+<span class="param">name</span></p>
+<p>
+<span class="param">props</span> is a JSON String or a <code>Map</code> containing a set of properties
+describing the <a class="crossref" href="../Spectre/VertexBuffer.html">VertexBuffer</a> being created</p>
 <pre class="source">
 VertexBuffer createVertexBuffer(String name, Object props) {
   if (_vertexBuffers.containsKey(name)){
@@ -588,7 +633,11 @@ VertexBuffer createVertexBuffer(String name, Object props) {
 <a href="../Spectre/VertexShader.html">VertexShader</a> <strong>createVertexShader</strong>(<a href="../dart_core/String.html">String</a> name, <a href="../dart_core/Object.html">Object</a> props) <a class="anchor-link" href="#createVertexShader"
               title="Permalink to Device.createVertexShader">#</a></h4>
 <div class="doc">
-
+<p>Create a <a class="crossref" href="../Spectre/VertexShader.html">VertexShader</a> named 
+<span class="param">name</span></p>
+<p>
+<span class="param">props</span> is a JSON String or a <code>Map</code> containing a set of properties
+describing the <a class="crossref" href="../Spectre/VertexShader.html">VertexShader</a> being created</p>
 <pre class="source">
 VertexShader createVertexShader(String name, Object props) {
   if (_vertexShaders.containsKey(name)){
@@ -617,7 +666,11 @@ VertexShader createVertexShader(String name, Object props) {
 <a href="../Spectre/Viewport.html">Viewport</a> <strong>createViewport</strong>(<a href="../dart_core/String.html">String</a> name, <a href="../dart_core/Object.html">Object</a> props) <a class="anchor-link" href="#createViewport"
               title="Permalink to Device.createViewport">#</a></h4>
 <div class="doc">
-
+<p>Create a <a class="crossref" href="../Spectre/Viewport.html">Viewport</a> named 
+<span class="param">name</span></p>
+<p>
+<span class="param">props</span> is a JSON String or a <code>Map</code> containing a set of properties
+describing the <a class="crossref" href="../Spectre/Viewport.html">Viewport</a> being created</p>
 <pre class="source">
 Viewport createViewport(String name, Object props) {
   if (_viewports.containsKey(name)) {
@@ -644,7 +697,7 @@ Viewport createViewport(String name, Object props) {
 <a href="../dart_core/void.html">void</a> <strong>deleteBlendState</strong>(<a href="../Spectre/BlendState.html">BlendState</a> bs) <a class="anchor-link" href="#deleteBlendState"
               title="Permalink to Device.deleteBlendState">#</a></h4>
 <div class="doc">
-
+<p>Deletes [BlendState] [bs]</p>
 <pre class="source">
 void deleteBlendState(BlendState bs) {
   _blendStates.remove(bs.name);
@@ -657,7 +710,7 @@ void deleteBlendState(BlendState bs) {
 <a href="../dart_core/void.html">void</a> <strong>deleteDepthState</strong>(<a href="../Spectre/DepthState.html">DepthState</a> ds) <a class="anchor-link" href="#deleteDepthState"
               title="Permalink to Device.deleteDepthState">#</a></h4>
 <div class="doc">
-
+<p>Deletes [DepthState] [ds]</p>
 <pre class="source">
 void deleteDepthState(DepthState ds) {
   _depthStates.remove(ds.name);
@@ -670,7 +723,7 @@ void deleteDepthState(DepthState ds) {
 <a href="../dart_core/void.html">void</a> <strong>deleteFragmentShader</strong>(<a href="../Spectre/FragmentShader.html">FragmentShader</a> fs) <a class="anchor-link" href="#deleteFragmentShader"
               title="Permalink to Device.deleteFragmentShader">#</a></h4>
 <div class="doc">
-
+<p>Deletes [FragmentShader] [fs]</p>
 <pre class="source">
 void deleteFragmentShader(FragmentShader fs) {
   if (fs == null) {
@@ -688,7 +741,7 @@ void deleteFragmentShader(FragmentShader fs) {
 <a href="../dart_core/void.html">void</a> <strong>deleteIndexBuffer</strong>(<a href="../Spectre/IndexBuffer.html">IndexBuffer</a> ib) <a class="anchor-link" href="#deleteIndexBuffer"
               title="Permalink to Device.deleteIndexBuffer">#</a></h4>
 <div class="doc">
-
+<p>Deletes [IndexBuffer] [ib]</p>
 <pre class="source">
 void deleteIndexBuffer(IndexBuffer ib) {
   if (ib == null) {
@@ -706,7 +759,7 @@ void deleteIndexBuffer(IndexBuffer ib) {
 <a href="../dart_core/void.html">void</a> <strong>deleteInputLayout</strong>(<a href="../Spectre/InputLayout.html">InputLayout</a> il) <a class="anchor-link" href="#deleteInputLayout"
               title="Permalink to Device.deleteInputLayout">#</a></h4>
 <div class="doc">
-
+<p>Deletes [InputLayout] [il]</p>
 <pre class="source">
 void deleteInputLayout(InputLayout il) {
   _inputLayouts.remove(il.name);
@@ -719,7 +772,7 @@ void deleteInputLayout(InputLayout il) {
 <a href="../dart_core/void.html">void</a> <strong>deleteRasterizerState</strong>(<a href="../Spectre/RasterizerState.html">RasterizerState</a> rs) <a class="anchor-link" href="#deleteRasterizerState"
               title="Permalink to Device.deleteRasterizerState">#</a></h4>
 <div class="doc">
-
+<p>Deletes [RasterizerState] [rs]</p>
 <pre class="source">
 void deleteRasterizerState(RasterizerState rs) {
   _rasterizerStates.remove(rs.name);
@@ -732,7 +785,7 @@ void deleteRasterizerState(RasterizerState rs) {
 <a href="../dart_core/void.html">void</a> <strong>deleteRenderBuffer</strong>(<a href="../Spectre/RenderBuffer.html">RenderBuffer</a> rb) <a class="anchor-link" href="#deleteRenderBuffer"
               title="Permalink to Device.deleteRenderBuffer">#</a></h4>
 <div class="doc">
-
+<p>Deletes [RenderBuffer] [rb]</p>
 <pre class="source">
 void deleteRenderBuffer(RenderBuffer rb) {
   _renderBuffers.remove(rb.name);
@@ -746,7 +799,7 @@ void deleteRenderBuffer(RenderBuffer rb) {
 <a href="../dart_core/void.html">void</a> <strong>deleteRenderTarget</strong>(<a href="../Spectre/RenderTarget.html">RenderTarget</a> rt) <a class="anchor-link" href="#deleteRenderTarget"
               title="Permalink to Device.deleteRenderTarget">#</a></h4>
 <div class="doc">
-
+<p>Deletes [RenderTarget] [rt]</p>
 <pre class="source">
 void deleteRenderTarget(RenderTarget rt) {
   _renderTargets.remove(rt.name);
@@ -760,7 +813,7 @@ void deleteRenderTarget(RenderTarget rt) {
 <a href="../dart_core/void.html">void</a> <strong>deleteSamplerState</strong>(<a href="../Spectre/SamplerState.html">SamplerState</a> sampler) <a class="anchor-link" href="#deleteSamplerState"
               title="Permalink to Device.deleteSamplerState">#</a></h4>
 <div class="doc">
-
+<p>Deletes [SamplerState] [sampler]</p>
 <pre class="source">
 void deleteSamplerState(SamplerState sampler) {
   _samplerStates.remove(sampler.name);
@@ -773,7 +826,7 @@ void deleteSamplerState(SamplerState sampler) {
 <a href="../dart_core/void.html">void</a> <strong>deleteShaderProgram</strong>(<a href="../Spectre/ShaderProgram.html">ShaderProgram</a> sp) <a class="anchor-link" href="#deleteShaderProgram"
               title="Permalink to Device.deleteShaderProgram">#</a></h4>
 <div class="doc">
-
+<p>Deletes [ShaderProgram] [sp]</p>
 <pre class="source">
 void deleteShaderProgram(ShaderProgram sp) {
   _shaderPrograms.remove(sp.name);
@@ -782,14 +835,14 @@ void deleteShaderProgram(ShaderProgram sp) {
 </pre>
 </div>
 </div>
-<div class="method"><h4 id="deleteTexture">
+<div class="method"><h4 id="deleteTexture2D">
 <span class="show-code">Code</span>
-<a href="../dart_core/void.html">void</a> <strong>deleteTexture</strong>(<a href="../Spectre/Texture.html">Texture</a> t) <a class="anchor-link" href="#deleteTexture"
-              title="Permalink to Device.deleteTexture">#</a></h4>
+<a href="../dart_core/void.html">void</a> <strong>deleteTexture2D</strong>(<a href="../Spectre/Texture2D.html">Texture2D</a> t) <a class="anchor-link" href="#deleteTexture2D"
+              title="Permalink to Device.deleteTexture2D">#</a></h4>
 <div class="doc">
-
+<p>Deletes [Texture2D] [t]</p>
 <pre class="source">
-void deleteTexture(Texture t) {
+void deleteTexture2D(Texture2D t) {
   _texture2Ds.remove(t.name);
   webGL.deleteTexture(t._buffer);
 }
@@ -801,7 +854,7 @@ void deleteTexture(Texture t) {
 <a href="../dart_core/void.html">void</a> <strong>deleteVertexBuffer</strong>(<a href="../Spectre/VertexBuffer.html">VertexBuffer</a> vb) <a class="anchor-link" href="#deleteVertexBuffer"
               title="Permalink to Device.deleteVertexBuffer">#</a></h4>
 <div class="doc">
-
+<p>Deletes [VertexBuffer] [vb]</p>
 <pre class="source">
 void deleteVertexBuffer(VertexBuffer vb) {
   if (vb == null) {
@@ -819,7 +872,7 @@ void deleteVertexBuffer(VertexBuffer vb) {
 <a href="../dart_core/void.html">void</a> <strong>deleteVertexShader</strong>(<a href="../Spectre/VertexShader.html">VertexShader</a> shader) <a class="anchor-link" href="#deleteVertexShader"
               title="Permalink to Device.deleteVertexShader">#</a></h4>
 <div class="doc">
-
+<p>Deletes [VertexShader] [shader]</p>
 <pre class="source">
 void deleteVertexShader(VertexShader shader) {
   _vertexShaders.remove(shader.name);
@@ -833,7 +886,7 @@ void deleteVertexShader(VertexShader shader) {
 <a href="../dart_core/void.html">void</a> <strong>deleteViewport</strong>(<a href="../Spectre/Viewport.html">Viewport</a> vp) <a class="anchor-link" href="#deleteViewport"
               title="Permalink to Device.deleteViewport">#</a></h4>
 <div class="doc">
-
+<p>Deletes [Viewport] [vp]</p>
 <pre class="source">
 void deleteViewport(Viewport vp) {
   _viewports.remove(vp.name);
@@ -846,7 +899,8 @@ void deleteViewport(Viewport vp) {
 <a href="../Spectre/BlendState.html">BlendState</a> <strong>findBlendState</strong>(<a href="../dart_core/String.html">String</a> name) <a class="anchor-link" href="#findBlendState"
               title="Permalink to Device.findBlendState">#</a></h4>
 <div class="doc">
-
+<p>Returns the <a class="crossref" href="../Spectre/BlendState.html">BlendState</a> named 
+<span class="param">name</span></p>
 <pre class="source">
 BlendState findBlendState(String name) {
   Dynamic o = _blendStates[name];
@@ -863,7 +917,8 @@ BlendState findBlendState(String name) {
 <a href="../Spectre/DepthState.html">DepthState</a> <strong>findDepthState</strong>(<a href="../dart_core/String.html">String</a> name) <a class="anchor-link" href="#findDepthState"
               title="Permalink to Device.findDepthState">#</a></h4>
 <div class="doc">
-
+<p>Returns the <a class="crossref" href="../Spectre/DepthState.html">DepthState</a> named 
+<span class="param">name</span></p>
 <pre class="source">
 DepthState findDepthState(String name) {
   Dynamic o = _depthStates[name];
@@ -880,7 +935,8 @@ DepthState findDepthState(String name) {
 <a href="../Spectre/FragmentShader.html">FragmentShader</a> <strong>findFragmentShader</strong>(<a href="../dart_core/String.html">String</a> name) <a class="anchor-link" href="#findFragmentShader"
               title="Permalink to Device.findFragmentShader">#</a></h4>
 <div class="doc">
-
+<p>Returns the <a class="crossref" href="../Spectre/FragmentShader.html">FragmentShader</a> named 
+<span class="param">name</span></p>
 <pre class="source">
 FragmentShader findFragmentShader(String name) {
   FragmentShader vs = _fragmentShaders[name];
@@ -897,7 +953,8 @@ FragmentShader findFragmentShader(String name) {
 <a href="../Spectre/IndexBuffer.html">IndexBuffer</a> <strong>findIndexBuffer</strong>(<a href="../dart_core/String.html">String</a> name) <a class="anchor-link" href="#findIndexBuffer"
               title="Permalink to Device.findIndexBuffer">#</a></h4>
 <div class="doc">
-
+<p>Returns the <a class="crossref" href="../Spectre/IndexBuffer.html">IndexBuffer</a> named 
+<span class="param">name</span></p>
 <pre class="source">
 IndexBuffer findIndexBuffer(String name) {
   IndexBuffer ib = _indexBuffers[name];
@@ -914,7 +971,8 @@ IndexBuffer findIndexBuffer(String name) {
 <a href="../Spectre/InputLayout.html">InputLayout</a> <strong>findInputLayout</strong>(<a href="../dart_core/String.html">String</a> name) <a class="anchor-link" href="#findInputLayout"
               title="Permalink to Device.findInputLayout">#</a></h4>
 <div class="doc">
-
+<p>Returns the <a class="crossref" href="../Spectre/InputLayout.html">InputLayout</a> named 
+<span class="param">name</span></p>
 <pre class="source">
 InputLayout findInputLayout(String name) {
   Dynamic o = _inputLayouts[name];
@@ -931,7 +989,8 @@ InputLayout findInputLayout(String name) {
 <a href="../Spectre/RasterizerState.html">RasterizerState</a> <strong>findRasterizerState</strong>(<a href="../dart_core/String.html">String</a> name) <a class="anchor-link" href="#findRasterizerState"
               title="Permalink to Device.findRasterizerState">#</a></h4>
 <div class="doc">
-
+<p>Returns the <a class="crossref" href="../Spectre/RasterizerState.html">RasterizerState</a> named 
+<span class="param">name</span></p>
 <pre class="source">
 RasterizerState findRasterizerState(String name) {
   Dynamic o = _rasterizerStates[name];
@@ -948,7 +1007,8 @@ RasterizerState findRasterizerState(String name) {
 <a href="../Spectre/RenderBuffer.html">RenderBuffer</a> <strong>findRenderBuffer</strong>(<a href="../dart_core/String.html">String</a> name) <a class="anchor-link" href="#findRenderBuffer"
               title="Permalink to Device.findRenderBuffer">#</a></h4>
 <div class="doc">
-
+<p>Returns the <a class="crossref" href="../Spectre/RenderBuffer.html">RenderBuffer</a> named 
+<span class="param">name</span></p>
 <pre class="source">
 RenderBuffer findRenderBuffer(String name) {
   RenderBuffer b = _renderBuffers[name];
@@ -965,7 +1025,8 @@ RenderBuffer findRenderBuffer(String name) {
 <a href="../Spectre/RenderTarget.html">RenderTarget</a> <strong>findRenderTarget</strong>(<a href="../dart_core/String.html">String</a> name) <a class="anchor-link" href="#findRenderTarget"
               title="Permalink to Device.findRenderTarget">#</a></h4>
 <div class="doc">
-
+<p>Returns the <a class="crossref" href="../Spectre/RenderTarget.html">RenderTarget</a> named 
+<span class="param">name</span></p>
 <pre class="source">
 RenderTarget findRenderTarget(String name) {
   RenderTarget t = _renderTargets[name];
@@ -982,7 +1043,8 @@ RenderTarget findRenderTarget(String name) {
 <a href="../Spectre/SamplerState.html">SamplerState</a> <strong>findSamplerState</strong>(<a href="../dart_core/String.html">String</a> name) <a class="anchor-link" href="#findSamplerState"
               title="Permalink to Device.findSamplerState">#</a></h4>
 <div class="doc">
-
+<p>Returns the <a class="crossref" href="../Spectre/SamplerState.html">SamplerState</a> named 
+<span class="param">name</span></p>
 <pre class="source">
 SamplerState findSamplerState(String name) {
   SamplerState s = _samplerStates[name];
@@ -999,7 +1061,8 @@ SamplerState findSamplerState(String name) {
 <a href="../Spectre/ShaderProgram.html">ShaderProgram</a> <strong>findShaderProgram</strong>(<a href="../dart_core/String.html">String</a> name) <a class="anchor-link" href="#findShaderProgram"
               title="Permalink to Device.findShaderProgram">#</a></h4>
 <div class="doc">
-
+<p>Returns the <a class="crossref" href="../Spectre/ShaderProgram.html">ShaderProgram</a> named 
+<span class="param">name</span></p>
 <pre class="source">
 ShaderProgram findShaderProgram(String name) {
   ShaderProgram vs = _shaderPrograms[name];
@@ -1016,7 +1079,8 @@ ShaderProgram findShaderProgram(String name) {
 <a href="../Spectre/Texture2D.html">Texture2D</a> <strong>findTexture2D</strong>(<a href="../dart_core/String.html">String</a> name) <a class="anchor-link" href="#findTexture2D"
               title="Permalink to Device.findTexture2D">#</a></h4>
 <div class="doc">
-
+<p>Returns the <a class="crossref" href="../Spectre/Texture2D.html">Texture2D</a> named 
+<span class="param">name</span></p>
 <pre class="source">
 Texture2D findTexture2D(String name) {
   Texture t = _texture2Ds[name];
@@ -1033,7 +1097,8 @@ Texture2D findTexture2D(String name) {
 <a href="../Spectre/VertexBuffer.html">VertexBuffer</a> <strong>findVertexBuffer</strong>(<a href="../dart_core/String.html">String</a> name) <a class="anchor-link" href="#findVertexBuffer"
               title="Permalink to Device.findVertexBuffer">#</a></h4>
 <div class="doc">
-
+<p>Returns the <a class="crossref" href="../Spectre/VertexBuffer.html">VertexBuffer</a> named 
+<span class="param">name</span></p>
 <pre class="source">
 VertexBuffer findVertexBuffer(String name) {
   VertexBuffer vb = _vertexBuffers[name];
@@ -1050,7 +1115,8 @@ VertexBuffer findVertexBuffer(String name) {
 <a href="../Spectre/VertexShader.html">VertexShader</a> <strong>findVertexShader</strong>(<a href="../dart_core/String.html">String</a> name) <a class="anchor-link" href="#findVertexShader"
               title="Permalink to Device.findVertexShader">#</a></h4>
 <div class="doc">
-
+<p>Returns the <a class="crossref" href="../Spectre/VertexShader.html">VertexShader</a> named 
+<span class="param">name</span></p>
 <pre class="source">
 VertexShader findVertexShader(String name) {
   VertexShader vs = _vertexShaders[name];
@@ -1067,7 +1133,8 @@ VertexShader findVertexShader(String name) {
 <a href="../Spectre/Viewport.html">Viewport</a> <strong>findViewport</strong>(<a href="../dart_core/String.html">String</a> name) <a class="anchor-link" href="#findViewport"
               title="Permalink to Device.findViewport">#</a></h4>
 <div class="doc">
-
+<p>Returns the <a class="crossref" href="../Spectre/Viewport.html">Viewport</a> named 
+<span class="param">name</span></p>
 <pre class="source">
 Viewport findViewport(String name) {
   Dynamic o = _viewports[name];
@@ -1084,7 +1151,7 @@ Viewport findViewport(String name) {
         </div>
         
         <div class="footer">
-          <div>This page generated at 2012-07-02 19:29:30.677</div>
+          <div>This page generated at 2012-07-02 22:37:22.038</div>
         </div>
         <script async src="../client-static.js"></script>
         </body></html>
