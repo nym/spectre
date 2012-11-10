@@ -2,413 +2,486 @@
         <html>
         <head>
                 <meta charset="utf-8">
-        <title>Camera Class / Spectre Library / Dart Documentation</title>
+        <title>Camera class / spectre Library / Dart Documentation</title>
         <link rel="stylesheet" type="text/css"
             href="../styles.css">
         <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet" type="text/css">
         <link rel="shortcut icon" href="../favicon.ico">
         
         </head>
-        <body data-library="Spectre" data-type="Camera">
+        <body data-library="spectre" data-type="Camera">
         <div class="page">
         <div class="header">
           <a href="../index.html"><div class="logo"></div></a>
           <a href="../index.html">Dart Documentation</a>
-         &rsaquo; <a href="../Spectre.html">Spectre</a> &rsaquo; <a href="../Spectre/Camera.html">Camera</a></div>
+         &rsaquo; <a href="../spectre.html">spectre</a> &rsaquo; <a href="../spectre/Camera.html">Camera</a>        <div id="search-box">
+          <input type="search" name="q" id="q" autocomplete="off"
+              class="search-input" placeholder="Search API">
+        </div>
+        
+      </div>
+      <div class="drop-down" id="drop-down"></div>
+      
         <div class="nav">
         
-<h2><div class="icon-library"></div><a href="../dart_core.html">dart:core</a></h2><h2><div class="icon-library"></div><a href="../dart_coreimpl.html">dart:coreimpl</a></h2><h2><div class="icon-library"></div><a href="../html.html">html</a></h2><h2><div class="icon-library"></div><a href="../json.html">json</a></h2><h2><div class="icon-library"></div><a href="../Spectre.html">Spectre</a></h2><ul class="icon">
-<li><a href="../Spectre/BlendState.html"><div class="icon-class"></div>BlendState</a></li>
-<li><a href="../Spectre/BoundCommand.html"><div class="icon-class"></div>BoundCommand</a></li>
-<li><a href="../Spectre/BoundCommandDraw.html"><div class="icon-class"></div>BoundCommandDraw</a></li>
-<li><a href="../Spectre/BoundCommandDrawIndexed.html"><div class="icon-class"></div>BoundCommandDrawIndexed</a></li>
-<li><a href="../Spectre/BoundCommandExecuter.html"><div class="icon-class"></div>BoundCommandExecuter</a></li>
-<li><a href="../Spectre/BoundCommandSetBlendState.html"><div class="icon-class"></div>BoundCommandSetBlendState</a></li>
-<li><a href="../Spectre/BoundCommandSetDepthState.html"><div class="icon-class"></div>BoundCommandSetDepthState</a></li>
-<li><a href="../Spectre/BoundCommandSetIndexBuffer.html"><div class="icon-class"></div>BoundCommandSetIndexBuffer</a></li>
-<li><a href="../Spectre/BoundCommandSetInputLayout.html"><div class="icon-class"></div>BoundCommandSetInputLayout</a></li>
-<li><a href="../Spectre/BoundCommandSetPrimitiveTopology.html"><div class="icon-class"></div>BoundCommandSetPrimitiveTopology</a></li>
-<li><a href="../Spectre/BoundCommandSetRasterizerState.html"><div class="icon-class"></div>BoundCommandSetRasterizerState</a></li>
-<li><a href="../Spectre/BoundCommandSetShaderProgram.html"><div class="icon-class"></div>BoundCommandSetShaderProgram</a></li>
-<li><a href="../Spectre/BoundCommandSetUniformMatrix3.html"><div class="icon-class"></div>BoundCommandSetUniformMatrix3</a></li>
-<li><a href="../Spectre/BoundCommandSetUniformMatrix4.html"><div class="icon-class"></div>BoundCommandSetUniformMatrix4</a></li>
-<li><a href="../Spectre/BoundCommandSetUniformVector3.html"><div class="icon-class"></div>BoundCommandSetUniformVector3</a></li>
-<li><a href="../Spectre/BoundCommandSetUniformVector4.html"><div class="icon-class"></div>BoundCommandSetUniformVector4</a></li>
-<li><a href="../Spectre/BoundCommandSetVertexBuffers.html"><div class="icon-class"></div>BoundCommandSetVertexBuffers</a></li>
-<li><a href="../Spectre/BoundCommandSetViewport.html"><div class="icon-class"></div>BoundCommandSetViewport</a></li>
+<h2><div class="icon-library"></div><a href="../handle_system.html">handle_system</a></h2><h2><div class="icon-library"></div><a href="../profiler.html">profiler</a></h2><h2><div class="icon-library"></div><a href="../spectre.html">spectre</a></h2><ul class="icon">
+<li><a href="../spectre/ArrayMesh.html"><div class="icon-class"></div>ArrayMesh</a></li>
+<li><a href="../spectre/BlendState.html"><div class="icon-class"></div>BlendState</a></li>
 <li><div class="icon-class"></div><strong>Camera</strong></li>
-<li><a href="../Spectre/CameraController.html"><div class="icon-class"></div>CameraController</a></li>
-<li><a href="../Spectre/Command.html"><div class="icon-class"></div>Command</a></li>
-<li><a href="../Spectre/CommandBuffer.html"><div class="icon-class"></div>CommandBuffer</a></li>
-<li><a href="../Spectre/CommandDraw.html"><div class="icon-class"></div>CommandDraw</a></li>
-<li><a href="../Spectre/CommandDrawIndexed.html"><div class="icon-class"></div>CommandDrawIndexed</a></li>
-<li><a href="../Spectre/CommandSetBlendState.html"><div class="icon-class"></div>CommandSetBlendState</a></li>
-<li><a href="../Spectre/CommandSetDepthState.html"><div class="icon-class"></div>CommandSetDepthState</a></li>
-<li><a href="../Spectre/CommandSetIndexBuffer.html"><div class="icon-class"></div>CommandSetIndexBuffer</a></li>
-<li><a href="../Spectre/CommandSetInputLayout.html"><div class="icon-class"></div>CommandSetInputLayout</a></li>
-<li><a href="../Spectre/CommandSetPrimitiveTopology.html"><div class="icon-class"></div>CommandSetPrimitiveTopology</a></li>
-<li><a href="../Spectre/CommandSetRasterizerState.html"><div class="icon-class"></div>CommandSetRasterizerState</a></li>
-<li><a href="../Spectre/CommandSetShaderProgram.html"><div class="icon-class"></div>CommandSetShaderProgram</a></li>
-<li><a href="../Spectre/CommandSetUniformMatrix3.html"><div class="icon-class"></div>CommandSetUniformMatrix3</a></li>
-<li><a href="../Spectre/CommandSetUniformMatrix4.html"><div class="icon-class"></div>CommandSetUniformMatrix4</a></li>
-<li><a href="../Spectre/CommandSetUniformVector3.html"><div class="icon-class"></div>CommandSetUniformVector3</a></li>
-<li><a href="../Spectre/CommandSetUniformVector4.html"><div class="icon-class"></div>CommandSetUniformVector4</a></li>
-<li><a href="../Spectre/CommandSetVertexBuffers.html"><div class="icon-class"></div>CommandSetVertexBuffers</a></li>
-<li><a href="../Spectre/CommandSetViewport.html"><div class="icon-class"></div>CommandSetViewport</a></li>
-<li><a href="../Spectre/DebugDrawManager.html"><div class="icon-class"></div>DebugDrawManager</a></li>
-<li><a href="../Spectre/DepthState.html"><div class="icon-class"></div>DepthState</a></li>
-<li><a href="../Spectre/Device.html"><div class="icon-class"></div>Device</a></li>
-<li><a href="../Spectre/DeviceChild.html"><div class="icon-class"></div>DeviceChild</a></li>
-<li><a href="../Spectre/DeviceFormat.html"><div class="icon-class"></div>DeviceFormat</a></li>
-<li><a href="../Spectre/FragmentShader.html"><div class="icon-class"></div>FragmentShader</a></li>
-<li><a href="../Spectre/FragmentShaderResource.html"><div class="icon-class"></div>FragmentShaderResource</a></li>
-<li><a href="../Spectre/HtmlLogger.html"><div class="icon-class"></div>HtmlLogger</a></li>
-<li><a href="../Spectre/ImageResource.html"><div class="icon-class"></div>ImageResource</a></li>
-<li><a href="../Spectre/ImmediateContext.html"><div class="icon-class"></div>ImmediateContext</a></li>
-<li><a href="../Spectre/IndexBuffer.html"><div class="icon-class"></div>IndexBuffer</a></li>
-<li><a href="../Spectre/InputElementDescription.html"><div class="icon-class"></div>InputElementDescription</a></li>
-<li><a href="../Spectre/InputLayout.html"><div class="icon-class"></div>InputLayout</a></li>
-<li><a href="../Spectre/InputLayoutHelper.html"><div class="icon-class"></div>InputLayoutHelper</a></li>
-<li><a href="../Spectre/Logger.html"><div class="icon-interface"></div>Logger</a></li>
-<li><a href="../Spectre/MeshResource.html"><div class="icon-class"></div>MeshResource</a></li>
-<li><a href="../Spectre/MouseKeyboardCameraController.html"><div class="icon-class"></div>MouseKeyboardCameraController</a></li>
-<li><a href="../Spectre/NullLogger.html"><div class="icon-class"></div>NullLogger</a></li>
-<li><a href="../Spectre/OnResourceLoad.html"><div class="icon-interface"></div>OnResourceLoad</a></li>
-<li><a href="../Spectre/OnResourceLoadFailure.html"><div class="icon-interface"></div>OnResourceLoadFailure</a></li>
-<li><a href="../Spectre/PrintLogger.html"><div class="icon-class"></div>PrintLogger</a></li>
-<li><a href="../Spectre/RasterizerState.html"><div class="icon-class"></div>RasterizerState</a></li>
-<li><a href="../Spectre/RenderBuffer.html"><div class="icon-class"></div>RenderBuffer</a></li>
-<li><a href="../Spectre/RenderTarget.html"><div class="icon-class"></div>RenderTarget</a></li>
-<li><a href="../Spectre/Resource.html"><div class="icon-class"></div>Resource</a></li>
-<li><a href="../Spectre/ResourceManager.html"><div class="icon-class"></div>ResourceManager</a></li>
-<li><a href="../Spectre/SamplerState.html"><div class="icon-class"></div>SamplerState</a></li>
-<li><a href="../Spectre/Shader.html"><div class="icon-class"></div>Shader</a></li>
-<li><a href="../Spectre/ShaderProgram.html"><div class="icon-class"></div>ShaderProgram</a></li>
-<li><a href="../Spectre/SpectreBuffer.html"><div class="icon-class"></div>SpectreBuffer</a></li>
-<li><a href="../Spectre/StaticResources.html"><div class="icon-class"></div>StaticResources</a></li>
-<li><a href="../Spectre/StencilState.html"><div class="icon-class"></div>StencilState</a></li>
-<li><a href="../Spectre/Texture.html"><div class="icon-class"></div>Texture</a></li>
-<li><a href="../Spectre/Texture2D.html"><div class="icon-class"></div>Texture2D</a></li>
-<li><a href="../Spectre/VertexBuffer.html"><div class="icon-class"></div>VertexBuffer</a></li>
-<li><a href="../Spectre/VertexShader.html"><div class="icon-class"></div>VertexShader</a></li>
-<li><a href="../Spectre/VertexShaderResource.html"><div class="icon-class"></div>VertexShaderResource</a></li>
-<li><a href="../Spectre/Viewport.html"><div class="icon-class"></div>Viewport</a></li>
+<li><a href="../spectre/CameraController.html"><div class="icon-class"></div>CameraController</a></li>
+<li><a href="../spectre/CommandListBuilder.html"><div class="icon-class"></div>CommandListBuilder</a></li>
+<li><a href="../spectre/DebugDrawManager.html"><div class="icon-class"></div>DebugDrawManager</a></li>
+<li><a href="../spectre/DepthState.html"><div class="icon-class"></div>DepthState</a></li>
+<li><a href="../spectre/DeviceChild.html"><div class="icon-class"></div>DeviceChild</a></li>
+<li><a href="../spectre/DeviceFormat.html"><div class="icon-class"></div>DeviceFormat</a></li>
+<li><a href="../spectre/Float32ArrayResource.html"><div class="icon-class"></div>Float32ArrayResource</a></li>
+<li><a href="../spectre/FragmentShader.html"><div class="icon-class"></div>FragmentShader</a></li>
+<li><a href="../spectre/GraphicsContext.html"><div class="icon-class"></div>GraphicsContext</a></li>
+<li><a href="../spectre/GraphicsDevice.html"><div class="icon-class"></div>GraphicsDevice</a></li>
+<li><a href="../spectre/HtmlLogger.html"><div class="icon-class"></div>HtmlLogger</a></li>
+<li><a href="../spectre/ImageResource.html"><div class="icon-class"></div>ImageResource</a></li>
+<li><a href="../spectre/IndexBuffer.html"><div class="icon-class"></div>IndexBuffer</a></li>
+<li><a href="../spectre/IndexedMesh.html"><div class="icon-class"></div>IndexedMesh</a></li>
+<li><a href="../spectre/InputElementDescription.html"><div class="icon-class"></div>InputElementDescription</a></li>
+<li><a href="../spectre/InputLayout.html"><div class="icon-class"></div>InputLayout</a></li>
+<li><a href="../spectre/InputLayoutDescription.html"><div class="icon-class"></div>InputLayoutDescription</a></li>
+<li><a href="../spectre/InputLayoutHelper.html"><div class="icon-class"></div>InputLayoutHelper</a></li>
+<li><a href="../spectre/Interpreter.html"><div class="icon-class"></div>Interpreter</a></li>
+<li><a href="../spectre/Logger.html"><div class="icon-interface"></div>Logger</a></li>
+<li><a href="../spectre/MeshResource.html"><div class="icon-class"></div>MeshResource</a></li>
+<li><a href="../spectre/MouseKeyboardCameraController.html"><div class="icon-class"></div>MouseKeyboardCameraController</a></li>
+<li><a href="../spectre/NullLogger.html"><div class="icon-class"></div>NullLogger</a></li>
+<li><a href="../spectre/Ops.html"><div class="icon-class"></div>Ops</a></li>
+<li><a href="../spectre/PackResource.html"><div class="icon-class"></div>PackResource</a></li>
+<li><a href="../spectre/PrintLogger.html"><div class="icon-class"></div>PrintLogger</a></li>
+<li><a href="../spectre/ProgramResource.html"><div class="icon-class"></div>ProgramResource</a></li>
+<li><a href="../spectre/RasterizerState.html"><div class="icon-class"></div>RasterizerState</a></li>
+<li><a href="../spectre/RenderBuffer.html"><div class="icon-class"></div>RenderBuffer</a></li>
+<li><a href="../spectre/RenderConfigResource.html"><div class="icon-class"></div>RenderConfigResource</a></li>
+<li><a href="../spectre/RenderTarget.html"><div class="icon-class"></div>RenderTarget</a></li>
+<li><a href="../spectre/ResourceBase.html"><div class="icon-class"></div>ResourceBase</a></li>
+<li><a href="../spectre/ResourceEventCallback.html"><div class="icon-interface"></div>ResourceEventCallback</a></li>
+<li><a href="../spectre/ResourceEvents.html"><div class="icon-class"></div>ResourceEvents</a></li>
+<li><a href="../spectre/ResourceLoaders.html"><div class="icon-class"></div>ResourceLoaders</a></li>
+<li><a href="../spectre/ResourceManager.html"><div class="icon-class"></div>ResourceManager</a></li>
+<li><a href="../spectre/SamplerState.html"><div class="icon-class"></div>SamplerState</a></li>
+<li><a href="../spectre/SceneResource.html"><div class="icon-class"></div>SceneResource</a></li>
+<li><a href="../spectre/Shader.html"><div class="icon-class"></div>Shader</a></li>
+<li><a href="../spectre/ShaderProgram.html"><div class="icon-class"></div>ShaderProgram</a></li>
+<li><a href="../spectre/ShaderProgramResource.html"><div class="icon-class"></div>ShaderProgramResource</a></li>
+<li><a href="../spectre/ShaderResource.html"><div class="icon-class"></div>ShaderResource</a></li>
+<li><a href="../spectre/SpectreBuffer.html"><div class="icon-class"></div>SpectreBuffer</a></li>
+<li><a href="../spectre/StencilState.html"><div class="icon-class"></div>StencilState</a></li>
+<li><a href="../spectre/Texture.html"><div class="icon-class"></div>Texture</a></li>
+<li><a href="../spectre/Texture2D.html"><div class="icon-class"></div>Texture2D</a></li>
+<li><a href="../spectre/Uint16ArrayResource.html"><div class="icon-class"></div>Uint16ArrayResource</a></li>
+<li><a href="../spectre/UniformCallback.html"><div class="icon-interface"></div>UniformCallback</a></li>
+<li><a href="../spectre/VertexBuffer.html"><div class="icon-class"></div>VertexBuffer</a></li>
+<li><a href="../spectre/VertexShader.html"><div class="icon-class"></div>VertexShader</a></li>
+<li><a href="../spectre/Viewport.html"><div class="icon-class"></div>Viewport</a></li>
 </ul>
-<h2><div class="icon-library"></div><a href="../VectorMath.html">VectorMath</a></h2></div>
+<h2><div class="icon-library"></div><a href="../vector_math_browser.html">vector_math_browser</a></h2></div>
 <div class="content">
         <h2><strong>Camera</strong>
-          Class
+          class
         </h2>
         
+<button id="show-inherited" class="show-inherited">Hide inherited</button>
 <div class="doc">
+<pre class="source">
+class Camera {
+ vec3 position;
+ vec3 upDirection;
+ vec3 focusPosition;
+ num zNear;
+ num zFar;
+ num aspectRatio;
+ num FOV;
 
+ String toString() {
+   return '$position -&gt; $focusPosition';
+ }
+
+ Camera() {
+   position = new vec3.raw(0.0, 0.0, 0.0);
+   focusPosition = new vec3.raw(0.0, 0.0, -1.0);
+   upDirection = new vec3.raw(0.0, 1.0, 0.0);
+
+   FOV = 0.785398163; // 2*45 degrees
+   zNear = 1.0;
+   zFar = 1000.0;
+   aspectRatio = 1.7777778;
+ }
+
+ num get yaw() {
+   vec3 z = new vec3(0.0, 0.0, 1.0);
+   vec3 forward = frontDirection;
+   forward.normalize();
+   num d = degrees(acos(forward.dot(z)));
+   return d;
+ }
+
+ num get pitch() {
+   vec3 y = new vec3(0.0, 1.0, 0.0);
+   vec3 forward = frontDirection;
+   forward.normalize();
+   num d = degrees(acos(forward.dot(y)));
+   return d;
+ }
+
+ mat4 get projectionMatrix() {
+   return makePerspective(FOV, aspectRatio, zNear, zFar);
+ }
+
+ mat4 get lookAtMatrix() {
+   return makeLookAt(position, focusPosition, upDirection);
+ }
+
+ void copyProjectionMatrixIntoArray(Float32Array pm) {
+   mat4 m = makePerspective(FOV, aspectRatio, zNear, zFar);
+   m.copyIntoArray(pm);
+ }
+
+ void copyViewMatrixIntoArray(Float32Array vm) {
+   mat4 m = makeLookAt(position, focusPosition, upDirection);
+   m.copyIntoArray(vm);
+ }
+
+ void copyNormalMatrixIntoArray(Float32Array nm) {
+   mat4 m = makeLookAt(position, focusPosition, upDirection);
+   m.copyIntoArray(nm);
+ }
+
+ void copyProjectionMatrix(mat4 pm) {
+   mat4 m = makePerspective(FOV, aspectRatio, zNear, zFar);
+   m.copyInto(pm);
+ }
+
+ void copyViewMatrix(mat4 vm) {
+   mat4 m = makeLookAt(position, focusPosition, upDirection);
+   m.copyInto(vm);
+ }
+
+ void copyNormalMatrix(mat4 nm) {
+   mat4 m = makeLookAt(position, focusPosition, upDirection);
+   m.copyInto(nm);
+ }
+
+ void copyEyePosition(vec3 ep) {
+   position.copyInto(ep);
+ }
+
+ void copyLookAtPosition(vec3 lap) {
+   focusPosition.copyInto(lap);
+ }
+
+ vec3 get frontDirection() =&gt;  (focusPosition-position).normalize();
+}
+</pre>
 </div>
+<div>
 <h3>Constructors</h3>
 <div class="method"><h4 id="Camera">
-<span class="show-code">Code</span>
+<button class="show-code">Code</button>
 new <strong>Camera</strong>() <a class="anchor-link" href="#Camera"
               title="Permalink to Camera.Camera">#</a></h4>
 <div class="doc">
-
 <pre class="source">
 Camera() {
-  eyePosition = new vec3.raw(0.0, 2.0, 2.0);
-  lookAtPosition = new vec3.raw(0.0, 2.0, 0.0);
-  upDirection = new vec3.raw(0.0, 1.0, 0.0);
-  
-  FOV = 0.785398163; // 2*45 degrees
-  zNear = 1.0;
-  zFar = 1000.0;
-  aspectRatio = 1.7777778;
+ position = new vec3.raw(0.0, 0.0, 0.0);
+ focusPosition = new vec3.raw(0.0, 0.0, -1.0);
+ upDirection = new vec3.raw(0.0, 1.0, 0.0);
+
+ FOV = 0.785398163; // 2*45 degrees
+ zNear = 1.0;
+ zFar = 1000.0;
+ aspectRatio = 1.7777778;
 }
 </pre>
 </div>
 </div>
-<h3>Methods</h3>
-<div class="method"><h4 id="copyEyePosition">
-<span class="show-code">Code</span>
-<a href="../dart_core/void.html">void</a> <strong>copyEyePosition</strong>(<a href="../VectorMath/vec3.html">vec3</a> ep) <a class="anchor-link" href="#copyEyePosition"
-              title="Permalink to Camera.copyEyePosition">#</a></h4>
-<div class="doc">
-
-<pre class="source">
-void copyEyePosition(vec3 ep) {
-  eyePosition.copyIntoVector(ep);
-}
-</pre>
 </div>
-</div>
-<div class="method"><h4 id="copyLookAtPosition">
-<span class="show-code">Code</span>
-<a href="../dart_core/void.html">void</a> <strong>copyLookAtPosition</strong>(<a href="../VectorMath/vec3.html">vec3</a> lap) <a class="anchor-link" href="#copyLookAtPosition"
-              title="Permalink to Camera.copyLookAtPosition">#</a></h4>
-<div class="doc">
-
-<pre class="source">
-void copyLookAtPosition(vec3 lap) {
-  lookAtPosition.copyIntoVector(lap);
-}
-</pre>
-</div>
-</div>
-<div class="method"><h4 id="copyNormalMatrix">
-<span class="show-code">Code</span>
-<a href="../dart_core/void.html">void</a> <strong>copyNormalMatrix</strong>(<a href="../VectorMath/mat4x4.html">mat4x4</a> nm) <a class="anchor-link" href="#copyNormalMatrix"
-              title="Permalink to Camera.copyNormalMatrix">#</a></h4>
-<div class="doc">
-
-<pre class="source">
-void copyNormalMatrix(mat4x4 nm) {
-  mat4x4 m = makeLookAt(eyePosition, lookAtPosition, upDirection);
-  m.copyIntoMatrix(nm);
-}
-</pre>
-</div>
-</div>
-<div class="method"><h4 id="copyNormalMatrixIntoArray">
-<span class="show-code">Code</span>
-<a href="../dart_core/void.html">void</a> <strong>copyNormalMatrixIntoArray</strong>(<a href="../html/Float32Array.html">Float32Array</a> nm) <a class="anchor-link" href="#copyNormalMatrixIntoArray"
-              title="Permalink to Camera.copyNormalMatrixIntoArray">#</a></h4>
-<div class="doc">
-
-<pre class="source">
-void copyNormalMatrixIntoArray(Float32Array nm) {
-  mat4x4 m = makeLookAt(eyePosition, lookAtPosition, upDirection);
-  m.copyIntoArray(nm);
-}
-</pre>
-</div>
-</div>
-<div class="method"><h4 id="copyProjectionMatrix">
-<span class="show-code">Code</span>
-<a href="../dart_core/void.html">void</a> <strong>copyProjectionMatrix</strong>(<a href="../VectorMath/mat4x4.html">mat4x4</a> pm) <a class="anchor-link" href="#copyProjectionMatrix"
-              title="Permalink to Camera.copyProjectionMatrix">#</a></h4>
-<div class="doc">
-
-<pre class="source">
-void copyProjectionMatrix(mat4x4 pm) {
-  mat4x4 m = makePerspective(FOV, aspectRatio, zNear, zFar);
-  m.copyIntoMatrix(pm);
-}
-</pre>
-</div>
-</div>
-<div class="method"><h4 id="copyProjectionMatrixIntoArray">
-<span class="show-code">Code</span>
-<a href="../dart_core/void.html">void</a> <strong>copyProjectionMatrixIntoArray</strong>(<a href="../html/Float32Array.html">Float32Array</a> pm) <a class="anchor-link" href="#copyProjectionMatrixIntoArray"
-              title="Permalink to Camera.copyProjectionMatrixIntoArray">#</a></h4>
-<div class="doc">
-
-<pre class="source">
-void copyProjectionMatrixIntoArray(Float32Array pm) {
-  mat4x4 m = makePerspective(FOV, aspectRatio, zNear, zFar);
-  m.copyIntoArray(pm);
-}
-</pre>
-</div>
-</div>
-<div class="method"><h4 id="copyViewMatrix">
-<span class="show-code">Code</span>
-<a href="../dart_core/void.html">void</a> <strong>copyViewMatrix</strong>(<a href="../VectorMath/mat4x4.html">mat4x4</a> vm) <a class="anchor-link" href="#copyViewMatrix"
-              title="Permalink to Camera.copyViewMatrix">#</a></h4>
-<div class="doc">
-
-<pre class="source">
-void copyViewMatrix(mat4x4 vm) {
-  mat4x4 m = makeLookAt(eyePosition, lookAtPosition, upDirection);
-  m.copyIntoMatrix(vm);
-}
-</pre>
-</div>
-</div>
-<div class="method"><h4 id="copyViewMatrixIntoArray">
-<span class="show-code">Code</span>
-<a href="../dart_core/void.html">void</a> <strong>copyViewMatrixIntoArray</strong>(<a href="../html/Float32Array.html">Float32Array</a> vm) <a class="anchor-link" href="#copyViewMatrixIntoArray"
-              title="Permalink to Camera.copyViewMatrixIntoArray">#</a></h4>
-<div class="doc">
-
-<pre class="source">
-void copyViewMatrixIntoArray(Float32Array vm) {
-  mat4x4 m = makeLookAt(eyePosition, lookAtPosition, upDirection);
-  m.copyIntoArray(vm);
-}
-</pre>
-</div>
-</div>
-<div class="method"><h4 id="get:frontDirection">
-<span class="show-code">Code</span>
-<a href="../VectorMath/vec3.html">vec3</a> <strong>get frontDirection</strong>() <a class="anchor-link" href="#get:frontDirection"
-              title="Permalink to Camera.get frontDirection">#</a></h4>
-<div class="doc">
-
-<pre class="source">
-vec3 get frontDirection() =&gt; lookAtPosition - eyePosition;
-</pre>
-</div>
-</div>
-<div class="method"><h4 id="get:lookAtMatrix">
-<span class="show-code">Code</span>
-<a href="../VectorMath/mat4x4.html">mat4x4</a> <strong>get lookAtMatrix</strong>() <a class="anchor-link" href="#get:lookAtMatrix"
-              title="Permalink to Camera.get lookAtMatrix">#</a></h4>
-<div class="doc">
-
-<pre class="source">
-mat4x4 get lookAtMatrix() {
-  return makeLookAt(eyePosition, lookAtPosition, upDirection);
-}
-</pre>
-</div>
-</div>
-<div class="method"><h4 id="get:pitch">
-<span class="show-code">Code</span>
-<a href="../dart_core/num.html">num</a> <strong>get pitch</strong>() <a class="anchor-link" href="#get:pitch"
-              title="Permalink to Camera.get pitch">#</a></h4>
-<div class="doc">
-
-<pre class="source">
-num get pitch() {
-  vec3 y = new vec3(0.0, 1.0, 0.0);
-  vec3 forward = frontDirection;
-  forward.normalize();
-  num d = degrees(acos(forward.dot(y)));
-  return d;
-}
-</pre>
-</div>
-</div>
-<div class="method"><h4 id="get:projectionMatrix">
-<span class="show-code">Code</span>
-<a href="../VectorMath/mat4x4.html">mat4x4</a> <strong>get projectionMatrix</strong>() <a class="anchor-link" href="#get:projectionMatrix"
-              title="Permalink to Camera.get projectionMatrix">#</a></h4>
-<div class="doc">
-
-<pre class="source">
-mat4x4 get projectionMatrix() {
-  return makePerspective(FOV, aspectRatio, zNear, zFar);
-}
-</pre>
-</div>
-</div>
-<div class="method"><h4 id="toString">
-<span class="show-code">Code</span>
-<a href="../dart_core/String.html">String</a> <strong>toString</strong>() <a class="anchor-link" href="#toString"
-              title="Permalink to Camera.toString">#</a></h4>
-<div class="doc">
-
-<pre class="source">
-String toString() {
-  return '$eyePosition -&gt; $lookAtPosition';  
-}
-</pre>
-</div>
-</div>
-<div class="method"><h4 id="get:yaw">
-<span class="show-code">Code</span>
-<a href="../dart_core/num.html">num</a> <strong>get yaw</strong>() <a class="anchor-link" href="#get:yaw"
-              title="Permalink to Camera.get yaw">#</a></h4>
-<div class="doc">
-
-<pre class="source">
-num get yaw() {
-  vec3 z = new vec3(0.0, 0.0, 1.0);
-  vec3 forward = frontDirection;
-  forward.normalize();
-  num d = degrees(acos(forward.dot(z)));
-  return d;
-}
-</pre>
-</div>
-</div>
-<h3>Fields</h3>
+<div>
+<h3>Properties</h3>
 <div class="field"><h4 id="aspectRatio">
-<span class="show-code">Code</span>
-<a href="../dart_core/num.html">num</a>         <strong>aspectRatio</strong> <a class="anchor-link"
+<button class="show-code">Code</button>
+num         <strong>aspectRatio</strong> <a class="anchor-link"
             href="#aspectRatio"
             title="Permalink to Camera.aspectRatio">#</a>
         </h4>
         <div class="doc">
-
 <pre class="source">
 num aspectRatio;
 </pre>
 </div>
 </div>
-<div class="field"><h4 id="eyePosition">
-<span class="show-code">Code</span>
-<a href="../VectorMath/vec3.html">vec3</a>         <strong>eyePosition</strong> <a class="anchor-link"
-            href="#eyePosition"
-            title="Permalink to Camera.eyePosition">#</a>
+<div class="field"><h4 id="focusPosition">
+<button class="show-code">Code</button>
+<a href="../vector_math_browser/vec3.html">vec3</a>         <strong>focusPosition</strong> <a class="anchor-link"
+            href="#focusPosition"
+            title="Permalink to Camera.focusPosition">#</a>
         </h4>
         <div class="doc">
-
 <pre class="source">
-vec3 eyePosition;
+vec3 focusPosition;
 </pre>
 </div>
 </div>
 <div class="field"><h4 id="FOV">
-<span class="show-code">Code</span>
-<a href="../dart_core/num.html">num</a>         <strong>FOV</strong> <a class="anchor-link"
+<button class="show-code">Code</button>
+num         <strong>FOV</strong> <a class="anchor-link"
             href="#FOV"
             title="Permalink to Camera.FOV">#</a>
         </h4>
         <div class="doc">
-
 <pre class="source">
 num FOV;
 </pre>
 </div>
 </div>
-<div class="field"><h4 id="lookAtPosition">
-<span class="show-code">Code</span>
-<a href="../VectorMath/vec3.html">vec3</a>         <strong>lookAtPosition</strong> <a class="anchor-link"
-            href="#lookAtPosition"
-            title="Permalink to Camera.lookAtPosition">#</a>
+<div class="field"><h4 id="frontDirection">
+<button class="show-code">Code</button>
+final <a href="../vector_math_browser/vec3.html">vec3</a>         <strong>frontDirection</strong> <a class="anchor-link"
+            href="#frontDirection"
+            title="Permalink to Camera.frontDirection">#</a>
         </h4>
         <div class="doc">
-
 <pre class="source">
-vec3 lookAtPosition;
+vec3 get frontDirection() =&gt;  (focusPosition-position).normalize();
+</pre>
+</div>
+</div>
+<div class="field"><h4 id="lookAtMatrix">
+<button class="show-code">Code</button>
+final <a href="../vector_math_browser/mat4.html">mat4</a>         <strong>lookAtMatrix</strong> <a class="anchor-link"
+            href="#lookAtMatrix"
+            title="Permalink to Camera.lookAtMatrix">#</a>
+        </h4>
+        <div class="doc">
+<pre class="source">
+mat4 get lookAtMatrix() {
+ return makeLookAt(position, focusPosition, upDirection);
+}
+</pre>
+</div>
+</div>
+<div class="field"><h4 id="pitch">
+<button class="show-code">Code</button>
+final num         <strong>pitch</strong> <a class="anchor-link"
+            href="#pitch"
+            title="Permalink to Camera.pitch">#</a>
+        </h4>
+        <div class="doc">
+<pre class="source">
+num get pitch() {
+ vec3 y = new vec3(0.0, 1.0, 0.0);
+ vec3 forward = frontDirection;
+ forward.normalize();
+ num d = degrees(acos(forward.dot(y)));
+ return d;
+}
+</pre>
+</div>
+</div>
+<div class="field"><h4 id="position">
+<button class="show-code">Code</button>
+<a href="../vector_math_browser/vec3.html">vec3</a>         <strong>position</strong> <a class="anchor-link"
+            href="#position"
+            title="Permalink to Camera.position">#</a>
+        </h4>
+        <div class="doc">
+<pre class="source">
+vec3 position;
+</pre>
+</div>
+</div>
+<div class="field"><h4 id="projectionMatrix">
+<button class="show-code">Code</button>
+final <a href="../vector_math_browser/mat4.html">mat4</a>         <strong>projectionMatrix</strong> <a class="anchor-link"
+            href="#projectionMatrix"
+            title="Permalink to Camera.projectionMatrix">#</a>
+        </h4>
+        <div class="doc">
+<pre class="source">
+mat4 get projectionMatrix() {
+ return makePerspective(FOV, aspectRatio, zNear, zFar);
+}
 </pre>
 </div>
 </div>
 <div class="field"><h4 id="upDirection">
-<span class="show-code">Code</span>
-<a href="../VectorMath/vec3.html">vec3</a>         <strong>upDirection</strong> <a class="anchor-link"
+<button class="show-code">Code</button>
+<a href="../vector_math_browser/vec3.html">vec3</a>         <strong>upDirection</strong> <a class="anchor-link"
             href="#upDirection"
             title="Permalink to Camera.upDirection">#</a>
         </h4>
         <div class="doc">
-
 <pre class="source">
 vec3 upDirection;
 </pre>
 </div>
 </div>
+<div class="field"><h4 id="yaw">
+<button class="show-code">Code</button>
+final num         <strong>yaw</strong> <a class="anchor-link"
+            href="#yaw"
+            title="Permalink to Camera.yaw">#</a>
+        </h4>
+        <div class="doc">
+<pre class="source">
+num get yaw() {
+ vec3 z = new vec3(0.0, 0.0, 1.0);
+ vec3 forward = frontDirection;
+ forward.normalize();
+ num d = degrees(acos(forward.dot(z)));
+ return d;
+}
+</pre>
+</div>
+</div>
 <div class="field"><h4 id="zFar">
-<span class="show-code">Code</span>
-<a href="../dart_core/num.html">num</a>         <strong>zFar</strong> <a class="anchor-link"
+<button class="show-code">Code</button>
+num         <strong>zFar</strong> <a class="anchor-link"
             href="#zFar"
             title="Permalink to Camera.zFar">#</a>
         </h4>
         <div class="doc">
-
 <pre class="source">
 num zFar;
 </pre>
 </div>
 </div>
 <div class="field"><h4 id="zNear">
-<span class="show-code">Code</span>
-<a href="../dart_core/num.html">num</a>         <strong>zNear</strong> <a class="anchor-link"
+<button class="show-code">Code</button>
+num         <strong>zNear</strong> <a class="anchor-link"
             href="#zNear"
             title="Permalink to Camera.zNear">#</a>
         </h4>
         <div class="doc">
-
 <pre class="source">
 num zNear;
 </pre>
+</div>
+</div>
+</div>
+<div>
+<h3>Methods</h3>
+<div class="method"><h4 id="copyEyePosition">
+<button class="show-code">Code</button>
+void <strong>copyEyePosition</strong>(<a href="../vector_math_browser/vec3.html">vec3</a> ep) <a class="anchor-link" href="#copyEyePosition"
+              title="Permalink to Camera.copyEyePosition">#</a></h4>
+<div class="doc">
+<pre class="source">
+void copyEyePosition(vec3 ep) {
+ position.copyInto(ep);
+}
+</pre>
+</div>
+</div>
+<div class="method"><h4 id="copyLookAtPosition">
+<button class="show-code">Code</button>
+void <strong>copyLookAtPosition</strong>(<a href="../vector_math_browser/vec3.html">vec3</a> lap) <a class="anchor-link" href="#copyLookAtPosition"
+              title="Permalink to Camera.copyLookAtPosition">#</a></h4>
+<div class="doc">
+<pre class="source">
+void copyLookAtPosition(vec3 lap) {
+ focusPosition.copyInto(lap);
+}
+</pre>
+</div>
+</div>
+<div class="method"><h4 id="copyNormalMatrix">
+<button class="show-code">Code</button>
+void <strong>copyNormalMatrix</strong>(<a href="../vector_math_browser/mat4.html">mat4</a> nm) <a class="anchor-link" href="#copyNormalMatrix"
+              title="Permalink to Camera.copyNormalMatrix">#</a></h4>
+<div class="doc">
+<pre class="source">
+void copyNormalMatrix(mat4 nm) {
+ mat4 m = makeLookAt(position, focusPosition, upDirection);
+ m.copyInto(nm);
+}
+</pre>
+</div>
+</div>
+<div class="method"><h4 id="copyNormalMatrixIntoArray">
+<button class="show-code">Code</button>
+void <strong>copyNormalMatrixIntoArray</strong>(Float32Array nm) <a class="anchor-link" href="#copyNormalMatrixIntoArray"
+              title="Permalink to Camera.copyNormalMatrixIntoArray">#</a></h4>
+<div class="doc">
+<pre class="source">
+void copyNormalMatrixIntoArray(Float32Array nm) {
+ mat4 m = makeLookAt(position, focusPosition, upDirection);
+ m.copyIntoArray(nm);
+}
+</pre>
+</div>
+</div>
+<div class="method"><h4 id="copyProjectionMatrix">
+<button class="show-code">Code</button>
+void <strong>copyProjectionMatrix</strong>(<a href="../vector_math_browser/mat4.html">mat4</a> pm) <a class="anchor-link" href="#copyProjectionMatrix"
+              title="Permalink to Camera.copyProjectionMatrix">#</a></h4>
+<div class="doc">
+<pre class="source">
+void copyProjectionMatrix(mat4 pm) {
+ mat4 m = makePerspective(FOV, aspectRatio, zNear, zFar);
+ m.copyInto(pm);
+}
+</pre>
+</div>
+</div>
+<div class="method"><h4 id="copyProjectionMatrixIntoArray">
+<button class="show-code">Code</button>
+void <strong>copyProjectionMatrixIntoArray</strong>(Float32Array pm) <a class="anchor-link" href="#copyProjectionMatrixIntoArray"
+              title="Permalink to Camera.copyProjectionMatrixIntoArray">#</a></h4>
+<div class="doc">
+<pre class="source">
+void copyProjectionMatrixIntoArray(Float32Array pm) {
+ mat4 m = makePerspective(FOV, aspectRatio, zNear, zFar);
+ m.copyIntoArray(pm);
+}
+</pre>
+</div>
+</div>
+<div class="method"><h4 id="copyViewMatrix">
+<button class="show-code">Code</button>
+void <strong>copyViewMatrix</strong>(<a href="../vector_math_browser/mat4.html">mat4</a> vm) <a class="anchor-link" href="#copyViewMatrix"
+              title="Permalink to Camera.copyViewMatrix">#</a></h4>
+<div class="doc">
+<pre class="source">
+void copyViewMatrix(mat4 vm) {
+ mat4 m = makeLookAt(position, focusPosition, upDirection);
+ m.copyInto(vm);
+}
+</pre>
+</div>
+</div>
+<div class="method"><h4 id="copyViewMatrixIntoArray">
+<button class="show-code">Code</button>
+void <strong>copyViewMatrixIntoArray</strong>(Float32Array vm) <a class="anchor-link" href="#copyViewMatrixIntoArray"
+              title="Permalink to Camera.copyViewMatrixIntoArray">#</a></h4>
+<div class="doc">
+<pre class="source">
+void copyViewMatrixIntoArray(Float32Array vm) {
+ mat4 m = makeLookAt(position, focusPosition, upDirection);
+ m.copyIntoArray(vm);
+}
+</pre>
+</div>
+</div>
+<div class="method"><h4 id="toString">
+<button class="show-code">Code</button>
+String <strong>toString</strong>() <a class="anchor-link" href="#toString"
+              title="Permalink to Camera.toString">#</a></h4>
+<div class="doc">
+<div class="inherited">
+<p>Returns a string representation of this object.</p>
+<div class="docs-inherited-from">docs inherited from Object </div></div>
+<pre class="source">
+String toString() {
+ return '$position -&gt; $focusPosition';
+}
+</pre>
+</div>
 </div>
 </div>
         </div>
@@ -416,7 +489,7 @@ num zNear;
         </div>
         
         <div class="footer">
-          <div>This page generated at 2012-07-02 22:37:22.473</div>
+          <div>This page was generated at 2012-11-10 15:19:59.707</div>
         </div>
         <script async src="../client-static.js"></script>
         </body></html>
